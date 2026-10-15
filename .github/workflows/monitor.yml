@@ -1,0 +1,55 @@
+# Daily check of official booking pages (06:05 JST).
+# Rule changes arrive as a pull request for a person to approve; nothing is published without a merge.
+# Needs repository secret ANTHROPIC_API_KEY, and Settings > Actions > General >
+# "Allow GitHub Actions to create and approve pull requests" turned on.
+name: monitor-official-pages
+on:
+  schedule:
+    - cron: '5 21 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/monitor.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Decide what to do with the results
+        id: result
+        run: |
+          if [ -s data/monitor/pr-body.md ]; then echo "review=true" >> "$GITHUB_OUTPUT"; else echo "review=false" >> "$GITHUB_OUTPUT"; fi
+          if [ -s data/monitor/alerts.md ]; then echo "alert=true" >> "$GITHUB_OUTPUT"; else echo "alert=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Open a pull request for review
+        if: steps.result.outputs.review == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: monitor/rule-changes
+          title: 'Official page changed: review release rules'
+          body-path: data/monitor/pr-body.md
+          commit-message: 'Monitor: proposed release-rule changes'
+          labels: rule-change
+      - name: Save routine check results to main
+        if: steps.result.outputs.review == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || (git commit -m "Monitor: daily check $(date -u +%F)" && git push)
+      - name: Raise an issue for pages that keep failing
+        if: steps.result.outputs.alert == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing=$(gh issue list --label monitor-alert --state open --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then gh issue comment "$existing" --body-file data/monitor/alerts.md
+          else gh label create monitor-alert --force >/dev/null; gh issue create --title "Official pages could not be read" --label monitor-alert --body-file data/monitor/alerts.md; fi
