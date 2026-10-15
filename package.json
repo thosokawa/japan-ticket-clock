@@ -1,0 +1,14 @@
+{
+  "name": "japan-ticket-clock",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "English site listing when popular Japanese attractions open reservations, with calendar reminders.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "fetch:jma": "node scripts/fetch-jma.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

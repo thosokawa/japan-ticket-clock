@@ -1,0 +1,43 @@
+{
+  "id": "pokemon-cafe",
+  "name": "Pokémon Café",
+  "shortName": "Pokémon Café",
+  "city": "Tokyo, Osaka",
+  "priority": 8,
+  "officialUrl": "https://www.pokemon-cafe.jp/en/",
+  "watchUrls": [
+    "https://www.pokemon-cafe.jp/en/"
+  ],
+  "rule": {
+    "type": "days_before",
+    "days": 31,
+    "time": "18:00"
+  },
+  "status": "unconfirmed",
+  "statusNote": "Travel guides disagree (30 or 31 days ahead). Not yet confirmed on the official site.",
+  "howToBuy": [
+    "Book on the official reservation site. A new day opens every evening.",
+    "Be on the booking page a few minutes early; slots go in seconds and the site often slows down."
+  ],
+  "rulesToKnow": [],
+  "soldOut": [
+    {
+      "label": "Kirby Café: reservations open on the 10th",
+      "internal": "/tickets/kirby-cafe/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How far ahead can I book Pokémon Café?",
+      "a": "Bookings are reported to open 31 days before your visit at 18:00 Japan time. Check the official site to confirm."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://thirdeyetraveller.com/pokemon-cafe-japan-reservation-worth-it/",
+      "quote": "Bookings open 31 days before your chosen date, at 6 pm Japan Time.",
+      "checkedAt": "2026-10-15"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+}

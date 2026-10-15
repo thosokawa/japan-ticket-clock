@@ -1,0 +1,28 @@
+{
+  "id": "teamlab-planets",
+  "name": "teamLab Planets TOKYO",
+  "shortName": "teamLab Planets",
+  "city": "Toyosu, Tokyo",
+  "priority": 5,
+  "officialUrl": "https://teamlabplanets.dmm.com/en",
+  "watchUrls": ["https://teamlabplanets.dmm.com/en"],
+  "rule": { "type": "rolling", "checkFromDaysBefore": 60 },
+  "status": "secondary",
+  "statusNote": "teamLab publishes no fixed release rule. Dates appear on the ticket calendar in batches.",
+  "howToBuy": [
+    "Buy on the official ticket site, or at Lawson Ticket and Seven-Eleven Ticket.",
+    "Pick a date and an entry time. Weekends and holidays sell out first."
+  ],
+  "rulesToKnow": [],
+  "soldOut": [
+    { "label": "teamLab Planets tickets on Klook", "partner": "klook", "query": "teamlab planets" },
+    { "label": "teamLab Borderless in Azabudai", "partner": "klook", "query": "teamlab borderless" }
+  ],
+  "faq": [
+    { "q": "How far in advance should I book teamLab Planets?", "a": "There is no fixed release day. Start checking the ticket calendar about two months before your visit." }
+  ],
+  "sources": [
+    { "url": "https://japanactivity.com/tools/japan-booking-deadline-planner", "quote": "teamLab Planets and teamLab Borderless: start checking two months out", "checkedAt": "2026-10-15" }
+  ],
+  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+}

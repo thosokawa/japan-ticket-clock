@@ -1,0 +1,27 @@
+{
+  "id": "kirby-cafe",
+  "name": "Kirby Café",
+  "shortName": "Kirby Café",
+  "city": "Tokyo, Osaka, Fukuoka",
+  "priority": 7,
+  "officialUrl": "https://kirbycafe.jp/cafe/",
+  "watchUrls": ["https://kirbycafe.jp/cafe/"],
+  "rule": { "type": "monthly", "day": 10, "time": "18:00", "monthsAhead": 1, "windowStartDay": 11 },
+  "status": "unconfirmed",
+  "statusNote": "From a travel guide; not yet confirmed on the official site.",
+  "howToBuy": [
+    "Book on the official reservation site (Japanese; use your browser's translate feature).",
+    "Each release covers the 11th of the next month to the 10th of the month after."
+  ],
+  "rulesToKnow": [],
+  "soldOut": [
+    { "label": "Pokémon Café: bookings open 31 days ahead", "internal": "/tickets/pokemon-cafe/" }
+  ],
+  "faq": [
+    { "q": "When do Kirby Café reservations open?", "a": "On the 10th of each month at 18:00 Japan time, for the 11th of the next month through the 10th of the month after. Check the official site to confirm." }
+  ],
+  "sources": [
+    { "url": "https://thirdeyetraveller.com/kirby-cafe-japan-reservation-worth-it/", "quote": "Reservations open at 6 pm Japan Time on the 10th of each month.", "checkedAt": "2026-10-15" }
+  ],
+  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+}

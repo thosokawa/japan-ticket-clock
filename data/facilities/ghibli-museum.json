@@ -1,0 +1,36 @@
+{
+  "id": "ghibli-museum",
+  "name": "Ghibli Museum, Mitaka",
+  "shortName": "Ghibli Museum",
+  "city": "Mitaka, Tokyo",
+  "priority": 1,
+  "officialUrl": "https://www.ghibli-museum.jp/en/tickets/",
+  "watchUrls": ["https://www.ghibli-museum.jp/en/tickets/", "https://www.lawson.co.jp/ghibli_museum/english.html"],
+  "rule": { "type": "monthly", "day": 10, "time": "10:00", "monthsAhead": 1 },
+  "status": "secondary",
+  "statusNote": "Confirmed from multiple travel guides; the official ticket page could not be read automatically yet.",
+  "howToBuy": [
+    "From abroad: buy on Lawson Ticket's online Ghibli Museum page (Japanese only; use your browser's translate feature).",
+    "In Japan: buy at a Lawson convenience store Loppi machine (a Japanese phone number is required).",
+    "Pick a date and an entry time slot. Have two or three back-up dates ready because popular slots go within minutes."
+  ],
+  "rulesToKnow": [
+    "Admission is by advance reservation only. No tickets are sold at the museum.",
+    "The ticket holder's name is checked against ID at the entrance. Tickets are non-transferable, so resale tickets will be refused."
+  ],
+  "soldOut": [
+    { "label": "Guided tours that include Ghibli Museum entry", "partner": "klook", "query": "ghibli museum tour" },
+    { "label": "JTB Sunrise Tours (bus tour with museum entry)", "url": "https://www.sunrise-tours.jp/en/ghibli/" },
+    { "label": "Ghibli Park in Aichi: tickets open two months ahead", "internal": "/tickets/ghibli-park/" }
+  ],
+  "faq": [
+    { "q": "When do Ghibli Museum tickets go on sale?", "a": "On the 10th of every month at 10:00 Japan time, for visits in the following month." },
+    { "q": "Can I buy Ghibli Museum tickets from overseas?", "a": "Yes, through Lawson Ticket's online page. The page is in Japanese, so use your browser's translate feature." },
+    { "q": "Are resale Ghibli Museum tickets valid?", "a": "No. The name on the ticket is checked against ID at the entrance, and transferred tickets are refused." }
+  ],
+  "sources": [
+    { "url": "https://en.japantravel.com/tokyo/ghibli-museum-how-to-get-tickets-2026-guide/71834", "quote": "Tickets open one month before your visit, on the 10th, at 10:00 JST.", "checkedAt": "2026-10-15" },
+    { "url": "https://japanactivity.com/tools/japan-booking-deadline-planner", "quote": "Next month's tickets go on sale on the 10th at 10:00 JST", "checkedAt": "2026-10-15" }
+  ],
+  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+}

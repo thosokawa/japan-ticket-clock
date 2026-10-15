@@ -1,0 +1,32 @@
+{
+  "id": "ghibli-park",
+  "name": "Ghibli Park (overseas tickets)",
+  "shortName": "Ghibli Park",
+  "city": "Nagakute, Aichi",
+  "priority": 4,
+  "officialUrl": "https://ghibli-park.jp/en/ticket/",
+  "watchUrls": ["https://ghibli-park.jp/en/ticket/", "https://ghibli-park.jp/en/ticket/ticket2.html"],
+  "rule": { "type": "monthly", "day": 10, "time": "14:00", "monthsAhead": 2 },
+  "status": "official",
+  "statusNote": "Read from the official overseas ticket page.",
+  "howToBuy": [
+    "Overseas tickets are sold online only, through LAWSON TICKET or Klook.",
+    "Tickets cannot be bought by phone or at the park.",
+    "Each ticket type can be bought once per month, up to six tickets per purchase."
+  ],
+  "rulesToKnow": [
+    "Sale dates can change, so check the official page before the release day."
+  ],
+  "soldOut": [
+    { "label": "Ghibli Park tickets on Klook (an official overseas seller)", "partner": "klook", "query": "ghibli park" },
+    { "label": "Ghibli Museum in Tokyo: tickets open one month ahead", "internal": "/tickets/ghibli-museum/" }
+  ],
+  "faq": [
+    { "q": "When do Ghibli Park tickets go on sale for overseas visitors?", "a": "On the 10th of each month at 14:00 Japan time, for visits two months later. For example, December tickets go on sale on October 10." },
+    { "q": "Can I buy Ghibli Park tickets at the park?", "a": "No. Tickets are sold online only." }
+  ],
+  "sources": [
+    { "url": "https://ghibli-park.jp/en/ticket/", "quote": "Reservations for December 2026 go on sale October 10th 2026 at 2 p.m. (Japan time).", "checkedAt": "2026-10-15" }
+  ],
+  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+}

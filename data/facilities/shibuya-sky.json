@@ -1,0 +1,30 @@
+{
+  "id": "shibuya-sky",
+  "name": "SHIBUYA SKY",
+  "shortName": "Shibuya Sky",
+  "city": "Shibuya, Tokyo",
+  "priority": 3,
+  "officialUrl": "https://www.shibuya-scramble-square.com/sky/",
+  "watchUrls": ["https://www.shibuya-scramble-square.com/sky/"],
+  "rule": { "type": "days_before", "days": 14, "time": "00:00" },
+  "status": "unconfirmed",
+  "statusNote": "Release timing from a third-party planner; official site not yet checked. Note: shibuya-sky.com is NOT the official site.",
+  "howToBuy": [
+    "Buy web tickets on the official SHIBUYA SKY site. Sunset slots sell out first.",
+    "Walk-in tickets are sold on the day if any are left."
+  ],
+  "rulesToKnow": [
+    "The domain shibuya-sky.com is not the official site."
+  ],
+  "soldOut": [
+    { "label": "SHIBUYA SKY tickets on Klook", "partner": "klook", "query": "shibuya sky" },
+    { "label": "Tokyo Skytree and other observation decks", "partner": "klook", "query": "tokyo observation deck" }
+  ],
+  "faq": [
+    { "q": "When do SHIBUYA SKY tickets go on sale?", "a": "Standard web tickets are reported to go on sale at midnight Japan time, two weeks before the visit date. Check the official site to confirm." }
+  ],
+  "sources": [
+    { "url": "https://japanactivity.com/tools/japan-booking-deadline-planner", "quote": "Standard web tickets release at 00:00 JST two weeks before admission", "checkedAt": "2026-10-15" }
+  ],
+  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+}
