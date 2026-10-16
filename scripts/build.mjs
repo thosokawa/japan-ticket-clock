@@ -60,7 +60,7 @@ write('about/index.html', simplePage({
 <h2>What we don't do</h2>
 <ul><li>We don't sell or resell tickets, and we don't book on your behalf.</li><li>We don't make our own weather forecasts; the Mt Fuji page shows the Japan Meteorological Agency's forecast.</li></ul>
 <h2>Affiliate links</h2><p>Some “Other ways in” links are affiliate links. If you book through them we may earn a commission, at no extra cost to you. This never changes the release times we publish.</p>
-<h2>Operator</h2><p>Run by ${esc(site.operator)}. Contact: ${esc(site.contactEmail)}</p>`,
+<h2>Operator</h2><p>${esc(site.name)} is run by ${esc(site.operator)}, based in Japan. Contact: <a href="mailto:${esc(site.contactEmail)}">${esc(site.contactEmail)}</a></p>`,
 }));
 write('privacy/index.html', simplePage({
   site, title: 'Privacy', path: '/privacy/',
