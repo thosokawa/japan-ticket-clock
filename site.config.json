@@ -1,7 +1,7 @@
 {
   "name": "Japan Ticket Clock",
   "tagline": "Know exactly when Japan's hardest-to-book tickets go on sale, in your own time zone.",
-  "baseUrl": "https://japan-ticket-clock.pages.dev",
+  "baseUrl": "https://japanticketclock.com",
   "operator": "TBD",
   "contactEmail": "TBD",
   "indexable": false
