@@ -88,7 +88,8 @@ write('data/facilities.json', JSON.stringify({ generatedAt: now.toISOString(), t
 write('llms.txt', `# ${site.name}\n\n> ${site.tagline}\n\nRelease rules for popular Japanese attractions, checked daily against official sources. Machine-readable data: ${site.baseUrl}/data/facilities.json\n\n${facilities.map((f) => `- [${f.shortName}](${site.baseUrl}/tickets/${f.id}/): ${describeRule(f.rule)} (status: ${f.status}, last checked ${f.lastVerifiedAt})`).join('\n')}\n- [Mt Fuji today](${site.baseUrl}/mt-fuji-visibility/): official JMA forecast for the Fuji Five Lakes and live cameras.\n`);
 const paths = ['/', '/planner/', '/mt-fuji-visibility/', '/changelog/', '/about/', ...facilities.map((f) => `/tickets/${f.id}/`)];
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${paths.map((p) => `  <url><loc>${site.baseUrl}${p}</loc><lastmod>${now.toISOString().slice(0, 10)}</lastmod></url>`).join('\n')}\n</urlset>\n`);
-write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${site.baseUrl}/sitemap.xml\n`);
+// indexable: false keeps search engines out until the site name and domain are final.
+write('robots.txt', site.indexable === false ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nSitemap: ${site.baseUrl}/sitemap.xml\n`);
 
 // Static assets plus the shared modules the browser needs.
 cpSync(join(root, 'public'), dist, { recursive: true });

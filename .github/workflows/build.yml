@@ -1,5 +1,5 @@
 # Rebuilds the site several times a day so the Mt Fuji forecast and "next release" dates stay current.
-# Needs repository secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID, and a Cloudflare Pages project.
+# Needs repository secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID. The Pages project is created on the first deploy.
 name: build-and-deploy
 on:
   push:
@@ -23,6 +23,11 @@ jobs:
       - run: npm test
       - run: npm run fetch:jma || echo "JMA fetch failed; building without forecast"
       - run: npm run build
+      - name: Create the Cloudflare Pages project on first deploy
+        if: ${{ github.event_name != 'pull_request' && env.CLOUDFLARE_API_TOKEN != '' }}
+        run: |
+          npx wrangler@3 pages project list | grep -q ' japan-ticket-clock ' \
+            || npx wrangler@3 pages project create japan-ticket-clock --production-branch=main
       - name: Deploy to Cloudflare Pages
         if: ${{ github.event_name != 'pull_request' && env.CLOUDFLARE_API_TOKEN != '' }}
-        run: npx wrangler@3 pages deploy dist --project-name=japan-ticket-clock
+        run: npx wrangler@3 pages deploy dist --project-name=japan-ticket-clock --branch=main
