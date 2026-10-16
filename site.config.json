@@ -4,5 +4,6 @@
   "baseUrl": "https://japanticketclock.com",
   "operator": "CREEKS Inc.",
   "contactEmail": "contact@japanticketclock.com",
-  "indexable": false
+  "indexable": false,
+  "travelpayoutsDriveSrc": "https://emrldtp.com/NTg2MzMz.js?t=586333"
 }
