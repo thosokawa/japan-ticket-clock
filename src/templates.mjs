@@ -40,6 +40,7 @@ ${body}
 <footer class="foot"><div class="wrap">
   <p>Release times are checked daily against official sources. Always confirm on the official site before booking.</p>
   <p>Some links are affiliate links: we may earn a commission at no extra cost to you. <a href="/about/">About &amp; methodology</a> · <a href="/privacy/">Privacy</a></p>
+  <p>© ${new Date().getFullYear()} ${esc(site.operator)}</p>
 </div></footer>
 <script type="module" src="/assets/app.js"></script>
 ${scripts}
