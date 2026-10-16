@@ -151,7 +151,7 @@ ${history.length ? `<h2>Rule changes</h2><ul>${history.map((c) => `<li>${esc(c.d
   });
 }
 
-export function homePage({ site, facilities, now }) {
+export function homePage({ site, facilities, now, affiliates }) {
   const rows = facilities
     .map((f) => {
       const [n] = f.rule.type === 'monthly' || f.rule.type === 'lottery' ? upcomingReleases(f.rule, now, 1) : [];
@@ -174,7 +174,8 @@ ${rows
     : `<p class="muted">${esc(describeRule(f.rule))}</p>`}
 </li>`)
   .join('\n')}
-</ul>`;
+</ul>
+${affiliates?.klook?.homeUrl ? `<p class="muted">Missed a release? Some attractions are also offered as tours that include entry on <a href="${esc(affiliates.klook.homeUrl)}" rel="sponsored noopener" target="_blank">Klook</a>.</p>` : ''}`;
   return layout({ site, title: `${site.name}: when Japan's popular attractions open bookings`, description: site.tagline, path: '/', body });
 }
 
