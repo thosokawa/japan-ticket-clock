@@ -1,45 +1,45 @@
 {
   "ghibli-museum:https://www.ghibli-museum.jp/en/tickets/": {
     "failures": 0,
-    "lastCheckedAt": "2026-10-15T23:35:52.479Z",
+    "lastCheckedAt": "2026-10-16T23:21:09.661Z",
     "via": "fetch"
   },
   "ghibli-museum:https://www.lawson.co.jp/ghibli_museum/english.html": {
     "failures": 0,
-    "lastCheckedAt": "2026-10-15T23:35:52.479Z",
+    "lastCheckedAt": "2026-10-16T23:21:09.661Z",
     "via": "fetch"
   },
   "ghibli-park:https://ghibli-park.jp/en/ticket/": {
     "failures": 0,
-    "lastCheckedAt": "2026-10-15T23:35:52.479Z",
+    "lastCheckedAt": "2026-10-16T23:21:09.661Z",
     "via": "fetch"
   },
   "ghibli-park:https://ghibli-park.jp/en/ticket/ticket2.html": {
-    "failures": 2,
-    "lastError": "2026-10-15: page text too short (96 chars)"
+    "failures": 3,
+    "lastError": "2026-10-16: page text too short (96 chars)"
   },
   "kirby-cafe:https://kirbycafe.jp/cafe/": {
     "failures": 0,
-    "lastCheckedAt": "2026-10-15T23:35:52.479Z",
+    "lastCheckedAt": "2026-10-16T23:21:09.661Z",
     "via": "fetch"
   },
   "nintendo-museum:https://museum.nintendo.com/en/guide/visit-flow/": {
     "failures": 0,
-    "lastCheckedAt": "2026-10-15T23:35:52.479Z",
+    "lastCheckedAt": "2026-10-16T23:21:09.661Z",
     "via": "fetch"
   },
   "pokemon-cafe:https://www.pokemon-cafe.jp/en/": {
-    "failures": 2,
-    "lastError": "2026-10-15: page text too short (90 chars)"
+    "failures": 3,
+    "lastError": "2026-10-16: page text too short (90 chars)"
   },
   "shibuya-sky:https://www.shibuya-scramble-square.com/sky/": {
     "failures": 0,
-    "lastCheckedAt": "2026-10-15T23:35:52.479Z",
+    "lastCheckedAt": "2026-10-16T23:21:09.661Z",
     "via": "browser"
   },
   "teamlab-planets:https://teamlabplanets.dmm.com/en": {
     "failures": 0,
-    "lastCheckedAt": "2026-10-15T23:35:52.479Z",
+    "lastCheckedAt": "2026-10-16T23:21:09.661Z",
     "via": "fetch"
   }
 }
