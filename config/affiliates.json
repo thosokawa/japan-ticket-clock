@@ -1,4 +1,4 @@
 {
-  "_note": "Placeholder links. Replace with tracked deep links once each affiliate program approves the site.",
-  "klook": { "name": "Klook", "searchUrl": "https://www.klook.com/en-US/search/?query={query}" }
+  "_note": "Plain partner links. The Travelpayouts Drive script on every page turns links to joined brands (Klook, GetYourGuide) into tracked affiliate links in the visitor's browser.",
+  "klook": { "name": "Klook", "searchUrl": "https://www.klook.com/en-US/search/result/?query={query}" }
 }
