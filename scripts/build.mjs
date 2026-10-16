@@ -28,7 +28,7 @@ const write = (path, content) => {
 };
 
 // Pages
-write('index.html', homePage({ site, facilities, now }));
+write('index.html', homePage({ site, facilities, now, affiliates }));
 for (const f of facilities) write(`tickets/${f.id}/index.html`, facilityPage({ site, f, affiliates, changelog, now }));
 write('planner/index.html', plannerPage({ site, facilities }));
 
