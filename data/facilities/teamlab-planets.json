@@ -7,6 +7,7 @@
   "priority": 5,
   "intro": "A walk-through digital art museum where you go barefoot through water and rooms filled with light. Tickets are for a set date and entry time, and weekends and holidays sell out first.",
   "facts": { "location": "Toyosu, Tokyo (about 15 minutes by taxi from Tokyo Station)", "price": "From ¥3,800 for adults", "bookAhead": "No fixed rule: start checking about two months ahead" },
+  "mapPlaces": [{ "label": "teamLab Planets", "query": "teamLab Planets TOKYO" }],
   "officialUrl": "https://teamlabplanets.dmm.com/en",
   "watchUrls": [
     "https://teamlabplanets.dmm.com/en"

@@ -7,6 +7,7 @@
   "priority": 8,
   "intro": "A Pokémon-themed café with food and drinks styled after Pokémon characters. Seats are by reservation only, and each day's slots usually go within minutes of release.",
   "facts": { "location": "Tokyo and Osaka", "bookAhead": "About a month: the whole next month opens on the 1st at 18:00 JST" },
+  "mapPlaces": [{ "label": "Pokémon Café Tokyo", "query": "Pokemon Cafe Tokyo Nihonbashi" }, { "label": "Pokémon Café Osaka", "query": "Pokemon Cafe Osaka Shinsaibashi" }],
   "officialUrl": "https://www.pokemon-cafe.jp/en/",
   "watchUrls": [
     "https://www.pokemon-cafe.jp/en/"

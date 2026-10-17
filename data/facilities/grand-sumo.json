@@ -7,6 +7,7 @@
   "priority": 12,
   "intro": "Professional sumo holds six main tournaments a year, each lasting 15 days, with bouts from morning until the top wrestlers fight in the late afternoon. Every tournament has a fixed ticket sale date, and weekends and the final days sell out fast.",
   "facts": { "location": "Tokyo (January, May, September), Osaka (March), Nagoya (July), Fukuoka (November)", "bookAhead": "About five weeks: each tournament has its own sale date" },
+  "mapPlaces": [{ "label": "Ryogoku Kokugikan, Tokyo", "query": "Ryogoku Kokugikan, Tokyo" }, { "label": "EDION Arena Osaka", "query": "EDION Arena Osaka" }, { "label": "IG Arena, Nagoya", "query": "IG Arena, Nagoya" }, { "label": "Fukuoka Kokusai Center", "query": "Fukuoka Kokusai Center" }],
   "officialUrl": "https://sumo.pia.jp/en/",
   "watchUrls": [
     "https://www.sumo.or.jp/EnTicket/year_schedule/"

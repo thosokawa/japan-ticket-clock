@@ -75,3 +75,16 @@ test('home list rows carry a difficulty label and sort keys; sort control lists 
   assert.match(html, /data-by="hardest"[^>]*>Hardest to get</);
   assert.match(html, /<ul class="what">/);
 });
+
+test('map places are labelled queries, and maps render only with a key', () => {
+  for (const f of facilities) {
+    for (const m of f.mapPlaces ?? []) assert.ok(m.label && m.query, `${f.id}: map place`);
+  }
+  const f = facilities.find((x) => x.id === 'grand-sumo');
+  const now = new Date('2026-10-17T00:00:00Z');
+  const site = { name: 'Test', baseUrl: 'https://example.com', operator: 'Test' };
+  assert.doesNotMatch(facilityPage({ site, f, affiliates: {}, changelog: [], now }), /maps\/embed/);
+  const html = facilityPage({ site: { ...site, googleMapsEmbedKey: 'KEY' }, f, affiliates: {}, changelog: [], now });
+  assert.equal(html.match(/<iframe src="https:\/\/www\.google\.com\/maps\/embed\/v1\/place\?key=KEY&amp;q=/g).length, f.mapPlaces.length);
+  assert.match(html, /<figcaption>Ryogoku Kokugikan, Tokyo<\/figcaption>/);
+});

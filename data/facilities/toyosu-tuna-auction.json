@@ -7,6 +7,7 @@
   "priority": 14,
   "intro": "Toyosu Market is Tokyo's main wholesale fish market. You can watch the early-morning tuna auction up close from an upper deck, but places are limited to 100 a day and given out by a free lottery.",
   "facts": { "location": "Toyosu, Tokyo", "price": "Free", "visitLength": "About 40 minutes (5:45 to 6:25 a.m.)", "bookAhead": "About a month: enter in the first week of the month before" },
+  "mapPlaces": [{ "label": "Toyosu Market", "query": "Toyosu Market, Tokyo" }],
   "officialUrl": "https://toyosu.jcdlotterysite.jp/index_en",
   "watchUrls": [
     "https://toyosu.jcdlotterysite.jp/index_en"
