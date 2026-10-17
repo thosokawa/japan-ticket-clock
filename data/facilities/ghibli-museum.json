@@ -10,8 +10,8 @@
   "officialUrl": "https://www.ghibli-museum.jp/en/tickets/",
   "watchUrls": ["https://www.ghibli-museum.jp/en/tickets/", "https://www.lawson.co.jp/ghibli_museum/english.html"],
   "rule": { "type": "monthly", "day": 10, "time": "10:00", "monthsAhead": 1 },
-  "status": "secondary",
-  "statusNote": "Confirmed from multiple travel guides; the official ticket page could not be read automatically yet.",
+  "status": "official",
+  "statusNote": "Read from the official tickets page.",
   "popularity": 2,
   "popularityNote": "Keyword data (Oct 2025 to Sep 2026): four searches about 50,000 a month each (\"ghibli museum tickets\", \"studio ghibli museum tickets\", \"ghibli tickets\", \"ghibli museum reservation\"), more than any other place at that level.",
   "difficulty": "minutes",
@@ -41,6 +41,7 @@
     { "q": "Are resale Ghibli Museum tickets valid?", "a": "No. The name on the ticket is checked against ID at the entrance, and transferred tickets are refused." }
   ],
   "sources": [
+    { "url": "https://www.ghibli-museum.jp/en/tickets/", "quote": "Tickets become available for purchase at 10 a.m. (JST) on the 10th of each month for the subsequent month.", "checkedAt": "2026-10-17" },
     { "url": "https://en.japantravel.com/tokyo/ghibli-museum-how-to-get-tickets-2026-guide/71834", "quote": "Tickets open one month before your visit, on the 10th, at 10:00 JST.", "checkedAt": "2026-10-15" },
     { "url": "https://japanactivity.com/tools/japan-booking-deadline-planner", "quote": "Next month's tickets go on sale on the 10th at 10:00 JST", "checkedAt": "2026-10-15" },
     { "url": "https://www.ghibli-museum.jp/en/tickets/", "quote": "Visitors may purchase tickets from overseas through one of the following methods", "checkedAt": "2026-10-17" },

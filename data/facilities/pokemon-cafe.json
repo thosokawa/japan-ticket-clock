@@ -6,18 +6,19 @@
   "category": "attractions",
   "priority": 8,
   "intro": "A Pokémon-themed café with food and drinks styled after Pokémon characters. Seats are by reservation only, and each day's slots usually go within minutes of release.",
-  "facts": { "location": "Tokyo and Osaka", "bookAhead": "About a month (reported: 31 days before)" },
+  "facts": { "location": "Tokyo and Osaka", "bookAhead": "About a month: the whole next month opens on the 1st at 18:00 JST" },
   "officialUrl": "https://www.pokemon-cafe.jp/en/",
   "watchUrls": [
     "https://www.pokemon-cafe.jp/en/"
   ],
   "rule": {
-    "type": "days_before",
-    "days": 31,
-    "time": "18:00"
+    "type": "monthly",
+    "day": 1,
+    "time": "18:00",
+    "monthsAhead": 1
   },
-  "status": "unconfirmed",
-  "statusNote": "Travel guides disagree (30 or 31 days ahead). Not yet confirmed on the official site.",
+  "status": "official",
+  "statusNote": "The official reservation site opened all of November 2026 at once on October 1 at 18:00 JST. Later months are assumed to follow the same pattern; the site announces each release.",
   "popularity": 8,
   "popularityNote": "Keyword data (Oct 2025 to Sep 2026): \"pokemon cafe reservation\" about 5,000 searches a month plus \"pokemon cafe reserve\" about 500.",
   "difficulty": "minutes",
@@ -44,14 +45,14 @@
   "faq": [
     {
       "q": "How far ahead can I book Pokémon Café?",
-      "a": "Bookings are reported to open 31 days before your visit at 18:00 Japan time. Check the official site to confirm."
+      "a": "A whole month opens at once, on the 1st of the month before, at 18:00 Japan time. For example, all November 2026 dates opened on October 1 at 18:00."
     }
   ],
   "sources": [
     {
-      "url": "https://thirdeyetraveller.com/pokemon-cafe-japan-reservation-worth-it/",
-      "quote": "Bookings open 31 days before your chosen date, at 6 pm Japan Time.",
-      "checkedAt": "2026-10-15"
+      "url": "https://reserve.pokemon-cafe.jp/",
+      "quote": "Reservations will open at 6:00 p.m. on Thursday, October 1, 2026. Available Dates: Sunday, November 1 - Monday, November 30, 2026",
+      "checkedAt": "2026-10-17"
     },
     {
       "url": "https://reserve.pokemon-cafe.jp/",
