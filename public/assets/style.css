@@ -2,9 +2,6 @@
   --bg: #fbfaf8; --fg: #1a1d23; --muted: #676b73; --line: #e3e1dc; --field: #cfccc5; --card: #ffffff;
   --accent: #c2412d; --accent-fg: #ffffff; --ink: #1a1d23; --ink-fg: #ffffff; --ok: #2e7d4f; --mid: #8a6a12; --warn: #b42318;
 }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #15171b; --fg: #eceae5; --muted: #a3a9b3; --line: #2c3038; --field: #3a3f48; --card: #1d2026; --accent: #f07a62; --accent-fg: #15171b; --ink: #eceae5; --ink-fg: #15171b; --ok: #4ade80; --mid: #facc15; --warn: #f87171; }
-}
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Figtree, system-ui, -apple-system, "Segoe UI", sans-serif; }
@@ -122,7 +119,7 @@ tr.past td { opacity: .6; }
 .foot { border-top: 1px solid var(--line); margin-top: 64px; padding: 20px 0 40px; font-size: 14px; color: var(--muted); }
 .foot a { color: var(--muted); }
 .rows .for { display: block; }
-.maps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.maps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 16px; }
 .map { margin: 0; }
-.map iframe { display: block; width: 100%; height: 300px; border: 1px solid var(--line); border-radius: 10px; }
+.map iframe { display: block; width: 100%; height: 440px; border: 1px solid var(--line); border-radius: 10px; }
 .map figcaption { margin-top: 6px; font-size: 15px; color: var(--muted); }
