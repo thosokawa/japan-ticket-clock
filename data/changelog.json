@@ -19,5 +19,6 @@
   { "date": "2026-10-17", "facility": "jidai-matsuri-seats", "text": "Added. 2026 seats went on sale September 8 at 10:00 JST (official page)." },
   { "date": "2026-10-17", "facility": "sunrise-izumo-seto", "text": "Added. Standard JR rule: 10:00 JST one month before travel (official JR-WEST page)." },
   { "date": "2026-10-17", "facility": "pokemon-cafe", "text": "Rule corrected from the official reservation site: the whole next month opens on the 1st at 18:00 JST (was reported as 31 days before)." },
-  { "date": "2026-10-17", "facility": "ghibli-museum", "text": "Confirmed on the official tickets page: 10th of each month at 10:00 JST, for the following month." }
+  { "date": "2026-10-17", "facility": "ghibli-museum", "text": "Confirmed on the official tickets page: 10th of each month at 10:00 JST, for the following month." },
+  { "date": "2026-10-18", "facility": "kirby-cafe", "text": "Corrected. Bookings on the 10th cover the whole next month, not the 11th to the 10th (official site). The 18:00 JST time is still from travel sources." }
 ]

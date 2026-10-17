@@ -6,13 +6,13 @@
   "category": "attractions",
   "priority": 7,
   "intro": "Kirby-themed cafés serving dishes shaped like Kirby and his friends. Reservations open once a month, you need an account to book, and each account can make up to three reservations per store per month.",
-  "facts": { "location": "Tokyo, Osaka and Hakata (Fukuoka)", "price": "Main dishes about ¥1,800 to ¥2,400 (tax included)", "bookAhead": "About one month (reported: on the 10th)" },
+  "facts": { "location": "Tokyo, Osaka and Hakata (Fukuoka)", "price": "Main dishes about ¥1,800 to ¥2,400 (tax included)", "bookAhead": "Next month's bookings open on the 10th" },
   "mapPlaces": [{ "label": "Kirby Café Tokyo", "query": "Kirby Cafe Tokyo" }, { "label": "Kirby Café Osaka", "query": "Kirby Cafe Osaka" }, { "label": "Kirby Café Hakata", "query": "Kirby Cafe Hakata" }],
   "officialUrl": "https://kirbycafe.jp/cafe/",
   "watchUrls": ["https://kirbycafe.jp/cafe/"],
-  "rule": { "type": "monthly", "day": 10, "time": "18:00", "monthsAhead": 1, "windowStartDay": 11 },
-  "status": "unconfirmed",
-  "statusNote": "From a travel guide; not yet confirmed on the official site.",
+  "rule": { "type": "monthly", "day": 10, "time": "18:00", "monthsAhead": 1 },
+  "status": "secondary",
+  "statusNote": "The official site confirms bookings open on the 10th for the following month. The 18:00 start time is from travel sources; the official site does not state it.",
   "popularity": 10,
   "popularityNote": "Keyword data (Oct 2025 to Sep 2026): \"kirby cafe reservation\" about 5,000 searches a month, with no other related searches.",
   "difficulty": "days",
@@ -35,12 +35,14 @@
     { "label": "Pokémon Café: bookings open 31 days ahead", "internal": "/tickets/pokemon-cafe/" }
   ],
   "faq": [
-    { "q": "When do Kirby Café reservations open?", "a": "On the 10th of each month at 18:00 Japan time, for the 11th of the next month through the 10th of the month after. Check the official site to confirm." }
+    { "q": "When do Kirby Café reservations open?", "a": "On the 10th of each month, for the whole of the next month. Travel sources report an 18:00 Japan time start; the official site gives the date but not the time." }
   ],
   "sources": [
+    { "url": "https://kirbycafe.jp/cafe/faq/", "quote": "2026年8月分（2026年7月10日予約開始）より、ご予約にはアカウント登録が必要となります。", "checkedAt": "2026-10-18" },
+    { "url": "https://report.iko-yo.net/articles/16374", "quote": "東京と福岡は、毎月10日、18:00に翌月の受付がスタートします。", "checkedAt": "2026-10-18" },
     { "url": "https://thirdeyetraveller.com/kirby-cafe-japan-reservation-worth-it/", "quote": "Reservations open at 6 pm Japan Time on the 10th of each month.", "checkedAt": "2026-10-15" },
     { "url": "https://kirbycafe.jp/cafe/faq/", "quote": "もしご予約時間から10分を過ぎてもご来店いただけない場合は、キャンセルとさせていただきます。", "checkedAt": "2026-10-17" },
     { "url": "https://kirbycafe.jp/cafe/", "quote": "Kirby Café will check your ID when you visit the store, and if you are not the person who made the reservation, you will not be allowed to enter the store.", "checkedAt": "2026-10-17" }
   ],
-  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+  "lastVerifiedAt": "2026-10-18T06:30:00+09:00"
 }
