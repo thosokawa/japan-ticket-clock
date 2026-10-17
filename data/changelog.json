@@ -24,5 +24,6 @@
   { "date": "2026-10-18", "facility": "shirakawa-go-light-up", "text": "Added. Parking round 2 goes on sale December 1, 2026 at 13:00 JST, for the four light-up days in January 2027 (official page)." },
   { "date": "2026-10-18", "facility": "sagano-romantic-train", "text": "Added. 00:00 JST on the same date one month before boarding (official page)." },
   { "date": "2026-10-18", "facility": "tokyo-disney-restaurants", "text": "Added. Park restaurants 10:00 JST one month before; Disney Hotel restaurants three months before (official page)." },
-  { "date": "2026-10-18", "facility": "kabukiza", "text": "Added. Regular seats on a set date per program (December 2026: November 14, 10:00 JST); single-act seats from 12:00 JST the day before (official pages)." }
+  { "date": "2026-10-18", "facility": "kabukiza", "text": "Added. Regular seats on a set date per program (December 2026: November 14, 10:00 JST); single-act seats from 12:00 JST the day before (official pages)." },
+  { "date": "2026-10-18", "facility": "kirby-cafe", "text": "Corrected. Bookings on the 10th cover the whole next month, not the 11th to the 10th (official site). The 18:00 JST time is still from travel sources." }
 ]
