@@ -12,13 +12,24 @@
   "rule": { "type": "monthly", "day": 10, "time": "14:00", "monthsAhead": 2 },
   "status": "official",
   "statusNote": "Read from the official overseas ticket page.",
-  "howToBuy": [
-    "Overseas tickets are sold online only, through LAWSON TICKET or Klook.",
-    "Tickets cannot be bought by phone or at the park.",
-    "Each ticket type can be bought once per month, up to six tickets per purchase."
+  "popularity": 5,
+  "popularityNote": "Keyword data (Oct 2025 to Sep 2026): \"ghibli park tickets\" and \"ghibli park ticket\" about 50,000 searches a month each; fewer high-volume searches than the Ghibli Museum.",
+  "difficulty": "days",
+  "difficultyNote": "Estimate: weekend and holiday Premium passes go first after the release; weekday Standard passes often stay on sale longer.",
+  "bookingSteps": [
+    "Check the Park Calendar and choose a pass: Premium covers all five areas, Standard covers three.",
+    "Buy from one of the two official overseas sellers linked from the official ticket page: Lawson Ticket or Klook.",
+    "Book in the name of someone who is visiting. Buying on someone else's behalf is not allowed.",
+    "At 14:00 Japan time on the 10th, choose a date and an entry time for Ghibli's Grand Warehouse. Each ticket type can be bought once a month, up to six tickets.",
+    "You receive one electronic ticket with a QR code for the whole group. It can't be split between people.",
+    "On the day, bring the named ticket holder’s passport. The whole group enters the first area together with that person.",
+    "Enter Ghibli's Grand Warehouse within one hour of your entry time. Early entry isn't allowed."
   ],
-  "rulesToKnow": [
-    "Sale dates can change, so check the official page before the release day."
+  "visitorTips": [
+    "No refunds or changes to the date, time, ticket type or number of tickets after booking.",
+    "Resale, transfer and gifting are banned. Tickets that seem to come from auctions are refused, and ID may be checked at random.",
+    "Children aged 3 and under enter free and aren't counted in the group. Some play areas are only for children 12 and under.",
+    "Phone help in English and other languages: +81 50 3626 2455 (international calls). Tickets can't be bought by phone."
   ],
   "soldOut": [
     { "label": "Ghibli Park tickets on Klook (an official overseas seller)", "partner": "klook", "query": "ghibli park" },

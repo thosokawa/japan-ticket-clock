@@ -19,14 +19,23 @@
   },
   "status": "official",
   "statusNote": "Read from the Imperial Household Agency's official visit application site.",
-  "howToBuy": [
-    "Apply on the Imperial Household Agency's visit website, which has an English version. The tour is free.",
-    "The whole month opens at 05:00 Japan time on the 1st of the month before. For example, December tours open on November 1.",
-    "Online applications close at 23:59 four days before the tour.",
-    "Bring your passport on the day. The name must match your application."
+  "popularity": 13,
+  "popularityNote": "Not in our keyword data. Estimate: a well-known free tour in central Tokyo, but searched far less than ticketed attractions.",
+  "difficulty": "days",
+  "difficultyNote": "Reasoning: online places for a whole month are released at once and the popular dates fill quickly; 300 same-day places per tour remain.",
+  "bookingSteps": [
+    "Apply on the Imperial Household Agency's visit website, which has English pages. The tour is free.",
+    "From 05:00 Japan time on the 1st of the month before, choose a date and a morning (10:00) or afternoon (13:30) tour.",
+    "Enter the name exactly as it appears on your passport.",
+    "You get an email with a 12-digit application number (needed to add companions) and a 9-digit permit number.",
+    "Applications close at 23:59 four days before the tour.",
+    "On the day, register at 9:30 for the morning tour or 13:00 for the afternoon tour. Show a valid photo ID such as your passport; photocopies are not accepted."
   ],
-  "rulesToKnow": [
-    "300 same-day places per tour are given out at the gate, first come, first served, until they run out.",
+  "visitorTips": [
+    "Anyone under 18 must come with an adult.",
+    "No tours on Sundays, Mondays, most national holidays, afternoons from July 1 to September 30, or from December 28 to January 4.",
+    "No booking? 300 same-day places per tour are handed out at the Kikyo-mon gate one hour before the tour, first come, first served. Bring ID.",
+    "A free audio guide app is available.",
     "The Imperial Palace East Gardens are a different area and need no booking."
   ],
   "soldOut": [
@@ -58,6 +67,11 @@
     {
       "url": "https://sankan.kunaicho.go.jp/",
       "quote": "先着順（300名）に整理券を配布し、満員となり次第受付終了。",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://sankan.kunaicho.go.jp/multilingual/lang/en/information.html",
+      "quote": "Generally conducted twice a day in the morning and in the afternoon.",
       "checkedAt": "2026-10-17"
     }
   ],

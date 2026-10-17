@@ -32,13 +32,20 @@
   },
   "status": "official",
   "statusNote": "The 2026 sale date is from the Kyoto City Tourism Association's official site. The 2027 date is not announced yet; we show early September as a guide.",
-  "howToBuy": [
-    "The Kyoto City Tourism Association sells paid seats for the Jidai Matsuri procession on October 22.",
-    "In 2026, seats went on sale at 10:00 Japan time on September 8. Buy online through the link on the official page, or at Seven-Eleven stores in Japan.",
-    "Seats are in the Kyoto Gyoen National Garden and along Oike-dori Street. Prices run from ¥5,000 to ¥15,500."
+  "popularity": 18,
+  "popularityNote": "Not in our keyword data. Estimate: a smaller Kyoto festival than the Gion Matsuri.",
+  "difficulty": "days",
+  "difficultyNote": "Official sales page: by October 17, 2026, all seats except Oike-dori general seats had sold out (sale began September 8).",
+  "bookingSteps": [
+    "Check the official seat page for the sale date and which seats are left.",
+    "At 10:00 Japan time on sale day, buy online through the link on the official page, or at a Seven-Eleven in Japan.",
+    "Choose seats in the Kyoto Gyoen National Garden (with live commentary in English or Chinese) or on Oike-dori Street (guidebook, no commentary).",
+    "For Gyoen seats, bring your own smartphone with internet access and headphones. No app or account is needed.",
+    "Bring a raincoat. Umbrellas, parasols and tripods aren't allowed in the seats."
   ],
-  "rulesToKnow": [
+  "visitorTips": [
     "On October 17, 2026, only general seats on Oike-dori Street were still on sale for the 2026 procession.",
+    "After a natural disaster, the schedule and route may change or the festival may be cancelled.",
     "The 2027 sale date has not been announced. We will update this page when it is."
   ],
   "soldOut": [

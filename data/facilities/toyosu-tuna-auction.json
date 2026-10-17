@@ -70,13 +70,21 @@
   },
   "status": "official",
   "statusNote": "The lottery and its past entry windows are from official Tokyo Metropolitan Government pages. Each round's dates are announced about a month ahead, so dates for future rounds are our estimate (the 1st of the month before) until they are announced.",
-  "howToBuy": [
-    "The upper observation deck, right above the tuna auction floor, is allocated by a free lottery. Enter on the official lottery site, which is in English.",
-    "Each month's tours have their own entry window, usually opening at 15:00 Japan time in the first week of the month before and lasting about a week.",
-    "Results are emailed in the middle of that month, around 18:00 Japan time. Only winners are notified.",
-    "Up to 100 people a day, in groups of up to five. The tour runs from 5:45 to 6:25 in the morning."
+  "popularity": 14,
+  "popularityNote": "Not in our keyword data. Estimate: the tuna auction is a famous early-morning sight, but the deck lottery is a niche search.",
+  "difficulty": "minutes",
+  "difficultyNote": "Only 100 places a day, given out by lottery (official); we show it as hard to get because the lottery is usually oversubscribed (estimate).",
+  "bookingSteps": [
+    "Check the entry window for your month on the official lottery site, which is in English. It usually opens at 15:00 Japan time in the first week of the month before.",
+    "Enter with an email address and a password. One application per group, for up to five people. The representative must be of junior high school age or older.",
+    "Allow email from noreply@jcdlotterysite.jp. Results arrive around the middle of the month, and only winners are notified.",
+    "If you win, keep the results email. You show it on screen or on paper on the day.",
+    "Be at the Promotional Corner (Toyosu Market, Block 7, 3F) by 5:30 a.m. Everyone in the group needs photo ID, such as a passport."
   ],
-  "rulesToKnow": [
+  "visitorTips": [
+    "You can't change your tour date if you can't come.",
+    "Transferring or reselling places is banned, and people who do it are refused.",
+    "Photos are allowed, but flash isn't.",
     "The market is closed on Sundays, public holidays and some Wednesdays, and there are no auction tours on those days.",
     "You can watch the auction from the lower gallery behind glass without entering the lottery."
   ],
@@ -104,6 +112,11 @@
     {
       "url": "https://www.english.metro.tokyo.lg.jp/documents/d/english/process202608-pdf",
       "quote": "From 3:00 p.m. on August 5 (Wed) to 11:59 p.m. on August 12 (Wed), 2026",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.english.metro.tokyo.lg.jp/documents/d/english/process202608-pdf",
+      "quote": "Please provide photo ID (e.g. a passport) in addition to the lottery results screen.",
       "checkedAt": "2026-10-17"
     }
   ],
