@@ -7,6 +7,7 @@
   "priority": 16,
   "intro": "An art museum on the island of Naoshima, built mostly underground, where a few works are shown in natural light. Entry is by timed ticket only, and a whole month goes on sale at once.",
   "facts": { "location": "Naoshima, Kagawa (reached by ferry)", "bookAhead": "Two months: tickets go on sale on the 5th, for the month after next" },
+  "mapPlaces": [{ "label": "Chichu Art Museum", "query": "Chichu Art Museum, Naoshima" }],
   "officialUrl": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
   "watchUrls": [
     "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html"

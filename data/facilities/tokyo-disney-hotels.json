@@ -8,6 +8,7 @@
   "priority": 13,
   "intro": "The hotels run by Tokyo Disney Resort, including Tokyo DisneySea Fantasy Springs Hotel inside the park. Rooms open four months ahead, and the most sought-after hotels and room types can sell out within minutes.",
   "facts": { "location": "Urayasu, Chiba (next to Tokyo)", "bookAhead": "Four months: rooms open at 11:00 on the same date four months before" },
+  "mapPlaces": [{ "label": "Tokyo Disney Resort", "query": "Tokyo Disney Resort, Urayasu" }],
   "officialUrl": "https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html",
   "watchUrls": [
     "https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html"

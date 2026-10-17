@@ -64,7 +64,7 @@ write('about/index.html', simplePage({
 }));
 write('privacy/index.html', simplePage({
   site, title: 'Privacy', path: '/privacy/',
-  html: `<h1>Privacy</h1><ul><li>We use privacy-friendly analytics that do not set cookies.</li><li>Calendar reminders are created on your own device or calendar; we don't receive your calendar data.</li><li>We use Travelpayouts to manage affiliate links. Its script loads on our pages and may set cookies to attribute bookings.</li><li>Affiliate partners may set cookies when you follow their links, under their own privacy policies.</li></ul>`,
+  html: `<h1>Privacy</h1><ul><li>We use privacy-friendly analytics that do not set cookies.</li><li>Calendar reminders are created on your own device or calendar; we don't receive your calendar data.</li><li>We use Travelpayouts to manage affiliate links. Its script loads on our pages and may set cookies to attribute bookings.</li>${site.googleMapsEmbedKey ? '<li>Facility pages show maps from Google Maps. Google may set cookies when a map loads, under its own privacy policy.</li>' : ''}<li>Affiliate partners may set cookies when you follow their links, under their own privacy policies.</li></ul>`,
 }));
 
 // Subscribable calendars: next 12 releases per facility with fixed release dates.

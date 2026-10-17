@@ -86,6 +86,14 @@ function introBlock(f) {
 <dl class="facts">${facts.map(([k, label]) => `<div><dt>${esc(label)}</dt><dd>${esc(f.facts[k])}</dd></div>`).join('')}</dl>` : ''}`;
 }
 
+/** Google Maps embeds for the places a facility lists; nothing without a key. */
+function mapBlock(f, site) {
+  if (!site.googleMapsEmbedKey || !f.mapPlaces?.length) return '';
+  const src = (q) => `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(site.googleMapsEmbedKey)}&q=${encodeURIComponent(q)}`;
+  return `<h2>Where it is</h2>
+<div class="maps">${f.mapPlaces.map((m) => `<figure class="map"><iframe src="${esc(src(m.query))}" title="Map: ${esc(m.label)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>${f.mapPlaces.length > 1 ? `<figcaption>${esc(m.label)}</figcaption>` : ''}</figure>`).join('')}</div>`;
+}
+
 function statusBadge(f) {
   const s = STATUS[f.status] ?? STATUS.unconfirmed;
   return `<span class="badge ${s.cls}" title="${esc(f.statusNote)}">${esc(s.label)}</span>`;
@@ -170,6 +178,7 @@ ${nextReleaseBox(f, now)}
 <ol class="steps">${f.bookingSteps.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
 ${f.visitorTips?.length ? `<h2>Good to know for overseas visitors</h2>
 <ul class="tips">${f.visitorTips.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+${mapBlock(f, site)}
 
 <h2>Sold out? Other ways in</h2>
 <ul class="alts">${f.soldOut.map((x) => `<li>${affiliateLink(x, affiliates)}</li>`).join('')}</ul>

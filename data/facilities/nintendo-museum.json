@@ -7,6 +7,7 @@
   "priority": 6,
   "intro": "Nintendo's own museum in Uji, near Kyoto, showing the company's products over the years, with hands-on games. Tickets are given out by lottery, so you have to enter three months ahead and hope to win.",
   "facts": { "location": "Uji, Kyoto Prefecture", "bookAhead": "Three months: enter the lottery three months before your visit" },
+  "mapPlaces": [{ "label": "Nintendo Museum", "query": "Nintendo Museum, Uji, Kyoto" }],
   "officialUrl": "https://museum.nintendo.com/en/guide/visit-flow/",
   "watchUrls": ["https://museum.nintendo.com/en/guide/visit-flow/"],
   "rule": { "type": "lottery", "monthsAhead": 3, "resultsDay": 1, "paymentDay": 7 },
