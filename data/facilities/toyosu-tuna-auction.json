@@ -71,7 +71,7 @@
   },
   "status": "official",
   "statusNote": "The lottery and its past entry windows are from official Tokyo Metropolitan Government pages. Each round's dates are announced about a month ahead, so dates for future rounds are our estimate (the 1st of the month before) until they are announced.",
-  "popularity": 14,
+  "popularity": 18,
   "popularityNote": "Not in our keyword data. Estimate: the tuna auction is a famous early-morning sight, but the deck lottery is a niche search.",
   "difficulty": "minutes",
   "difficultyNote": "Only 100 places a day, given out by lottery (official); we show it as hard to get because the lottery is usually oversubscribed (estimate).",

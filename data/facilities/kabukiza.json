@@ -1,0 +1,113 @@
+{
+  "id": "kabukiza",
+  "name": "Kabukiza Theatre kabuki tickets (regular and single-act seats)",
+  "shortName": "Kabukiza",
+  "city": "Tokyo",
+  "category": "events",
+  "priority": 25,
+  "intro": "Kabukiza is a kabuki theatre in Tokyo. Regular seats for each program go on sale on a date set for that program, so far the 14th of the month before. Single-act seats, for watching just one act, are sold separately: online from noon the day before, and at the box office on the day.",
+  "facts": { "location": "Tokyo", "price": "Single-act seats ¥1,500 to ¥4,000 on the 4th level (October 2026)", "bookAhead": "About three weeks for regular seats; single-act seats from noon the day before" },
+  "mapPlaces": [{ "label": "Kabukiza Theatre", "query": "Kabukiza Theatre, Tokyo" }],
+  "officialUrl": "https://www.kabukiweb.net/theatres/kabukiza/",
+  "watchUrls": [
+    "https://www.kabukiweb.net/theatres/kabukiza/",
+    "https://www.kabuki-bito.jp/theaters/kabukiza/",
+    "https://www.kabukiweb.net/about/ticket/"
+  ],
+  "rule": {
+    "type": "fixed_dates",
+    "sales": [
+      {
+        "event": "November 2026 program",
+        "opensAt": "2026-10-14",
+        "time": "10:00",
+        "coversFrom": "2026-11-01",
+        "coversTo": "2026-11-25"
+      },
+      {
+        "event": "December 2026 program",
+        "opensAt": "2026-11-14",
+        "time": "10:00",
+        "coversFrom": "2026-12-02",
+        "coversTo": "2026-12-25"
+      }
+    ]
+  },
+  "status": "official",
+  "statusNote": "Sale dates are from Kabukiza's official program pages. The December page gives the date only; the 10:00 start comes from the official ticket page, which says online sales start at 10:00 on the first day. Single-act seat times are from the official program and news pages.",
+  "popularity": 13,
+  "popularityNote": "Not in our keyword data. Estimate: kabuki is a classic Tokyo experience for visitors, but searched less than the theme parks and the Shinkansen.",
+  "difficulty": "days",
+  "difficultyNote": "Estimate, not measured: the official pages don't say how fast seats sell. Leftover regular seats are sold at the door before curtain, and single-act seats are sold every day.",
+  "bookingSteps": [
+    "Regular seats: check the program and its sale date on Kabukiza's English website. So far each program has gone on sale on the 14th of the month before, but each sets its own date.",
+    "From 10:00 Japan time on sale day, buy on Shochiku Multilingual Online Ticket, or call the English line on +81-3-6745-0888 (10:00 to 17:00 Japan time). For the October 2026 program, the theatre box office opened two days after online sales.",
+    "Online and phone sales for Kabukiza close the day before the performance.",
+    "Single-act seats (hitomakumi), for one act only: reserved seats go on sale at 12:00 noon Japan time the day before the performance, on Shochiku's single-act e-ticket site.",
+    "The act times for each day are announced on the evening before the program's run begins.",
+    "Same-day single-act seats are sold at the Kabukiza single-act box office from 10:00 to 18:00, for cash or credit card. One ticket per person."
+  ],
+  "visitorTips": [
+    "The multilingual site sells only its own share of seats. If it shows nothing, phone or the box office may still have seats.",
+    "Single-act seats are on the 4th level. Upgraded 2nd-level seats cost ¥5,400 to ¥13,800 (October 2026) and are not offered every day.",
+    "Same-day single-act tickets can't be changed or refunded. IC cards and QR code payments aren't accepted at the single-act box office.",
+    "Children need their own single-act ticket from age 4.",
+    "We could not check the single-act e-ticket site, so its account and payment details are not confirmed."
+  ],
+  "soldOut": [
+    {
+      "label": "Buy a single-act seat: online from noon the day before, or at the box office on the day from 10:00"
+    },
+    {
+      "label": "Leftover regular seats are sold at the door before curtain"
+    },
+    {
+      "label": "Tokyo kabuki experiences on Klook",
+      "partner": "klook",
+      "query": "kabuki tokyo"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Kabukiza tickets go on sale?",
+      "a": "Each program has its own sale date, so far the 14th of the month before, from 10:00 Japan time. Tickets for the December 2026 program (December 2 to 25) go on sale on November 14, 2026."
+    },
+    {
+      "q": "When do single-act seats go on sale?",
+      "a": "Reserved single-act seats go on sale online at 12:00 noon Japan time the day before the performance. Same-day seats are sold at the Kabukiza box office from 10:00."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.kabukiweb.net/theatres/kabukiza/",
+      "quote": "On sale: from Oct 14 (Wed), 2026 10:00 AM(JST)",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.kabuki-bito.jp/theaters/kabukiza/",
+      "quote": "11月14日（土）チケット発売予定",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.kabuki-bito.jp/ticket/",
+      "quote": "パソコン、スマートフォンより24時間受付。販売初日は10：00～",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.kabuki-bito.jp/theaters/kabukiza/play/985/",
+      "quote": "ご観劇前日正午より指定席を販売いたします",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.kabuki-bito.jp/news/10274/",
+      "quote": "当日窓口販売分の4階自由席が全席指定席になります。",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.kabukiweb.net/about/ticket/",
+      "quote": "Shochiku Multilingual Online Ticket serves as a ticket agency, meaning you can only purchase tickets allocated to it.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "shirakawa-go-light-up",
+  "name": "Shirakawa-go winter light-up parking reservations",
+  "shortName": "Shirakawa-go light-up",
+  "ticketNoun": "parking spaces",
+  "city": "Shirakawa-go, Gifu",
+  "category": "events",
+  "priority": 22,
+  "intro": "Shirakawa-go, a village in Gifu Prefecture, holds its winter light-up on four days in January 2027. Parking for those days is sold in advance, online only, in rounds. Round 1 is sold out, and round 2 goes on sale on December 1, 2026.",
+  "facts": { "location": "Shirakawa-go, Gifu Prefecture", "bookAhead": "About six weeks: round 2 opens December 1, 2026, for light-up days in January 2027" },
+  "mapPlaces": [{ "label": "Shirakawa-go", "query": "Shirakawa-go, Gifu" }],
+  "officialUrl": "https://shirakawa-go.gr.jp/events/443/",
+  "watchUrls": [
+    "https://shirakawa-go.gr.jp/events/443/",
+    "https://shirakawa-go.gr.jp/"
+  ],
+  "rule": {
+    "type": "fixed_dates",
+    "sales": [
+      {
+        "event": "Light-up day, January 11, 2027",
+        "opensAt": "2026-12-01",
+        "time": "13:00",
+        "coversFrom": "2027-01-11",
+        "coversTo": "2027-01-11"
+      },
+      {
+        "event": "Light-up day, January 17, 2027",
+        "opensAt": "2026-12-01",
+        "time": "13:00",
+        "coversFrom": "2027-01-17",
+        "coversTo": "2027-01-17"
+      },
+      {
+        "event": "Light-up day, January 24, 2027",
+        "opensAt": "2026-12-01",
+        "time": "13:00",
+        "coversFrom": "2027-01-24",
+        "coversTo": "2027-01-24"
+      },
+      {
+        "event": "Light-up day, January 31, 2027",
+        "opensAt": "2026-12-01",
+        "time": "13:00",
+        "coversFrom": "2027-01-31",
+        "coversTo": "2027-01-31"
+      }
+    ]
+  },
+  "status": "official",
+  "statusNote": "The light-up dates and the round 2 sale date and time are from the Shirakawa-go Tourist Association's official parking page. Its event overview and lodging pages could not be read, and bus tour dates are not confirmed.",
+  "popularity": 22,
+  "popularityNote": "Not in our keyword data. Estimate: the light-up is famous, but it runs on only four days and this page covers parking only.",
+  "difficulty": "days",
+  "difficultyNote": "Official parking page: round 1, on sale from September 10, is sold out. The page doesn't say how fast it went, so this is an estimate.",
+  "bookingSteps": [
+    "Check the light-up dates on the Shirakawa-go Tourist Association website: January 11, 17, 24 and 31, 2027.",
+    "Parking is sold online only, on the Tourist Association's website, and paid by credit card.",
+    "Round 2 goes on sale at 13:00 Japan time on December 1, 2026. Have the page open before then.",
+    "Expect the site to be slow at release. The Tourist Association warns that pages may be hard to open.",
+    "Choose your light-up day and pay by credit card to confirm your parking space."
+  ],
+  "visitorTips": [
+    "Round 1 sold out, so expect round 2 to go fast.",
+    "Lodging in the village on light-up days is allocated by lottery, not first come, first served.",
+    "A news report says group bus parking in the village will also need advance booking from December 1, 2026. This is not from an official page.",
+    "Bus tours and observation deck tours have their own sale dates, which we have not been able to confirm."
+  ],
+  "soldOut": [
+    {
+      "label": "Watch the Tourist Association website for news of any further sales"
+    },
+    {
+      "label": "Shirakawa-go tours on Klook",
+      "partner": "klook",
+      "query": "shirakawa-go tour"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When does Shirakawa-go light-up parking go on sale?",
+      "a": "Round 2 goes on sale at 13:00 Japan time on December 1, 2026, online only on the Tourist Association's website. It covers the light-up days on January 11, 17, 24 and 31, 2027."
+    },
+    {
+      "q": "Can I stay in Shirakawa-go on a light-up day?",
+      "a": "Lodging on light-up days is allocated by lottery, not first come, first served. Check the Tourist Association's website for details."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://shirakawa-go.gr.jp/events/443/",
+      "quote": "2027年 1/11（月・祝）・1/17（日）・1/24（日）・1/31（日）の4日間",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://shirakawa-go.gr.jp/events/443/",
+      "quote": "2026年12月1日(火)の13:00から販売を開始します",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://shirakawa-go.gr.jp/events/443/",
+      "quote": "白川郷観光協会のHP内にてネット販売(クレジット決済)のみとなります",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://shirakawa-go.gr.jp/events/443/",
+      "quote": "アクセスが大変込み合い、ページが開きにくくなる可能性があります",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}
