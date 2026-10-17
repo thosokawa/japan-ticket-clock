@@ -18,7 +18,7 @@
   },
   "status": "official",
   "statusNote": "Read from JR Hokkaido's official English page, which uses the same JR-EAST Train Reservation system. The eki-net.com page itself could not be read automatically.",
-  "popularity": 12,
+  "popularity": 15,
   "popularityNote": "Not in our keyword data. Estimate: many visitors use JR East trains, but few need to book the moment seats open.",
   "difficulty": "available",
   "difficultyNote": "Reasoning: seats are usually available, except on popular trains at holiday peaks (New Year, Golden Week, Obon).",

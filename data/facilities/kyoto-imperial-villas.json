@@ -1,0 +1,97 @@
+{
+  "id": "kyoto-imperial-villas",
+  "name": "Kyoto Imperial villas: Katsura Imperial Villa, Shugakuin Imperial Villa and Sento Imperial Palace",
+  "shortName": "Kyoto Imperial Villas",
+  "city": "Kyoto",
+  "category": "sights",
+  "priority": 21,
+  "intro": "Katsura Imperial Villa, Shugakuin Imperial Villa and Sento Imperial Palace in Kyoto can only be seen on timed tours run by the Imperial Household Agency. All three share one booking rule: a whole month of tours opens at once, three months ahead, and a few same-day places are handed out each morning.",
+  "facts": { "location": "Kyoto: three separate sites", "price": "Katsura ¥1,000 for ages 18 and over (13 to 17 free); Shugakuin and Sento free", "bookAhead": "Three months: the whole month opens on the 1st at 05:00, three months before" },
+  "mapPlaces": [{ "label": "Katsura Imperial Villa", "query": "Katsura Imperial Villa, Kyoto" }, { "label": "Shugakuin Imperial Villa", "query": "Shugakuin Imperial Villa, Kyoto" }, { "label": "Sento Imperial Palace", "query": "Sento Imperial Palace, Kyoto" }],
+  "officialUrl": "https://sankan.kunaicho.go.jp/",
+  "watchUrls": [
+    "https://kyoto-gosho.kunaicho.go.jp/katsura-rikyu/visit",
+    "https://kyoto-gosho.kunaicho.go.jp/shugakuin-rikyu/visit",
+    "https://kyoto-gosho.kunaicho.go.jp/sento-gosho/visit"
+  ],
+  "rule": {
+    "type": "monthly",
+    "day": 1,
+    "time": "05:00",
+    "monthsAhead": 3
+  },
+  "status": "official",
+  "statusNote": "Read from the Imperial Household Agency's official application guides for Katsura, Shugakuin and Sento, which state the same rule.",
+  "popularity": 17,
+  "popularityNote": "Not in our keyword data. Estimate: Katsura is well known to garden and architecture fans, but these tours are searched far less than the big Tokyo attractions.",
+  "difficulty": "days",
+  "difficultyNote": "Estimate, not measured: tours are small, and the official guide says a day with more applicants than places goes to a lottery. The official pages don't say how fast dates fill.",
+  "bookingSteps": [
+    "Apply on the Imperial Household Agency's visit website, the same site used for the Tokyo Imperial Palace tour. Choose Katsura, Shugakuin or Sento.",
+    "From 05:00 Japan time on the 1st, you can apply for any day in the month three months later. For example, January visits open on October 1.",
+    "Enter your nationality, name, email address and age, and list everyone in your party.",
+    "Applications are handled in order of the day they arrive. If one day's applications are more than the places available, the places are drawn by lottery.",
+    "Results come by email. Only successful applicants get a permit number.",
+    "Online applications close at 23:59 three days before your visit date.",
+    "On the day, bring photo ID for everyone in your party. At Katsura, visitors aged 18 and over pay the ¥1,000 fee at the villa."
+  ],
+  "visitorTips": [
+    "There is no need to apply at exactly 05:00. All applications made on the 1st count the same, and a lottery decides if there are too many.",
+    "Age limits differ. Katsura: junior high school age and above only. Shugakuin and Sento: 18 and over only, even as companions.",
+    "Katsura has English guided tours for foreign visitors at 9:20, 11:20, 13:20, 15:20 and 16:20.",
+    "No booking? Same-day tickets are handed out from 8:40, first come, first served: 70 a day at Katsura and 50 a day each at Shugakuin and Sento.",
+    "Shugakuin tours start at 9:00, 10:00, 11:00, 13:30 and 15:00. In July and August, usually only the 9:00, 10:00 and 15:00 tours run."
+  ],
+  "soldOut": [
+    {
+      "label": "Get a same-day ticket at the site from 8:40: 70 a day at Katsura, 50 a day at Shugakuin and Sento"
+    },
+    {
+      "label": "Kyoto guided tours on Klook",
+      "partner": "klook",
+      "query": "kyoto tour"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When can I book Katsura Imperial Villa?",
+      "a": "From 05:00 Japan time on the 1st of the month three months before your visit, for any day that month. Online applications close at 23:59 three days before the visit. Shugakuin and Sento follow the same rule."
+    },
+    {
+      "q": "Do I need to apply right at 05:00?",
+      "a": "No. Applications are handled by day, and all of the 1st's applications count the same. If too many people apply for a date that day, a lottery decides."
+    },
+    {
+      "q": "Can children visit?",
+      "a": "At Katsura, only visitors of junior high school age and above. At Shugakuin and Sento, only visitors aged 18 and over."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kyoto-gosho.kunaicho.go.jp/pdf/visit-1A3_ja.pdf",
+      "quote": "受付期間：参観希望月の 3 ヶ月前の 1 日 5 時～希望日の 3 日前 23 時 59 分まで",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://kyoto-gosho.kunaicho.go.jp/pdf/visit-1A3_ja.pdf",
+      "quote": "※申込日（郵送の場合は消印日）の早い順に受け付け、同日申込分で定員を超えるお申込みがあった場合には抽選となります。",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://kyoto-gosho.kunaicho.go.jp/pdf/visit-1A4_ja.pdf",
+      "quote": "受付期間：参観希望月の 3 ヶ月前の 1 日 5 時～希望日の 3 日前 23 時 59 分まで",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://kyoto-gosho.kunaicho.go.jp/pdf/visit-1A2_ja.pdf",
+      "quote": "受付期間：参観希望月の 3 ヶ月前の 1 日 5 時～希望日の 3 日前 23 時 59 分まで",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://kyoto-gosho.kunaicho.go.jp/en/katsura-rikyu/visit",
+      "quote": "The following time slots are English guided tours for foreign visitors only.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

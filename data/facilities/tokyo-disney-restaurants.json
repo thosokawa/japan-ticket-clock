@@ -1,0 +1,85 @@
+{
+  "id": "tokyo-disney-restaurants",
+  "name": "Tokyo Disney Resort restaurant Priority Seating",
+  "shortName": "Tokyo Disney Priority Seating",
+  "ticketNoun": "bookings",
+  "city": "Urayasu, Chiba (Tokyo area)",
+  "category": "attractions",
+  "priority": 24,
+  "intro": "Priority Seating is Tokyo Disney Resort's restaurant booking system. Park restaurants open one month ahead at 10:00 Japan time, and Disney Hotel restaurants three months ahead. A booking shortens your wait for a table but is not a fixed table time.",
+  "facts": { "location": "Urayasu, Chiba (next to Tokyo)", "bookAhead": "One month for park restaurants, from 10:00 on the same date a month before; three months for Disney Hotel restaurants" },
+  "mapPlaces": [{ "label": "Tokyo Disney Resort", "query": "Tokyo Disney Resort, Urayasu" }],
+  "officialUrl": "https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html",
+  "watchUrls": [
+    "https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html",
+    "https://reserve.tokyodisneyresort.jp/en/about/restaurant_01"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 1,
+    "time": "10:00"
+  },
+  "status": "official",
+  "statusNote": "Read from the official Tokyo Disney Resort Priority Seating pages. They don't say what happens for dates that don't exist a month earlier (such as the 31st); we assume the park ticket rule, the 1st of the next month.",
+  "popularity": 12,
+  "popularityNote": "Not in our keyword data. Estimate: many Disney visitors book a restaurant, but fewer search for it than for park tickets or Disney hotels.",
+  "difficulty": "days",
+  "difficultyNote": "Estimate, not measured: the official pages don't say how fast tables fill. Same-day bookings are still offered online and at the restaurant, so we don't rate it as selling out in minutes.",
+  "bookingSteps": [
+    "Create a user ID (account) for the Tokyo Disney Resort Online Reservations & Tickets site or the Tokyo Disney Resort App.",
+    "Park restaurants: book from 10:00 Japan time one month before the day you want to dine, until 20:59 the day before.",
+    "Disney Hotel restaurants: book from 10:00 Japan time three months before, until 60 minutes before your meal. Chef Mickey is the exception: it opens one month before.",
+    "Book for up to 8 people. One user ID can hold up to 3 advance bookings for the same day.",
+    "Pay at the restaurant on the day.",
+    "Arrive on time. Your booking may be cancelled if you arrive late."
+  ],
+  "visitorTips": [
+    "Priority Seating is not a fixed table time. You may still wait, and parties of 5 or more may be seated separately.",
+    "Same-day bookings open online at 9:00 Japan time, and in person at the restaurant from 10:00 while seats last.",
+    "Groups of 9 or more must split into two bookings under two user IDs.",
+    "Cancelling a Disney Hotel reservation also cancels the dining bookings made with it.",
+    "Dates that don't exist a month earlier (such as March 31): the official pages don't say. We assume they open on the 1st of the next month, as park tickets do."
+  ],
+  "soldOut": [
+    {
+      "label": "Try again on the day: same-day bookings open online at 9:00, and at the restaurant from 10:00"
+    },
+    {
+      "label": "Park tickets: on sale two months ahead",
+      "internal": "/tickets/tokyo-disney-tickets/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When can I book a Tokyo Disney restaurant?",
+      "a": "For park restaurants, from 10:00 Japan time one month before the day you want to dine, until 20:59 the day before."
+    },
+    {
+      "q": "How far ahead can I book Disney Hotel restaurants?",
+      "a": "Three months, from 10:00 Japan time, until 60 minutes before your meal. Chef Mickey opens one month before."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html",
+      "quote": "Booking in advance: From 10:00 a.m. (JST) one month before to 8:59 p.m. (JST) the day before you wish to dine.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html",
+      "quote": "Booking on the Day of Visit: From 9:00 a.m. (JST)",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html",
+      "quote": "From 10:00 a.m. (JST) three month before to 60 minutes before you wish to dine.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html",
+      "quote": "Chef Mickey can be booked from 10:00 a.m. (JST) one month before to 60 minutes before you wish to dine.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

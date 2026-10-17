@@ -1,0 +1,74 @@
+{
+  "id": "sagano-romantic-train",
+  "name": "Sagano Romantic Train, Arashiyama, Kyoto",
+  "shortName": "Sagano Romantic Train",
+  "city": "Kyoto (Arashiyama)",
+  "category": "trains",
+  "priority": 23,
+  "intro": "A sightseeing train in Kyoto's Arashiyama area, with one open-air car. Reserved seats go on sale at midnight Japan time, one month before the ride. The busiest times are the autumn leaves in November and cherry blossom in spring.",
+  "facts": { "location": "Arashiyama, Kyoto", "bookAhead": "One month: seats open at 00:00 on the same date a month before" },
+  "officialUrl": "https://www.sagano-kanko.co.jp/en/ticket",
+  "watchUrls": [
+    "https://www.sagano-kanko.co.jp/en/faq/",
+    "https://www.sagano-kanko.co.jp/en/ticket"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 1,
+    "time": "00:00"
+  },
+  "status": "official",
+  "statusNote": "Read from the operator's official English FAQ. The rule for dates that don't exist a month earlier is inferred from the official example, since the full rule is shown only as an image.",
+  "popularity": 14,
+  "popularityNote": "Not in our keyword data. Estimate: a well-known Arashiyama ride, searched less than the big Tokyo attractions and the Shinkansen.",
+  "difficulty": "days",
+  "difficultyNote": "Estimate, not measured: demand peaks for the autumn leaves in November and cherry blossom in spring. The operator doesn't say how fast seats sell.",
+  "bookingSteps": [
+    "Go to the operator's English website and follow \"Reserve tickets here\" to the online booking system.",
+    "Register an account with your email address or a social login.",
+    "From 00:00 Japan time, one month before your ride, pick your train and seats on the seat map. You can buy up to 8 tickets at a time.",
+    "There are no round-trip tickets. Buy two one-way tickets if you want to ride both ways.",
+    "Pay by credit card (Visa, Mastercard, American Express, JCB or Diners Club). The card must support 3D Secure. Debit cards are accepted.",
+    "On the day, show the QR e-ticket at the gate."
+  ],
+  "visitorTips": [
+    "Window seats are A and D. Car No. 5, \"The Rich\", is open-air and has no windows.",
+    "Cancellation is free until 23:59 the day before you ride, which is also when online booking closes. No refunds on the day.",
+    "Dates that don't exist a month earlier: the official example says tickets for March 29 go on sale on March 1. We take this to mean such dates open at 00:00 on the 1st of the travel month.",
+    "No card, or no booking? Same-day tickets are sold at Saga station from about 8:35 and Arashiyama station from about 8:50, for cash or IC card (not PiTaPa). None are sold at Hozukyo.",
+    "Standing tickets go on sale only after the reserved seats sell out."
+  ],
+  "soldOut": [
+    {
+      "label": "Buy a same-day ticket at Saga or Arashiyama station: standing tickets are sold once reserved seats are gone"
+    },
+    {
+      "label": "Sagano Romantic Train tickets and Arashiyama tours on Klook",
+      "partner": "klook",
+      "query": "sagano romantic train"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Sagano Romantic Train tickets go on sale?",
+      "a": "At 00:00 (midnight) Japan time, one month before the boarding date. For example, seats for November 20 go on sale at 00:00 on October 20."
+    },
+    {
+      "q": "Can I buy a round-trip ticket?",
+      "a": "No. Round-trip tickets are not sold, so buy two one-way tickets."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sagano-kanko.co.jp/en/faq/",
+      "quote": "Tickets can be purchased from 0:00 a.m. (Japan time) one month before the boarding date.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.sagano-kanko.co.jp/en/faq/",
+      "quote": "Tickets for boarding on March 29 will be available from 0:00 a.m. on March 1.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}
