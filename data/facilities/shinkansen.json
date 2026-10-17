@@ -19,13 +19,23 @@
   },
   "status": "official",
   "statusNote": "Read from the official JR Central and JR-WEST English pages.",
-  "howToBuy": [
-    "For the Tokaido, Sanyo and Kyushu Shinkansen (Tokyo, Kyoto, Osaka, Hiroshima, Fukuoka), book on SmartEX or JR-WEST Online Train Reservation. Both are in English and take overseas credit cards.",
-    "Seats for a given day go on sale at 10:00 Japan time on the same date one month before. For example, seats for December 25 open on November 25.",
-    "Japan Rail Pass holders can also reserve seats online.",
-    "Busy times sell out fast: New Year, late March to early April, Golden Week (late April to early May) and Obon (mid-August)."
+  "popularity": 4,
+  "popularityNote": "Not in our keyword data. Estimate: almost every first-time visitor rides the Shinkansen, but most trains have seats to spare, so fewer people search for release times than for the Ghibli Museum.",
+  "difficulty": "available",
+  "difficultyNote": "Reasoning: on most days there are seats to spare; popular trains sell out at New Year, late March to early April, Golden Week and Obon (JR Central publishes separate advice for these peak periods).",
+  "bookingSteps": [
+    "Register on SmartEX (JR Central) or JR-WEST Online Train Reservation. Both are in English. SmartEX needs a credit card when you register.",
+    "At 10:00 Japan time, one month before your travel date, search for your train.",
+    "Pick a train and a seat on the seat map. SmartEX books up to six people at once.",
+    "Travelling with a large suitcase on the Tokaido, Sanyo or Kyushu Shinkansen? Reserve a seat with an oversized baggage area.",
+    "Pay by credit card when you book.",
+    "SmartEX: show the QR ticket on your phone at the ticket gate. There is nothing to collect.",
+    "JR-WEST: before boarding, collect your ticket from a ticket machine with the credit card you paid with and your four-digit ID number."
   ],
-  "rulesToKnow": [
+  "visitorTips": [
+    "Busy times sell out fast: New Year, late March to early April, Golden Week (late April to early May) and Obon (mid-August).",
+    "With a Japan Rail Pass, Nozomi and Mizuho trains need an extra ticket.",
+    "Your card company may charge a foreign transaction fee.",
     "SmartEX releases some products one year ahead at 05:30, but ordinary reserved seats open one month ahead.",
     "If the same date doesn't exist in the previous month (for example March 31), sales start on the 1st of the travel month."
   ],
@@ -62,6 +72,11 @@
     {
       "url": "https://www.westjr.co.jp/global/en/ticket/overview/",
       "quote": "starting at 10:00 am (JST) on same day of preceding month.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://global.jr-central.co.jp/en/nozomi/",
+      "quote": "A compatible credit card is required for initial registration.",
       "checkedAt": "2026-10-17"
     }
   ],

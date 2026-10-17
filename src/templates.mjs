@@ -9,6 +9,21 @@ const STATUS = {
   unconfirmed: { label: 'Not yet confirmed on the official site', cls: 'warn' },
 };
 
+// How hard a place is to book, in plain words. Lottery places get their own wording,
+// since nothing "sells out" there. `rank` orders the home list's "Hardest to get" sort.
+export const DIFFICULTY = {
+  minutes: { rank: 0, long: 'Usually sells out within minutes of release', short: 'Sells out in minutes', lotteryLong: 'Given out by lottery, and hard to win', lotteryShort: 'Lottery, hard to win' },
+  days: { rank: 1, long: 'Usually sells out within days or weeks', short: 'Sells out in days', lotteryLong: 'Given out by lottery', lotteryShort: 'Lottery' },
+  available: { rank: 2, long: 'Usually still available', short: 'Usually available', lotteryLong: 'Given out by lottery; most entries win', lotteryShort: 'Lottery, usually won' },
+};
+const isLottery = (rule) => rule.type === 'lottery' || rule.kind === 'lottery';
+/** "Usually sells out within minutes of release" (size 'long') or "Sells out in minutes" (size 'short'). */
+export const difficultyText = (f, size = 'long') => {
+  const d = DIFFICULTY[f.difficulty];
+  if (!d) return '';
+  return isLottery(f.rule) ? d[size === 'long' ? 'lotteryLong' : 'lotteryShort'] : d[size];
+};
+
 const fmtJst = (d) =>
   new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Tokyo', month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(d) + ' JST';
 const fmtJstDay = (d) => new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Tokyo', month: 'short', day: 'numeric', year: 'numeric' }).format(d);
@@ -147,12 +162,14 @@ export function facilityPage({ site, f, affiliates, changelog, now }) {
 <p class="lede">${esc(describeRule(f.rule))}</p>
 ${introBlock(f)}
 <p>${statusBadge(f)} <span class="muted">Last checked ${esc(fmtJst(new Date(f.lastVerifiedAt)))}</span></p>
+${f.difficulty ? `<p class="difficulty"><strong>How hard to get:</strong> ${esc(difficultyText(f))}. <a href="#basis">Why we say this</a></p>` : ''}
 ${nextReleaseBox(f, now)}
 <p><a class="official" href="${esc(f.officialUrl)}" rel="noopener" target="_blank">Official booking page ↗</a></p>
 
-<h2>How to buy</h2>
-<ol>${f.howToBuy.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
-${f.rulesToKnow.length ? `<h2>Rules to know</h2><ul>${f.rulesToKnow.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+<h2>How to book, step by step</h2>
+<ol class="steps">${f.bookingSteps.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
+${f.visitorTips?.length ? `<h2>Good to know for overseas visitors</h2>
+<ul class="tips">${f.visitorTips.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
 
 <h2>Sold out? Other ways in</h2>
 <ul class="alts">${f.soldOut.map((x) => `<li>${affiliateLink(x, affiliates)}</li>`).join('')}</ul>
@@ -163,6 +180,7 @@ ${f.faq.map((x) => `<details><summary>${esc(x.q)}</summary><p>${esc(x.a)}</p></d
 <h2>Sources</h2>
 <ul class="sources">${f.sources.map((s) => `<li><a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(new URL(s.url).hostname)}</a>: “${esc(s.quote)}” <span class="muted">(checked ${esc(s.checkedAt)})</span></li>`).join('')}</ul>
 <p class="muted">${esc(f.statusNote)}</p>
+${f.difficultyNote ? `<p class="muted" id="basis">How hard to get (“${esc(difficultyText(f))}”): ${esc(f.difficultyNote)}</p>` : ''}
 ${history.length ? `<h2>Rule changes</h2><ul>${history.map((c) => `<li>${esc(c.date)}: ${esc(c.text)}</li>`).join('')}</ul>` : ''}
 `;
   return layout({
@@ -176,6 +194,12 @@ ${history.length ? `<h2>Rule changes</h2><ul>${history.map((c) => `<li>${esc(c.d
 }
 
 const CATEGORIES = { attractions: 'Attractions', trains: 'Trains', events: 'Events', sights: 'Sights' };
+// Home list sort options. The server renders "soonest"; app.js re-orders for the others.
+const SORTS = {
+  soonest: { label: 'Opening soonest', heading: 'Opening next' },
+  popular: { label: 'Most popular', heading: 'Most popular' },
+  hardest: { label: 'Hardest to get', heading: 'Hardest to get' },
+};
 
 const monthYear = (iso) => new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', month: 'long', year: 'numeric' }).format(new Date(`${iso}T00:00:00Z`));
 const dayMonth = (iso) => new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric' }).format(new Date(`${iso}T00:00:00Z`));
@@ -217,6 +241,11 @@ export function homePage({ site, facilities, now, affiliates }) {
 <section class="hero">
   <h1>Know when to book in Japan, in your time.</h1>
   <p class="lede">Ghibli, Disney, sumo, the Shinkansen and more. Release times from official sites, checked every day.</p>
+  <ul class="what">
+    <li>When bookings open, in your time zone</li>
+    <li>How to book, step by step, plus tips for overseas visitors</li>
+    <li>Add release times to your calendar so you don't miss them</li>
+  </ul>
   <form class="search" role="search" data-search>
     <label for="q" class="sr">Search</label>
     <input id="q" name="q" type="search" list="places" placeholder="Search a place, train or event" autocomplete="off">
@@ -237,15 +266,21 @@ export function homePage({ site, facilities, now, affiliates }) {
   <h2>Opening next</h2>
   <p class="muted" data-tz>Times in Japan time (JST)</p>
 </div>
-<div class="tabs" data-tabs hidden>
-  <button type="button" aria-pressed="true" data-cat="">All</button>
-  ${Object.entries(CATEGORIES).map(([k, v]) => `<button type="button" aria-pressed="false" data-cat="${k}">${v}</button>`).join('')}
+<div class="filters" data-filters hidden>
+  <div class="tabs" data-tabs role="group" aria-label="Category">
+    <button type="button" aria-pressed="true" data-cat="">All</button>
+    ${Object.entries(CATEGORIES).map(([k, v]) => `<button type="button" aria-pressed="false" data-cat="${k}">${v}</button>`).join('')}
+  </div>
+  <div class="tabs sort" data-sort role="group" aria-label="Sort">
+    <span class="sort-label">Sort</span>
+    ${Object.entries(SORTS).map(([k, v], i) => `<button type="button" aria-pressed="${i === 0}" data-by="${k}" data-heading="${esc(v.heading)}">${esc(v.label)}</button>`).join('')}
+  </div>
 </div>
 <ul class="rows" data-rows>
 ${rows
-  .map(({ f, n }) => `<li class="card" data-cat="${esc(f.category ?? '')}" data-name="${esc(`${f.name} ${f.shortName}`.toLowerCase())}">
+  .map(({ f, n }, i) => `<li class="card" data-cat="${esc(f.category ?? '')}" data-name="${esc(`${f.name} ${f.shortName}`.toLowerCase())}" data-soonest="${i}" data-popular="${esc(f.popularity ?? 999)}" data-hardest="${esc(DIFFICULTY[f.difficulty]?.rank ?? 9)}">
   <div><span class="cat">${esc(CATEGORIES[f.category] ?? '')}</span>
-  <a href="/tickets/${esc(f.id)}/">${esc(f.shortName)}</a>${n ? `<span class="for muted">${esc(shortCovers(n))}</span>` : ''}</div>
+  <a href="/tickets/${esc(f.id)}/">${esc(f.shortName)}</a>${n ? `<span class="for muted">${esc(shortCovers(n))}</span>` : ''}${f.difficulty ? `<span class="diff diff-${esc(f.difficulty)}">${esc(difficultyText(f, 'short'))}</span>` : ''}</div>
   <div class="when">${when(n, f)}</div>
 </li>`)
   .join('\n')}

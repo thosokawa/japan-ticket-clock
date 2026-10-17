@@ -18,14 +18,21 @@
   },
   "status": "official",
   "statusNote": "Read from JR Hokkaido's official English page, which uses the same JR-EAST Train Reservation system. The eki-net.com page itself could not be read automatically.",
-  "howToBuy": [
-    "Book on JR-EAST Train Reservation, the English site of JR East. It covers the Tohoku, Hokkaido, Hokuriku and Joetsu Shinkansen, the Narita Express and limited express trains.",
-    "Seats go on sale at 10:00 Japan time one month before the travel date, and you can book until 6 minutes before departure.",
-    "You can also buy JR East rail passes on the same site and reserve seats with them.",
-    "Pick up paper tickets from a ticket machine at a JR East station, using the card you paid with."
+  "popularity": 12,
+  "popularityNote": "Not in our keyword data. Estimate: many visitors use JR East trains, but few need to book the moment seats open.",
+  "difficulty": "available",
+  "difficultyNote": "Reasoning: seats are usually available, except on popular trains at holiday peaks (New Year, Golden Week, Obon).",
+  "bookingSteps": [
+    "Go to JR-EAST Train Reservation, JR East's English booking site.",
+    "Using a JR East rail pass? Buy it on the same site first. Seats for the nationwide Japan Rail Pass are not reserved here.",
+    "From 10:00 Japan time, one month before your travel date, choose your train and seat. You can book until 6 minutes before departure.",
+    "Pay by credit card. If your card is declined, try another card or buy at a station.",
+    "Before boarding, collect your tickets from a reserved-seat ticket machine at a JR East station, using the card you paid with. Allow extra time, as stations can be crowded."
   ],
-  "rulesToKnow": [
-    "If the same date doesn't exist in the previous month (for example March 31), sales start on the 1st of the travel month."
+  "visitorTips": [
+    "You also need a basic fare ticket. In IC card areas, an IC card can cover the fare.",
+    "If the same date doesn't exist in the previous month (for example March 31), sales start on the 1st of the travel month.",
+    "Busy times sell out fast: New Year, Golden Week (late April to early May) and Obon (mid-August)."
   ],
   "soldOut": [
     {

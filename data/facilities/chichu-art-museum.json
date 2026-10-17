@@ -19,13 +19,22 @@
   },
   "status": "official",
   "statusNote": "Read from the official Benesse Art Site Naoshima FAQ.",
-  "howToBuy": [
-    "Buy timed-entry tickets on the official Benesse Art Site Naoshima website. Entry is in 30-minute slots.",
-    "A whole month goes on sale at 10:00 Japan time on the 5th, two months ahead. For example, October tickets go on sale on August 5.",
-    "Online payment is by credit card only (Visa, Mastercard or JCB)."
+  "popularity": 17,
+  "popularityNote": "Not in our keyword data. Estimate: a must-see for art lovers, but Naoshima is far off the usual route.",
+  "difficulty": "days",
+  "difficultyNote": "Reasoning: weekend and holiday slots in busy seasons sell out ahead; weekday slots often remain, and same-day tickets are sold if any are left (official).",
+  "bookingSteps": [
+    "Check ferry times to Naoshima first. Museum tickets don't include buses or ferries.",
+    "Buy on the sales page of the official Benesse Art Site Naoshima website. Tickets aren't sold by phone.",
+    "At 10:00 Japan time on the 5th, choose a date and an entry time. Slots start every 15 minutes.",
+    "Add a ticket for every visitor. Ages 15 and under enter free but still need a reservation.",
+    "Pay by credit card: Visa, Mastercard or JCB. There is no fee for buying online.",
+    "Arrive on time. Your ticket is valid for 30 minutes from the reserved time."
   ],
-  "rulesToKnow": [
-    "Naoshima is reached by ferry, so check ferry times before choosing an entry slot."
+  "visitorTips": [
+    "Tickets can't be changed or cancelled. Refunds are given only if the museum closes, for example for bad weather.",
+    "Same-day tickets are sold if slots remain, until 30 minutes before the slot.",
+    "Junior and senior high school students should bring proof of student status."
   ],
   "soldOut": [
     {
@@ -53,6 +62,11 @@
     {
       "url": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
       "quote": "Ticket sales for October start at 10:00 on August 5th",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
+      "quote": "Reservation tickets can be used for 30 minutes from the reservation time.",
       "checkedAt": "2026-10-17"
     }
   ],

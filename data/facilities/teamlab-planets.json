@@ -17,11 +17,22 @@
   },
   "status": "secondary",
   "statusNote": "teamLab publishes no fixed release rule. Dates appear on the ticket calendar in batches.",
-  "howToBuy": [
-    "Buy on the official ticket site, or at Lawson Ticket and Seven-Eleven Ticket.",
-    "Pick a date and an entry time. Weekends and holidays sell out first."
+  "popularity": 6,
+  "popularityNote": "Keyword data (Oct 2025 to Sep 2026): \"teamlab planets tickets\" about 50,000 searches a month; other teamLab searches are 5,000 or less.",
+  "difficulty": "days",
+  "difficultyNote": "Estimate: weekend and holiday slots sell out days ahead; weekday slots are often still available.",
+  "bookingSteps": [
+    "Buy on the official teamLab Planets Ticket Store. Lawson Ticket and Seven-Eleven Ticket also sell tickets.",
+    "Choose a date and an entry time. Weekends and holidays sell out first.",
+    "Pay by credit card, PayPay or UnionPay. The Ticket Store adds no fees to the ticket price.",
+    "Two days before your visit, you get an email with a link to your QR ticket. The QR code shows from 0:00 on the day.",
+    "At the gate, show the QR ticket on your phone, or a printout."
   ],
-  "rulesToKnow": [],
+  "visitorTips": [
+    "No tickets are sold on site.",
+    "Tickets can't be cancelled or refunded. Ticket Store tickets can be moved to another date or time up to three times, until two hours before entry, if the new slot isn't sold out.",
+    "Running late? You can still enter the same day during opening hours. Last entry is one hour before closing."
+  ],
   "soldOut": [
     {
       "label": "teamLab Planets tickets on Klook",
@@ -45,6 +56,11 @@
       "url": "https://japanactivity.com/tools/japan-booking-deadline-planner",
       "quote": "teamLab Planets and teamLab Borderless: start checking two months out",
       "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.teamlab.art/faq/planets/",
+      "quote": "Tickets cannot be cancelled or refunded once purchased.",
+      "checkedAt": "2026-10-17"
     }
   ],
   "lastVerifiedAt": "2026-10-16T23:21:09.661Z"

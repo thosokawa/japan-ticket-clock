@@ -37,7 +37,7 @@ for (const t of document.querySelectorAll('time[data-at]')) {
   if (local) local.textContent = `Your time (${tz}): ${fmtLocal(d, t.dataset.timeknown === 'true')}`;
 }
 
-// Home list: show each release in the visitor's time, filter by search and category.
+// Home list: show each release in the visitor's time, filter by search and category, and sort.
 const list = document.querySelector('[data-rows]');
 if (list) {
   for (const t of list.querySelectorAll('time[data-at]')) {
@@ -67,13 +67,27 @@ if (list) {
     if (shown.length === 1) location.href = shown[0].querySelector('a').href;
     else document.getElementById('list').scrollIntoView({ behavior: 'smooth' });
   });
-  tabs.hidden = false;
+  document.querySelector('[data-filters]').hidden = false;
   tabs.addEventListener('click', (e) => {
     const b = e.target.closest('button');
     if (!b) return;
     cat = b.dataset.cat;
     for (const x of tabs.querySelectorAll('button')) x.setAttribute('aria-pressed', String(x === b));
     apply();
+  });
+  // Sort: the server order is "soonest"; each row carries its rank for every sort.
+  // Ties (same difficulty) keep the soonest order.
+  const sort = document.querySelector('[data-sort]');
+  const heading = document.querySelector('#list h2');
+  sort.addEventListener('click', (e) => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    const by = b.dataset.by;
+    for (const x of sort.querySelectorAll('button')) x.setAttribute('aria-pressed', String(x === b));
+    const key = (r) => [Number(r.dataset[by]), Number(r.dataset.soonest)];
+    const sorted = [...rows].sort((a, c) => { const [a1, a2] = key(a), [c1, c2] = key(c); return a1 - c1 || a2 - c2; });
+    list.append(...sorted);
+    heading.textContent = b.dataset.heading;
   });
 }
 

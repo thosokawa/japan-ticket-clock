@@ -18,12 +18,20 @@
   },
   "status": "official",
   "statusNote": "The standard JR release rule, read from JR-WEST's official English page.",
-  "howToBuy": [
-    "The Sunrise Izumo (Tokyo to Izumo) and Sunrise Seto (Tokyo to Takamatsu) are Japan's last regular overnight sleeper trains.",
-    "Berths go on sale at 10:00 Japan time one month before the travel date. Book on JR-WEST Online Train Reservation, which is in English.",
-    "The private rooms often sell out within minutes of the 10:00 release. Be ready a few minutes early."
+  "popularity": 16,
+  "popularityNote": "Not in our keyword data. Estimate: a well-known \"bucket list\" train with a small, dedicated audience.",
+  "difficulty": "minutes",
+  "difficultyNote": "Rail guides and travellers report the private rooms selling out within minutes of the 10:00 release.",
+  "bookingSteps": [
+    "Book on JR-WEST Online Train Reservation, which is in English.",
+    "Be ready a few minutes before 10:00 Japan time, one month before your travel date. The private rooms often go within minutes.",
+    "Pay by credit card when you book.",
+    "Before boarding, collect your ticket at a ticket machine: choose \"Receive reserved ticket\", insert the card you paid with and enter your four-digit ID number.",
+    "Starting in Tokyo? JR East has only a few machines and Travel Service Centers that hand out these tickets, so find one in advance."
   ],
-  "rulesToKnow": [
+  "visitorTips": [
+    "If you board without collecting your ticket, you must buy a new one at full price.",
+    "Bring the physical card you paid with. Virtual cards can't be used to collect tickets.",
     "If the same date doesn't exist in the previous month, sales start on the 1st of the travel month."
   ],
   "soldOut": [
@@ -47,6 +55,11 @@
     {
       "url": "https://www.westjr.co.jp/global/en/ticket/overview/",
       "quote": "starting at 10:00 am (JST) on same day of preceding month.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.westjr.co.jp/global/en/howto/train-reservation/receive/",
+      "quote": "A passport with an IC chip is required for this.",
       "checkedAt": "2026-10-17"
     }
   ],

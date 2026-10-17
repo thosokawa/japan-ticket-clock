@@ -102,14 +102,24 @@
   },
   "status": "secondary",
   "statusNote": "Sale dates are from the official Japan Sumo Association schedule. The 10:00 start time is from travel sources and an older official ticket page; the current official schedule does not state it.",
-  "howToBuy": [
-    "There are six tournaments a year, each 15 days long: January, May and September in Tokyo, March in Osaka, July in Nagoya and November in Fukuoka.",
-    "Advance tickets for each tournament go on sale on a fixed Saturday about five weeks before it starts. Buy on Ticket Oosumo, the official ticket site, which has an English version.",
-    "Sales are reported to start at 10:00 Japan time. Weekend days and the final day sell out first.",
-    "Ticket Oosumo members can enter a pre-sale lottery before the general sale."
+  "popularity": 7,
+  "popularityNote": "Not in our keyword data. Estimate: sumo is one of the most requested experiences on travel forums, but tournaments run only six times a year.",
+  "difficulty": "days",
+  "difficultyNote": "Reasoning from ticket guides: weekend days and the final day of each tournament sell out first; weekday chair seats usually last longer.",
+  "bookingSteps": [
+    "Check the tournament dates and sale dates on the Japan Sumo Association's English site.",
+    "Choose a day and a seat type: a box seat on the floor (masu-seki, for up to four people) or a chair seat.",
+    "At 10:00 Japan time on the sale day, buy on Ticket Oosumo English, the official ticket site.",
+    "Pay by credit card. The English site takes cards only and adds a handling fee per ticket.",
+    "Print your tickets at a Seven-Eleven store in Japan, using the details in your confirmation email.",
+    "Keep the tickets safe: lost tickets can't be used to enter."
   ],
-  "rulesToKnow": [
-    "At the Ryogoku Kokugikan in Tokyo, a limited number of same-day general admission tickets are sold at the box office from 8:00."
+  "visitorTips": [
+    "Tickets can't be changed or cancelled for any reason.",
+    "Resale or transfer to strangers is prohibited.",
+    "Children aged 4 and over need their own ticket.",
+    "At the Ryogoku Kokugikan in Tokyo, a limited number of same-day tickets are sold at the box office from 8:00.",
+    "Ticket Oosumo members can enter a pre-sale lottery before the general sale."
   ],
   "soldOut": [
     {
@@ -142,6 +152,11 @@
     {
       "url": "https://japanroyalservice.com/blog/how-sumo-tickets-work-japan",
       "quote": "Official general sales typically open about one month before each tournament at 10:00 a.m. Japan Standard Time.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://sumo.pia.jp/en/sumo07.jsp",
+      "quote": "Tickets that have been purchased cannot be changed or cancelled for whatever reason.",
       "checkedAt": "2026-10-17"
     }
   ],

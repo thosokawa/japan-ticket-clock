@@ -18,12 +18,20 @@
   },
   "status": "unconfirmed",
   "statusNote": "Release timing from a third-party planner; official site not yet checked. Note: shibuya-sky.com is NOT the official site.",
-  "howToBuy": [
-    "Buy web tickets on the official SHIBUYA SKY site. Sunset slots sell out first.",
-    "Walk-in tickets are sold on the day if any are left."
+  "popularity": 1,
+  "popularityNote": "Keyword data (Oct 2025 to Sep 2026): \"shibuya sky tickets\" about 500,000 searches a month, the highest of any place we list.",
+  "difficulty": "days",
+  "difficultyNote": "Estimate: sunset slots sell out days ahead; other times are often still available nearer the day.",
+  "bookingSteps": [
+    "Open the official SHIBUYA SKY site and use its ticket link. The LANG menu switches the language.",
+    "Choose a date and an entry time. Sunset slots sell out first, so book those as soon as sales open.",
+    "On the day, put your bags in a locker before you go up: bags aren't allowed on the rooftop.",
+    "Check the opening status on the official site before you go. The open-air rooftop can close in bad weather."
   ],
-  "rulesToKnow": [
-    "The domain shibuya-sky.com is not the official site."
+  "visitorTips": [
+    "The domain shibuya-sky.com is not the official site.",
+    "Opening hours are 10:00 to 22:30, with last entry at 21:20.",
+    "Tickets are sold on the day only if any are left."
   ],
   "soldOut": [
     {

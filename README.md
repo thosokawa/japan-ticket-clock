@@ -9,7 +9,7 @@ English site that shows when popular Japanese attractions open bookings, in the 
 - `npm run serve`: preview `dist/` at http://localhost:4321
 
 ## Layout
-- `data/facilities/*.json`: one file per attraction: release rule, how to buy, sold-out alternatives, FAQ, sources, verification status
+- `data/facilities/*.json`: one file per attraction: release rule, booking steps, tips for overseas visitors, popularity rank and difficulty (each with its basis), sold-out alternatives, FAQ, sources, verification status
 - `data/changelog.json`: public log of rule changes
 - `src/rules.mjs`: release-rule engine (`monthly`, `days_before`, `lottery`, `rolling`), shared with the browser
 - `src/templates.mjs`, `scripts/build.mjs`: static page generation

@@ -45,7 +45,8 @@ label.check { display: inline-flex; align-items: center; gap: 6px; margin: 0 8px
 /* home */
 .hero { text-align: center; padding: 40px 0 8px; }
 .hero h1 { font-size: 46px; max-width: 760px; margin: 0 auto 14px; }
-.hero .lede { max-width: 640px; margin: 0 auto 28px; }
+.hero .lede { max-width: 640px; margin: 0 auto 16px; }
+.what { list-style: none; text-align: center; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 24px; max-width: 760px; margin: 0 auto 28px; padding: 0; font-size: 15px; font-weight: 500; }
 .search { display: flex; gap: 8px; max-width: 640px; margin: 0 auto; padding: 6px; border: 2px solid var(--ink); border-radius: 10px; background: var(--card); }
 .search input { flex: 1 1 200px; min-width: 0; border: 0; font-size: 18px; background: transparent; outline: none; }
 .search .btn { padding-inline: 24px; }
@@ -59,13 +60,17 @@ label.check { display: inline-flex; align-items: center; gap: 6px; margin: 0 8px
 .list-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; margin-top: 48px; scroll-margin-top: 16px; }
 .list-head h2 { margin: 0; }
 .list-head p { margin: 0; }
-.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; }
+.filters { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 24px; margin: 14px 0 12px; }
+.tabs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.sort-label { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .tabs button { font: inherit; font-size: 15px; font-weight: 700; padding: 7px 16px; border: 1px solid var(--field); border-radius: 999px; background: var(--card); color: var(--fg); cursor: pointer; }
 .tabs button[aria-pressed=true] { background: var(--ink); border-color: var(--ink); color: var(--ink-fg); }
 .rows { list-style: none; margin: 0; padding: 0; }
 .rows li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 20px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .rows li:first-child { border-top: 1px solid var(--line); }
 .rows a { font-weight: 700; }
+.diff { display: block; font-size: 13px; font-weight: 700; color: var(--muted); }
+.diff-minutes { color: var(--warn); } .diff-days { color: var(--mid); }
 .cat { display: block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .when { display: flex; flex-direction: column; align-items: flex-end; text-align: right; }
 .when-main { font-weight: 700; }
@@ -73,6 +78,7 @@ label.check { display: inline-flex; align-items: center; gap: 6px; margin: 0 8px
 @media (max-width: 600px) {
   h1, .hero h1 { font-size: 32px; }
   .rows li { grid-template-columns: 1fr; }
+  .what { grid-template-columns: 1fr; gap: 2px; }
   .when { align-items: flex-start; text-align: left; }
 }
 
@@ -94,6 +100,9 @@ form.visit { display: grid; gap: 12px; margin-top: 12px; justify-items: start; }
 .facts dd { margin: 0; }
 @media (max-width: 520px) { .facts div { grid-template-columns: 1fr; gap: 0; } }
 .official { font-weight: 700; }
+.difficulty { margin: 4px 0 0; }
+.difficulty a { font-size: 15px; color: var(--muted); }
+.steps li, .tips li { margin-bottom: 6px; }
 details { border-top: 1px solid var(--line); padding: 12px 0; }
 details:last-of-type { border-bottom: 1px solid var(--line); }
 summary { cursor: pointer; font-weight: 700; }

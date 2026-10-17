@@ -18,14 +18,23 @@
   },
   "status": "official",
   "statusNote": "Read from the official Tokyo Disney Resort ticket sales page.",
-  "howToBuy": [
-    "Buy on the official Tokyo Disney Resort website or app. The site is in English and takes overseas credit cards.",
-    "A new day goes on sale every day at 14:00 Japan time, for the same date two months later. For example, tickets for December 20 go on sale on October 20.",
-    "Tickets are for one park on one date, and the price changes by date, so choose Tokyo Disneyland or Tokyo DisneySea before you buy.",
-    "Weekends and Japanese school holidays sell out first."
+  "popularity": 3,
+  "popularityNote": "Not in our keyword data. Estimate: Tokyo Disneyland and DisneySea are among the most visited attractions in Japan, so we place them just below the two most-searched places.",
+  "difficulty": "available",
+  "difficultyNote": "Reasoning: most dates stay on sale until close to the day; weekends and Japanese school holidays can sell out, and the official page says sold-out tickets may go back on sale.",
+  "bookingSteps": [
+    "Create a MyDisney account. You need it to buy on the official website or in the Tokyo Disney Resort App.",
+    "Decide on the park (Tokyo Disneyland or Tokyo DisneySea) and the date. Each ticket is for one park on one date.",
+    "From 14:00 Japan time, tickets go on sale for the same date two months later. You can buy up to ten tickets at a time.",
+    "Install the Tokyo Disney Resort App and log in with the same account. Tickets you bought online appear automatically.",
+    "Visiting as a group? Create a group in the app and invite the others so everyone sees the tickets.",
+    "On the day, tap the ticket in the app to show its code and scan it at the park entrance. The code appears from midnight on your visit day."
   ],
-  "rulesToKnow": [
-    "If the same date doesn't exist two months earlier (for example April 30), tickets go on sale at 14:00 on the 1st of the next month instead.",
+  "visitorTips": [
+    "No cancellations or refunds for personal reasons, even for bad weather. You can change the date or age category for free in My Booking if the new date is on sale, but you can't change the park.",
+    "After a change, the code in your original email no longer works. Use the app or the code in the new email.",
+    "Sold-out dates can come back on sale without notice, so keep checking.",
+    "Ages: adult 18 and over, junior 12 to 17, child 4 to 11. Children 3 and under enter free.",
     "Some older guides say tickets are released every Wednesday. That is out of date: the official page now says daily."
   ],
   "soldOut": [
@@ -58,6 +67,11 @@
     {
       "url": "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html",
       "quote": "tickets will be available from 2:00 p.m. on the first day of the next month.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/ticket/purchase.html",
+      "quote": "Up to ten Park tickets may be purchased online at a time.",
       "checkedAt": "2026-10-17"
     }
   ],
