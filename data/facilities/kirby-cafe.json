@@ -32,7 +32,7 @@
     "Cancel online in My Page until the day before. On the day, call the store."
   ],
   "soldOut": [
-    { "label": "Pokémon Café: bookings open 31 days ahead", "internal": "/tickets/pokemon-cafe/" }
+    { "label": "Pokémon Café: the whole next month opens on the 1st", "internal": "/tickets/pokemon-cafe/" }
   ],
   "faq": [
     { "q": "When do Kirby Café reservations open?", "a": "On the 10th of each month, for the whole of the next month. Travel sources report an 18:00 Japan time start; the official site gives the date but not the time." }
