@@ -37,6 +37,46 @@ for (const t of document.querySelectorAll('time[data-at]')) {
   if (local) local.textContent = `Your time (${tz}): ${fmtLocal(d, t.dataset.timeknown === 'true')}`;
 }
 
+// Home list: show each release in the visitor's time, filter by search and category.
+const list = document.querySelector('[data-rows]');
+if (list) {
+  for (const t of list.querySelectorAll('time[data-at]')) {
+    const d = new Date(t.dataset.at);
+    const known = t.dataset.timeknown === 'true';
+    const jst = t.parentElement.querySelector('[data-jst]');
+    if (known && jst && jst.textContent === 'Japan time') jst.textContent = fmtJst(d);
+    // Without a set time, keep the Japan date: converting midnight JST would show the wrong day.
+    if (known) t.textContent = fmtLocal(d, true);
+    else t.textContent = `${t.dataset.estimated === 'true' ? 'Around ' : ''}${new Intl.DateTimeFormat(undefined, { timeZone: 'Asia/Tokyo', weekday: 'short', month: 'short', day: 'numeric' }).format(d)}`;
+  }
+  document.querySelector('[data-tz]').textContent = `Times in your time zone (${tz})`;
+  const rows = [...list.children];
+  const input = document.querySelector('[data-search] input');
+  const tabs = document.querySelector('[data-tabs]');
+  let cat = '';
+  const apply = () => {
+    const q = input.value.trim().toLowerCase();
+    for (const r of rows) r.hidden = (cat && r.dataset.cat !== cat) || (q && !r.dataset.name.includes(q));
+    document.querySelector('[data-noresult]').hidden = rows.some((r) => !r.hidden);
+    return rows.filter((r) => !r.hidden);
+  };
+  input.addEventListener('input', apply);
+  document.querySelector('[data-search]').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const shown = apply();
+    if (shown.length === 1) location.href = shown[0].querySelector('a').href;
+    else document.getElementById('list').scrollIntoView({ behavior: 'smooth' });
+  });
+  tabs.hidden = false;
+  tabs.addEventListener('click', (e) => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    cat = b.dataset.cat;
+    for (const x of tabs.querySelectorAll('button')) x.setAttribute('aria-pressed', String(x === b));
+    apply();
+  });
+}
+
 // Facility "next release" box: recompute live so a cached page is never stale.
 const box = document.querySelector('.next[data-rule]');
 if (box) {
@@ -140,4 +180,14 @@ if (planner) {
       downloadIcs('Japan trip bookings', events);
     });
   });
+}
+
+// Dates handed over from the home page: fill them in and show the result straight away.
+if (planner) {
+  const params = new URLSearchParams(location.search);
+  if (params.get('from') && params.get('to')) {
+    planner.elements.from.value = params.get('from');
+    planner.elements.to.value = params.get('to');
+    planner.requestSubmit();
+  }
 }

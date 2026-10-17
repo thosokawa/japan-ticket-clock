@@ -28,6 +28,9 @@ export function layout({ site, title, description, path, body, jsonLd = [], scri
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&display=swap">
 <link rel="stylesheet" href="/assets/style.css">${site.travelpayoutsDriveSrc ? `
 <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
   (function () {
@@ -172,6 +175,31 @@ ${history.length ? `<h2>Rule changes</h2><ul>${history.map((c) => `<li>${esc(c.d
   });
 }
 
+const CATEGORIES = { attractions: 'Attractions', trains: 'Trains', events: 'Events', sights: 'Sights' };
+
+const monthYear = (iso) => new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', month: 'long', year: 'numeric' }).format(new Date(`${iso}T00:00:00Z`));
+const dayMonth = (iso) => new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric' }).format(new Date(`${iso}T00:00:00Z`));
+const lastDay = (iso) => new Date(Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7), 0)).getUTCDate();
+
+/** "For December 2026 visits", "For Jan 10 to Jan 24 visits" or the event name, for the home list. */
+function shortCovers(n) {
+  if (n.event) return n.event;
+  const { coversFrom: a, coversTo: b } = n;
+  if (a.slice(0, 7) === b.slice(0, 7) && a.endsWith('-01') && +b.slice(8) === lastDay(b)) return `For ${monthYear(a)} visits`;
+  return a === b ? `For ${dayMonth(a)} visits` : `For ${dayMonth(a)} to ${dayMonth(b)} visits`;
+}
+
+/** Two short lines for rules with no single next date. */
+function shortRule(rule) {
+  const t = rule.time ? `${rule.time} Japan time` : '';
+  switch (rule.type) {
+    case 'months_before': return [`Daily, ${rule.monthsAhead === 1 ? '1 month' : `${rule.monthsAhead} months`} ahead`, t];
+    case 'days_before': return [`${rule.days} days before your visit`, t];
+    case 'rolling': return ['No fixed date', `Check about ${rule.checkFromDaysBefore} days ahead`];
+    default: return [describeRule(rule), ''];
+  }
+}
+
 export function homePage({ site, facilities, now, affiliates }) {
   const rows = facilities
     .map((f) => {
@@ -179,25 +207,52 @@ export function homePage({ site, facilities, now, affiliates }) {
       return { f, n };
     })
     .sort((a, b) => (a.n?.opensAt ?? Infinity) - (b.n?.opensAt ?? Infinity));
+  const when = (n, f) => {
+    if (n && n.opensAt <= now) return `<span class="when-main ok">Open now</span><span class="muted">until ${esc(fmtJstDay(new Date(n.closesAt - 1)))}, Japan time</span>`;
+    if (n) return `<time class="when-main" data-at="${n.opensAt.toISOString()}" data-timeknown="${n.timeKnown}" data-estimated="${!!n.estimated}">${esc(n.timeKnown ? fmtJst(n.opensAt) : fmtJstDay(n.opensAt))}</time><span class="muted" data-jst>${n.estimated ? 'Expected, not announced yet' : 'Japan time'}</span>`;
+    const [main, sub] = shortRule(f.rule);
+    return `<span class="when-main">${esc(main)}</span><span class="muted">${esc(sub)}</span>`;
+  };
   const body = `
 <section class="hero">
-  <h1>Japan's hardest tickets, on your clock</h1>
-  <p class="lede">${esc(site.tagline)}</p>
-  <p><a class="btn" href="/planner/">Plan my bookings</a> <a class="btn ghost" href="/mt-fuji-visibility/">Can I see Mt Fuji today?</a></p>
+  <h1>Know when to book in Japan, in your time.</h1>
+  <p class="lede">Ghibli, Disney, sumo, the Shinkansen and more. Release times from official sites, checked every day.</p>
+  <form class="search" role="search" data-search>
+    <label for="q" class="sr">Search</label>
+    <input id="q" name="q" type="search" list="places" placeholder="Search a place, train or event" autocomplete="off">
+    <datalist id="places">${facilities.map((f) => `<option value="${esc(f.shortName)}"></option>`).join('')}</datalist>
+    <button class="btn" type="submit">Search</button>
+  </form>
 </section>
-<h2>Opening next</h2>
-<ul class="cards">
+<section class="box trip">
+  <h2>Already know your dates?</h2>
+  <p class="muted">We'll list when to book each place for your trip.</p>
+  <form class="trip-form" action="/planner/" method="get">
+    <label>Arrive <input type="date" name="from" required></label>
+    <label>Leave <input type="date" name="to" required></label>
+    <button class="btn dark" type="submit">Show booking dates</button>
+  </form>
+</section>
+<div class="list-head" id="list">
+  <h2>Opening next</h2>
+  <p class="muted" data-tz>Times in Japan time (JST)</p>
+</div>
+<div class="tabs" data-tabs hidden>
+  <button type="button" aria-pressed="true" data-cat="">All</button>
+  ${Object.entries(CATEGORIES).map(([k, v]) => `<button type="button" aria-pressed="false" data-cat="${k}">${v}</button>`).join('')}
+</div>
+<ul class="rows" data-rows>
 ${rows
-  .map(({ f, n }) => `<li class="card">
-  <a href="/tickets/${esc(f.id)}/"><strong>${esc(f.shortName)}</strong></a> ${statusBadge(f)}
-  ${n && n.opensAt <= now ? `<p><strong>Open now</strong>, until ${esc(fmtJstDay(new Date(n.closesAt - 1)))} (Japan time)</p><p class="muted">Lottery for visits ${esc(coversText(n))}</p>`
-    : n ? `<p><time data-at="${n.opensAt.toISOString()}" data-timeknown="${n.timeKnown}">${esc(n.timeKnown ? fmtJst(n.opensAt) : fmtJstDay(n.opensAt))}</time><span class="local" data-local></span></p><p class="muted">${esc(n.label)} for ${esc(coversText(n))}</p>`
-    : `<p class="muted">${esc(describeRule(f.rule))}</p>`}
+  .map(({ f, n }) => `<li class="card" data-cat="${esc(f.category ?? '')}" data-name="${esc(`${f.name} ${f.shortName}`.toLowerCase())}">
+  <div><span class="cat">${esc(CATEGORIES[f.category] ?? '')}</span>
+  <a href="/tickets/${esc(f.id)}/">${esc(f.shortName)}</a>${n ? `<span class="for muted">${esc(shortCovers(n))}</span>` : ''}</div>
+  <div class="when">${when(n, f)}</div>
 </li>`)
   .join('\n')}
 </ul>
+<p class="muted" data-noresult hidden>Nothing matches. Try another name, or <a href="/planner/">plan by trip dates</a>.</p>
 ${affiliates?.klook?.homeUrl ? `<p class="muted">Missed a release? Some attractions are also offered as tours that include entry on <a href="${esc(affiliates.klook.homeUrl)}" rel="sponsored noopener" target="_blank">Klook</a>.</p>` : ''}`;
-  return layout({ site, title: `${site.name}: when Japan's popular attractions open bookings`, description: site.tagline, path: '/', body });
+  return layout({ site, title: `${site.name}: when to book Japan's popular attractions, trains and events`, description: site.tagline, path: '/', body });
 }
 
 export function plannerPage({ site, facilities }) {
