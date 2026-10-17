@@ -3,6 +3,7 @@
   "name": "Ghibli Park (overseas tickets)",
   "shortName": "Ghibli Park",
   "city": "Nagakute, Aichi",
+  "category": "attractions",
   "priority": 4,
   "officialUrl": "https://ghibli-park.jp/en/ticket/",
   "watchUrls": ["https://ghibli-park.jp/en/ticket/", "https://ghibli-park.jp/en/ticket/ticket2.html"],

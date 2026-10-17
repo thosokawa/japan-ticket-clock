@@ -1,0 +1,65 @@
+{
+  "id": "aoi-matsuri-seats",
+  "name": "Aoi Matsuri procession paid seats",
+  "shortName": "Aoi Matsuri",
+  "city": "Kyoto",
+  "category": "events",
+  "priority": 19,
+  "officialUrl": "https://kyoto.travel/en/travel-inspiration/the-aoi-matsuri-festival-procession-sales-information-parade-viewing-seats/",
+  "watchUrls": [
+    "https://kyoto.travel/en/travel-inspiration/the-aoi-matsuri-festival-procession-sales-information-parade-viewing-seats/"
+  ],
+  "rule": {
+    "type": "fixed_dates",
+    "sales": [
+      {
+        "event": "Aoi Matsuri procession, May 15, 2026",
+        "opensAt": "2026-04-01",
+        "time": "10:00",
+        "coversFrom": "2026-05-15",
+        "coversTo": "2026-05-16"
+      },
+      {
+        "event": "Aoi Matsuri procession, May 15, 2027",
+        "opensAt": "2027-04-01",
+        "estimated": true,
+        "coversFrom": "2027-05-15",
+        "coversTo": "2027-05-16"
+      }
+    ]
+  },
+  "status": "official",
+  "statusNote": "The 2026 sale date is from the Kyoto City Tourism Association's official site. The 2027 date is not announced yet; we show the 2026 date as a guide.",
+  "howToBuy": [
+    "The Kyoto City Tourism Association sells paid seats for the Aoi Matsuri procession on May 15.",
+    "In 2026, seats went on sale at 10:00 Japan time on April 1, online through Ticket Pia's English site.",
+    "Regular seats cost ¥5,000 to ¥6,500. Royal seats cost ¥18,000 to ¥20,000."
+  ],
+  "rulesToKnow": [
+    "If it rains, the procession moves to May 16.",
+    "The 2027 sale date has not been announced. We will update this page when it is."
+  ],
+  "soldOut": [
+    {
+      "label": "Watch from the street for free along the route"
+    },
+    {
+      "label": "Jidai Matsuri seats in October",
+      "internal": "/tickets/jidai-matsuri-seats/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Aoi Matsuri seats go on sale?",
+      "a": "In 2026 they went on sale at 10:00 Japan time on April 1. The 2027 date has not been announced yet."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kyoto.travel/en/travel-inspiration/the-aoi-matsuri-festival-procession-sales-information-parade-viewing-seats/",
+      "quote": "From April 1 (Wed), 10 AM (JST), 2026",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

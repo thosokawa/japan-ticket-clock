@@ -3,6 +3,7 @@
   "name": "SHIBUYA SKY",
   "shortName": "Shibuya Sky",
   "city": "Shibuya, Tokyo",
+  "category": "sights",
   "priority": 3,
   "officialUrl": "https://www.shibuya-scramble-square.com/sky/",
   "watchUrls": [

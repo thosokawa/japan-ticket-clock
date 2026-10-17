@@ -1,0 +1,63 @@
+{
+  "id": "tokyo-disney-tickets",
+  "name": "Tokyo Disneyland and Tokyo DisneySea park tickets",
+  "shortName": "Tokyo Disney",
+  "city": "Urayasu, Chiba (Tokyo area)",
+  "category": "attractions",
+  "priority": 10,
+  "officialUrl": "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html",
+  "watchUrls": [
+    "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 2,
+    "time": "14:00"
+  },
+  "status": "official",
+  "statusNote": "Read from the official Tokyo Disney Resort ticket sales page.",
+  "howToBuy": [
+    "Buy on the official Tokyo Disney Resort website or app. The site is in English and takes overseas credit cards.",
+    "A new day goes on sale every day at 14:00 Japan time, for the same date two months later. For example, tickets for December 20 go on sale on October 20.",
+    "Tickets are for one park on one date, and the price changes by date, so choose Tokyo Disneyland or Tokyo DisneySea before you buy.",
+    "Weekends and Japanese school holidays sell out first."
+  ],
+  "rulesToKnow": [
+    "If the same date doesn't exist two months earlier (for example April 30), tickets go on sale at 14:00 on the 1st of the next month instead.",
+    "Some older guides say tickets are released every Wednesday. That is out of date: the official page now says daily."
+  ],
+  "soldOut": [
+    {
+      "label": "Tokyo Disney tickets on Klook",
+      "partner": "klook",
+      "query": "tokyo disney ticket"
+    },
+    {
+      "label": "Stay at a Disney hotel: rooms open four months ahead",
+      "internal": "/tickets/tokyo-disney-hotels/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How far ahead can I buy Tokyo Disney tickets?",
+      "a": "Two months. Tickets go on sale every day at 14:00 Japan time for the same date two months later."
+    },
+    {
+      "q": "Can I buy Tokyo Disney tickets at the gate?",
+      "a": "Don't count on it. Buy online before you go; popular dates sell out."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html",
+      "quote": "Tickets will be sold daily from 2:00 p.m. for admissions on the same date two months later.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html",
+      "quote": "tickets will be available from 2:00 p.m. on the first day of the next month.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

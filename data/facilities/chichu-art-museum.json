@@ -1,0 +1,58 @@
+{
+  "id": "chichu-art-museum",
+  "name": "Chichu Art Museum (Benesse Art Site Naoshima)",
+  "shortName": "Chichu Art Museum",
+  "city": "Naoshima, Kagawa",
+  "category": "attractions",
+  "priority": 16,
+  "officialUrl": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
+  "watchUrls": [
+    "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html"
+  ],
+  "rule": {
+    "type": "monthly",
+    "day": 5,
+    "time": "10:00",
+    "monthsAhead": 2
+  },
+  "status": "official",
+  "statusNote": "Read from the official Benesse Art Site Naoshima FAQ.",
+  "howToBuy": [
+    "Buy timed-entry tickets on the official Benesse Art Site Naoshima website. Entry is in 30-minute slots.",
+    "A whole month goes on sale at 10:00 Japan time on the 5th, two months ahead. For example, October tickets go on sale on August 5.",
+    "Online payment is by credit card only (Visa, Mastercard or JCB)."
+  ],
+  "rulesToKnow": [
+    "Naoshima is reached by ferry, so check ferry times before choosing an entry slot."
+  ],
+  "soldOut": [
+    {
+      "label": "Naoshima art island tours on Klook",
+      "partner": "klook",
+      "query": "naoshima tour"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Chichu Art Museum tickets go on sale?",
+      "a": "At 10:00 Japan time on the 5th of each month, for the month after next. For example, tickets for October go on sale on August 5."
+    },
+    {
+      "q": "How do I pay for Chichu Art Museum tickets?",
+      "a": "By credit card online: Visa, Mastercard or JCB."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
+      "quote": "We start selling online tickets for the month after next at 10:00 on the 5th of every month.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
+      "quote": "Ticket sales for October start at 10:00 on August 5th",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

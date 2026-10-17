@@ -3,6 +3,7 @@
   "name": "Kirby Café",
   "shortName": "Kirby Café",
   "city": "Tokyo, Osaka, Fukuoka",
+  "category": "attractions",
   "priority": 7,
   "officialUrl": "https://kirbycafe.jp/cafe/",
   "watchUrls": ["https://kirbycafe.jp/cafe/"],

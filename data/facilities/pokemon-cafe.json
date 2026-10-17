@@ -3,6 +3,7 @@
   "name": "Pokémon Café",
   "shortName": "Pokémon Café",
   "city": "Tokyo, Osaka",
+  "category": "attractions",
   "priority": 8,
   "officialUrl": "https://www.pokemon-cafe.jp/en/",
   "watchUrls": [

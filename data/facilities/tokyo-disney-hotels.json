@@ -1,0 +1,58 @@
+{
+  "id": "tokyo-disney-hotels",
+  "name": "Tokyo Disney Hotels (including Fantasy Springs Hotel)",
+  "shortName": "Tokyo Disney Hotels",
+  "ticketNoun": "rooms",
+  "city": "Urayasu, Chiba (Tokyo area)",
+  "category": "attractions",
+  "priority": 13,
+  "officialUrl": "https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html",
+  "watchUrls": [
+    "https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 4,
+    "time": "11:00"
+  },
+  "status": "official",
+  "statusNote": "Read from the official Tokyo Disney Resort hotel reservation page. Tokyo DisneySea Fantasy Springs Hotel has its own page, which we have not checked separately.",
+  "howToBuy": [
+    "Book on the official Tokyo Disney Resort website, which is in English.",
+    "Rooms open at 11:00 Japan time four months before the night of your stay. For example, a stay on December 15 opens on August 15.",
+    "Rooms at Tokyo DisneySea Fantasy Springs Hotel go in minutes. Be logged in before 11:00 and have your dates ready."
+  ],
+  "rulesToKnow": [
+    "If the same date doesn't exist four months earlier, rooms open on the 1st of the next month. The official example: an October 31 stay opens on July 1 at 11:00.",
+    "Fantasy Springs Hotel has its own reservation page. Check it before booking."
+  ],
+  "soldOut": [
+    {
+      "label": "Hotels near Tokyo Disney Resort on Klook",
+      "partner": "klook",
+      "query": "tokyo disney hotel"
+    },
+    {
+      "label": "Park tickets: on sale two months ahead",
+      "internal": "/tickets/tokyo-disney-tickets/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When can I book a Tokyo Disney hotel?",
+      "a": "From 11:00 Japan time four months before the date of your stay."
+    },
+    {
+      "q": "Does the same rule apply to Fantasy Springs Hotel?",
+      "a": "Fantasy Springs Hotel has its own reservation page. Check it on the official site before you book."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html",
+      "quote": "Reservations are accepted from 11:00 a.m. four months before your planned day of stay",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

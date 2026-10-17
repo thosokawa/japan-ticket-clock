@@ -1,0 +1,63 @@
+{
+  "id": "imperial-palace-tour",
+  "name": "Tokyo Imperial Palace grounds tour",
+  "shortName": "Imperial Palace tour",
+  "city": "Chiyoda, Tokyo",
+  "category": "sights",
+  "priority": 15,
+  "officialUrl": "https://sankan.kunaicho.go.jp/",
+  "watchUrls": [
+    "https://sankan.kunaicho.go.jp/"
+  ],
+  "rule": {
+    "type": "monthly",
+    "day": 1,
+    "time": "05:00",
+    "monthsAhead": 1
+  },
+  "status": "official",
+  "statusNote": "Read from the Imperial Household Agency's official visit application site.",
+  "howToBuy": [
+    "Apply on the Imperial Household Agency's visit website, which has an English version. The tour is free.",
+    "The whole month opens at 05:00 Japan time on the 1st of the month before. For example, December tours open on November 1.",
+    "Online applications close at 23:59 four days before the tour.",
+    "Bring your passport on the day. The name must match your application."
+  ],
+  "rulesToKnow": [
+    "300 same-day places per tour are given out at the gate, first come, first served, until they run out.",
+    "The Imperial Palace East Gardens are a different area and need no booking."
+  ],
+  "soldOut": [
+    {
+      "label": "Get a same-day place at the gate: 300 per tour, first come, first served"
+    },
+    {
+      "label": "Guided walks around the Imperial Palace and its gardens on Klook",
+      "partner": "klook",
+      "query": "tokyo imperial palace tour"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When can I book the Imperial Palace tour?",
+      "a": "At 05:00 Japan time on the 1st of the month before your visit. Bookings close at 23:59 four days before the tour."
+    },
+    {
+      "q": "Can I join the Imperial Palace tour without booking?",
+      "a": "Yes, if places are left. 300 same-day places per tour are handed out at the gate, first come, first served."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sankan.kunaicho.go.jp/",
+      "quote": "参観希望日の前月の1日の午前5時～希望日の4日前23時59分まで",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://sankan.kunaicho.go.jp/",
+      "quote": "先着順（300名）に整理券を配布し、満員となり次第受付終了。",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

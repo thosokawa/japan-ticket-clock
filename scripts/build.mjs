@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, cpSync, ex
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { homePage, facilityPage, plannerPage, fujiPage, simplePage, esc } from '../src/templates.mjs';
-import { upcomingReleases, describeRule } from '../src/rules.mjs';
+import { upcomingReleases, describeRule, hasFixedReleases } from '../src/rules.mjs';
 import { buildCalendar } from '../src/ics.mjs';
 import { parseForecast } from '../src/jma.mjs';
 
@@ -67,14 +67,15 @@ write('privacy/index.html', simplePage({
   html: `<h1>Privacy</h1><ul><li>We use privacy-friendly analytics that do not set cookies.</li><li>Calendar reminders are created on your own device or calendar; we don't receive your calendar data.</li><li>We use Travelpayouts to manage affiliate links. Its script loads on our pages and may set cookies to attribute bookings.</li><li>Affiliate partners may set cookies when you follow their links, under their own privacy policies.</li></ul>`,
 }));
 
-// Subscribable calendars: next 12 releases per facility with fixed monthly or lottery dates.
+// Subscribable calendars: next 12 releases per facility with fixed release dates.
 for (const f of facilities) {
-  if (!['monthly', 'lottery'].includes(f.rule.type)) continue;
+  if (!hasFixedReleases(f.rule)) continue;
   const events = upcomingReleases(f.rule, now, 12).map((n) => ({
-    uid: `${f.id}-${n.opensAt.toISOString().slice(0, 10)}@${new URL(site.baseUrl).hostname}`,
+    // Fixed-date sales can share an opening day (Gion Matsuri's two processions), so add what they cover.
+    uid: `${f.id}-${n.opensAt.toISOString().slice(0, 10)}${n.event ? `-${n.coversFrom}` : ''}@${new URL(site.baseUrl).hostname}`,
     start: n.opensAt,
     minutes: 30,
-    title: `${f.shortName}: ${n.label.toLowerCase()} (${n.coversFrom.slice(0, 7)})`,
+    title: `${f.shortName}: ${n.label.toLowerCase()} (${n.event ?? n.coversFrom.slice(0, 7)})`,
     description: `${describeRule(f.rule)}\nBook: ${f.officialUrl}\nSold out? ${site.baseUrl}/tickets/${f.id}/`,
     url: `${site.baseUrl}/tickets/${f.id}/`,
     alarmMinutes: 15,

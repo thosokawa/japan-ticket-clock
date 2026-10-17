@@ -1,6 +1,6 @@
 // Client-side: show release times in the visitor's time zone, countdowns,
 // calendar links, and the trip planner. No tracking, no cookies.
-import { releaseForVisit, upcomingReleases, describeRule } from './rules.mjs';
+import { releaseForVisit, upcomingReleases, describeRule, hasFixedReleases } from './rules.mjs';
 import { buildCalendar, googleCalendarUrl } from './ics.mjs';
 
 const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -11,6 +11,7 @@ const fmtLocal = (d, timeKnown = true) => timeKnown
 const fmtJst = (d) =>
   new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Tokyo', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(d) + ' JST';
 const el = (html) => { const t = document.createElement('template'); t.innerHTML = html.trim(); return t.content; };
+const coversText = (n) => `${n.coversFrom === n.coversTo ? n.coversFrom : `${n.coversFrom} to ${n.coversTo}`}${n.event ? ` (${n.event})` : ''}`;
 const escHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
 function countdown(target) {
@@ -42,8 +43,8 @@ if (box) {
   const rule = JSON.parse(box.dataset.rule);
   const name = box.dataset.name;
   const pageUrl = location.href;
-  if (rule.type === 'monthly' || rule.type === 'lottery') {
-    const [n] = upcomingReleases(rule, new Date(), 1);
+  const [n] = hasFixedReleases(rule) ? upcomingReleases(rule, new Date(), 1) : [];
+  if (n) {
     const time = box.querySelector('time');
     const openNow = n.opensAt <= new Date();
     box.querySelector('.eyebrow').textContent = n.label;
@@ -51,9 +52,10 @@ if (box) {
       ? `Now, until ${new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Tokyo', month: 'short', day: 'numeric' }).format(new Date(n.closesAt - 1))} (Japan time)`
       : n.timeKnown ? fmtJst(n.opensAt) : `${fmtJst(n.opensAt).replace(/ \d\d:\d\d JST$/, '')} (time not confirmed)`;
     box.querySelector('[data-local]').textContent = openNow ? '' : `Your time (${tz}): ${fmtLocal(n.opensAt, n.timeKnown)}`;
-    box.querySelector('.covers').textContent = `For visits ${n.coversFrom} to ${n.coversTo}`;
+    box.querySelector('.covers').textContent = `For visits ${coversText(n)}`;
     const cd = box.querySelector('[data-countdown]');
-    const tick = () => { cd.textContent = openNow ? '' : countdown(n.opensAt); };
+    // An expected date is only a guess, so no countdown to it.
+    const tick = () => { cd.textContent = openNow || n.estimated ? '' : countdown(n.opensAt); };
     tick();
     setInterval(tick, 30000);
     box.querySelector('[data-gcal]').href = googleCalendarUrl({
@@ -62,6 +64,11 @@ if (box) {
       title: `${name}: ${n.label.toLowerCase()}`,
       details: `${describeRule(rule)}\nBook: ${box.dataset.url}\nSold out? ${pageUrl}`,
     });
+  } else if (hasFixedReleases(rule)) {
+    // Every listed date has passed since the page was built.
+    box.querySelector('.eyebrow').textContent = 'No upcoming sale date';
+    box.querySelector('.when').textContent = 'The next sale date has not been announced yet';
+    for (const x of box.querySelectorAll('[data-local], .covers, [data-countdown], [data-actions]')) x.remove();
   }
   const form = box.querySelector('[data-visit-form]');
   if (form) {
@@ -91,28 +98,35 @@ if (planner) {
     const to = fd.get('to');
     const chosen = facilities.filter((f) => fd.getAll('f').includes(f.id));
     // One release per facility for the first day of the trip; a second if the trip crosses into another release window.
+    // Fixed-date sales (sumo, festivals) cover only some days, so check every day of the trip for those.
+    const tripDays = [];
+    for (let d = new Date(`${from}T00:00:00Z`); d <= new Date(`${to}T00:00:00Z`) && tripDays.length < 120; d.setUTCDate(d.getUTCDate() + 1)) tripDays.push(d.toISOString().slice(0, 10));
     const items = [];
+    const notCovered = [];
     for (const f of chosen) {
       const seen = new Set();
-      for (const day of [from, to]) {
+      for (const day of f.rule.type === 'fixed_dates' ? tripDays : [from, to]) {
         const r = releaseForVisit(f.rule, day);
+        if (!r) continue;
         const key = r.opensAt.toISOString();
         if (seen.has(key)) continue;
         seen.add(key);
         items.push({ f, r, day });
       }
+      if (!seen.size) notCovered.push(f);
     }
     items.sort((a, b) => a.r.opensAt - b.r.opensAt);
     const now = Date.now();
     const rows = items.map(({ f, r, day }) => {
       const past = r.opensAt.getTime() < now;
-      const label = r.kind === 'check' ? 'Start checking' : r.kind === 'lottery' ? 'Lottery entries open' : 'Booking opens';
+      const label = r.estimated ? 'Expected sale (not announced yet)' : r.kind === 'check' ? 'Start checking' : r.kind === 'lottery' ? 'Lottery entries open' : 'Booking opens';
       return `<tr class="${past ? 'past' : ''}"><td><a href="/tickets/${escHtml(f.id)}/">${escHtml(f.shortName)}</a><br><span class="muted">for ${escHtml(day)}</span></td>
 <td>${escHtml(label)}<br><strong>${escHtml(fmtLocal(r.opensAt, r.timeKnown))}</strong><br><span class="muted">${escHtml(r.timeKnown ? fmtJst(r.opensAt) : 'Japan time')}</span></td>
 <td>${past ? (r.kind === 'lottery' ? 'Entries open now' : 'Already open: book now') : escHtml(countdown(r.opensAt))}</td></tr>`;
     });
     const result = document.querySelector('[data-planner-result]');
-    result.replaceChildren(el(`<table class="plan"><thead><tr><th>Place</th><th>When (your time)</th><th></th></tr></thead><tbody>${rows.join('')}</tbody></table>
+    const skipped = notCovered.length ? `<p class="muted">No sale dates listed for your trip: ${notCovered.map((f) => `<a href="/tickets/${escHtml(f.id)}/">${escHtml(f.shortName)}</a>`).join(', ')}</p>` : '';
+    result.replaceChildren(el(`<table class="plan"><thead><tr><th>Place</th><th>When (your time)</th><th></th></tr></thead><tbody>${rows.join('')}</tbody></table>${skipped}
 <p><button class="btn" type="button" data-ics>Add all to my calendar (.ics)</button></p>`));
     result.querySelector('[data-ics]').addEventListener('click', () => {
       const events = items.filter(({ r }) => r.opensAt.getTime() > now).map(({ f, r, day }) => ({

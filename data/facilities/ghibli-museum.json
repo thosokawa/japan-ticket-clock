@@ -3,6 +3,7 @@
   "name": "Ghibli Museum, Mitaka",
   "shortName": "Ghibli Museum",
   "city": "Mitaka, Tokyo",
+  "category": "attractions",
   "priority": 1,
   "officialUrl": "https://www.ghibli-museum.jp/en/tickets/",
   "watchUrls": ["https://www.ghibli-museum.jp/en/tickets/", "https://www.lawson.co.jp/ghibli_museum/english.html"],

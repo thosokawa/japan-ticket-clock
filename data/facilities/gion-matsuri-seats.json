@@ -1,0 +1,84 @@
+{
+  "id": "gion-matsuri-seats",
+  "name": "Gion Matsuri float procession paid seats",
+  "shortName": "Gion Matsuri",
+  "city": "Kyoto",
+  "category": "events",
+  "priority": 17,
+  "officialUrl": "https://kyoto.travel/en/travel-inspiration/gion-matsuri-seats/",
+  "watchUrls": [
+    "https://kyoto.travel/en/travel-inspiration/gion-matsuri-seats/",
+    "https://kyoto.travel/en/news/gion-festival-seats/"
+  ],
+  "rule": {
+    "type": "fixed_dates",
+    "sales": [
+      {
+        "event": "Saki Matsuri procession, July 17, 2026",
+        "opensAt": "2026-06-01",
+        "time": "10:00",
+        "coversFrom": "2026-07-17",
+        "coversTo": "2026-07-17"
+      },
+      {
+        "event": "Ato Matsuri procession, July 24, 2026",
+        "opensAt": "2026-06-01",
+        "time": "10:00",
+        "coversFrom": "2026-07-24",
+        "coversTo": "2026-07-24"
+      },
+      {
+        "event": "Saki Matsuri procession, July 17, 2027",
+        "opensAt": "2027-06-01",
+        "estimated": true,
+        "coversFrom": "2027-07-17",
+        "coversTo": "2027-07-17"
+      },
+      {
+        "event": "Ato Matsuri procession, July 24, 2027",
+        "opensAt": "2027-06-01",
+        "estimated": true,
+        "coversFrom": "2027-07-24",
+        "coversTo": "2027-07-24"
+      }
+    ]
+  },
+  "status": "official",
+  "statusNote": "The 2026 sale date is from the Kyoto City Tourism Association's official site. The 2027 date is not announced yet; we show the 2026 date as a guide.",
+  "howToBuy": [
+    "The Kyoto City Tourism Association sells paid seats along the route of the float processions on July 17 and July 24.",
+    "In 2026, seats went on sale at 10:00 Japan time on June 1, for both processions. Follow the link on the official page to buy online, or buy at Seven-Eleven stores in Japan.",
+    "Seats in the front row and the premium seats go first."
+  ],
+  "rulesToKnow": [
+    "The 2027 sale date has not been announced. We will update this page when it is."
+  ],
+  "soldOut": [
+    {
+      "label": "Watch from the street for free: the procession route is public, but arrive early for a good spot"
+    },
+    {
+      "label": "Kyoto kimono rental and walking tours on Klook",
+      "partner": "klook",
+      "query": "kyoto gion tour"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Gion Matsuri seats go on sale?",
+      "a": "In 2026 they went on sale at 10:00 Japan time on June 1. The 2027 date has not been announced yet."
+    },
+    {
+      "q": "Do I need a seat to see the Gion Matsuri floats?",
+      "a": "No. Anyone can watch from the street for free. Paid seats give you a reserved spot on the route."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kyoto.travel/en/news/gion-festival-seats/",
+      "quote": "went on sale at 10:00 AM JST, June 1 (Mon), 2026",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

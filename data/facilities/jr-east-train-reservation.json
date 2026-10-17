@@ -1,0 +1,57 @@
+{
+  "id": "jr-east-train-reservation",
+  "name": "JR-EAST Train Reservation (East Japan Shinkansen and limited express)",
+  "shortName": "JR East",
+  "city": "Tokyo, Tohoku, Hokkaido, Hokuriku",
+  "category": "trains",
+  "priority": 11,
+  "officialUrl": "https://www.eki-net.com/en/",
+  "watchUrls": [
+    "https://www.jrhokkaido.co.jp/global/english/ticket/reservation/index.html"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 1,
+    "time": "10:00"
+  },
+  "status": "official",
+  "statusNote": "Read from JR Hokkaido's official English page, which uses the same JR-EAST Train Reservation system. The eki-net.com page itself could not be read automatically.",
+  "howToBuy": [
+    "Book on JR-EAST Train Reservation, the English site of JR East. It covers the Tohoku, Hokkaido, Hokuriku and Joetsu Shinkansen, the Narita Express and limited express trains.",
+    "Seats go on sale at 10:00 Japan time one month before the travel date, and you can book until 6 minutes before departure.",
+    "You can also buy JR East rail passes on the same site and reserve seats with them.",
+    "Pick up paper tickets from a ticket machine at a JR East station, using the card you paid with."
+  ],
+  "rulesToKnow": [
+    "If the same date doesn't exist in the previous month (for example March 31), sales start on the 1st of the travel month."
+  ],
+  "soldOut": [
+    {
+      "label": "JR East rail passes on Klook",
+      "partner": "klook",
+      "query": "jr east pass"
+    },
+    {
+      "label": "Shinkansen west of Tokyo: same 10:00 rule, different site",
+      "internal": "/tickets/shinkansen/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When can I book JR East trains like the Tohoku Shinkansen?",
+      "a": "From 10:00 Japan time one month before your travel date, on the JR-EAST Train Reservation site."
+    },
+    {
+      "q": "Does this cover the Tokyo to Osaka Shinkansen?",
+      "a": "No. Tokyo to Osaka (the Tokaido Shinkansen) is run by JR Central and booked on SmartEX or JR-WEST Online. The release time is the same."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.jrhokkaido.co.jp/global/english/ticket/reservation/index.html",
+      "quote": "Reservation available from 10 am (JST) one month before the boarding date until 6 minutes before departure time",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "sunrise-izumo-seto",
+  "name": "Sunrise Izumo and Sunrise Seto sleeper trains",
+  "shortName": "Sunrise Izumo / Seto",
+  "city": "Tokyo to Izumo and Takamatsu",
+  "category": "trains",
+  "priority": 18,
+  "officialUrl": "https://www.westjr.co.jp/global/en/ticket/overview/",
+  "watchUrls": [
+    "https://www.westjr.co.jp/global/en/ticket/overview/"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 1,
+    "time": "10:00"
+  },
+  "status": "official",
+  "statusNote": "The standard JR release rule, read from JR-WEST's official English page.",
+  "howToBuy": [
+    "The Sunrise Izumo (Tokyo to Izumo) and Sunrise Seto (Tokyo to Takamatsu) are Japan's last regular overnight sleeper trains.",
+    "Berths go on sale at 10:00 Japan time one month before the travel date. Book on JR-WEST Online Train Reservation, which is in English.",
+    "The private rooms often sell out within minutes of the 10:00 release. Be ready a few minutes early."
+  ],
+  "rulesToKnow": [
+    "If the same date doesn't exist in the previous month, sales start on the 1st of the travel month."
+  ],
+  "soldOut": [
+    {
+      "label": "Take the Shinkansen instead: same 10:00 release",
+      "internal": "/tickets/shinkansen/"
+    },
+    {
+      "label": "Japan Rail Pass on Klook",
+      "partner": "klook",
+      "query": "japan rail pass"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When can I book the Sunrise Izumo?",
+      "a": "At 10:00 Japan time, one month before your travel date, on JR-WEST Online Train Reservation."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.westjr.co.jp/global/en/ticket/overview/",
+      "quote": "starting at 10:00 am (JST) on same day of preceding month.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

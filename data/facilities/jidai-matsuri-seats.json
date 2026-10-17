@@ -1,0 +1,65 @@
+{
+  "id": "jidai-matsuri-seats",
+  "name": "Jidai Matsuri procession paid seats",
+  "shortName": "Jidai Matsuri",
+  "city": "Kyoto",
+  "category": "events",
+  "priority": 20,
+  "officialUrl": "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/",
+  "watchUrls": [
+    "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/"
+  ],
+  "rule": {
+    "type": "fixed_dates",
+    "sales": [
+      {
+        "event": "Jidai Matsuri procession, October 22, 2026",
+        "opensAt": "2026-09-08",
+        "time": "10:00",
+        "coversFrom": "2026-10-22",
+        "coversTo": "2026-10-22"
+      },
+      {
+        "event": "Jidai Matsuri procession, October 22, 2027",
+        "opensAt": "2027-09-01",
+        "estimated": true,
+        "coversFrom": "2027-10-22",
+        "coversTo": "2027-10-22"
+      }
+    ]
+  },
+  "status": "official",
+  "statusNote": "The 2026 sale date is from the Kyoto City Tourism Association's official site. The 2027 date is not announced yet; we show early September as a guide.",
+  "howToBuy": [
+    "The Kyoto City Tourism Association sells paid seats for the Jidai Matsuri procession on October 22.",
+    "In 2026, seats went on sale at 10:00 Japan time on September 8. Buy online through the link on the official page, or at Seven-Eleven stores in Japan.",
+    "Seats are in the Kyoto Gyoen National Garden and along Oike-dori Street. Prices run from ¥5,000 to ¥15,500."
+  ],
+  "rulesToKnow": [
+    "On October 17, 2026, only general seats on Oike-dori Street were still on sale for the 2026 procession.",
+    "The 2027 sale date has not been announced. We will update this page when it is."
+  ],
+  "soldOut": [
+    {
+      "label": "Watch from the street for free along the route"
+    },
+    {
+      "label": "Aoi Matsuri seats in May",
+      "internal": "/tickets/aoi-matsuri-seats/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Jidai Matsuri seats go on sale?",
+      "a": "In 2026 they went on sale at 10:00 Japan time on September 8. The 2027 date has not been announced yet."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/",
+      "quote": "From September 8 (Tue), 10 AM (JST), 2026",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

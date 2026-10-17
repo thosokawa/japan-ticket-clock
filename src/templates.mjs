@@ -1,5 +1,5 @@
 // HTML templates. Plain template strings; every dynamic value goes through esc().
-import { describeRule, upcomingReleases } from './rules.mjs';
+import { describeRule, upcomingReleases, hasFixedReleases } from './rules.mjs';
 
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
@@ -12,6 +12,8 @@ const STATUS = {
 const fmtJst = (d) =>
   new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Tokyo', month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(d) + ' JST';
 const fmtJstDay = (d) => new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Tokyo', month: 'short', day: 'numeric', year: 'numeric' }).format(d);
+// What a release covers: "2027-01-10 to 2027-01-24", with the event name when there is one.
+const coversText = (n) => `${n.coversFrom === n.coversTo ? n.coversFrom : `${n.coversFrom} to ${n.coversTo}`}${n.event ? ` (${n.event})` : ''}`;
 
 export function layout({ site, title, description, path, body, jsonLd = [], scripts = '' }) {
   const canonical = site.baseUrl + path;
@@ -75,24 +77,33 @@ function affiliateLink(item, affiliates) {
 function nextReleaseBox(f, now) {
   const rule = f.rule;
   const ruleAttr = esc(JSON.stringify(rule));
-  if (rule.type === 'monthly' || rule.type === 'lottery') {
-    const [n] = upcomingReleases(rule, now, 1);
+  if (hasFixedReleases(rule)) {
+    const [n, ...later] = upcomingReleases(rule, now, rule.type === 'fixed_dates' ? 6 : 1);
+    if (!n) {
+      return `<section class="next">
+  <p class="eyebrow">No upcoming sale date</p>
+  <p class="when">The next sale date has not been announced yet</p>
+</section>`;
+    }
     return `<section class="next" data-rule="${ruleAttr}" data-name="${esc(f.shortName)}" data-id="${esc(f.id)}" data-url="${esc(f.officialUrl)}">
   <p class="eyebrow">${esc(n.label)}</p>
   <p class="when"><time data-at="${n.opensAt.toISOString()}" data-timeknown="${n.timeKnown}">${esc(n.opensAt <= now ? `Now, until ${fmtJstDay(new Date(n.closesAt - 1))}` : n.timeKnown ? fmtJst(n.opensAt) : fmtJstDay(n.opensAt) + ' (time not confirmed)')}</time></p>
   <p class="local" data-local></p>
-  <p class="covers">For visits ${esc(n.coversFrom)} to ${esc(n.coversTo)}</p>
+  <p class="covers">For visits ${esc(coversText(n))}</p>
   <p class="countdown" data-countdown></p>
   <div class="actions" data-actions>
     <a class="btn" data-gcal href="#">Add to Google Calendar</a>
     <a class="btn ghost" href="/calendars/${esc(f.id)}.ics">Subscribe to all ${esc(f.shortName)} release dates (.ics)</a>
   </div>
-</section>`;
+</section>${later.length ? `
+<h2>Later sale dates</h2>
+<ul class="later">${later.map((x) => `<li>${esc(x.timeKnown ? fmtJst(x.opensAt) : fmtJstDay(x.opensAt))}${x.estimated ? ' (expected, not announced yet)' : ''}: for ${esc(coversText(x))}</li>`).join('')}</ul>` : ''}`;
   }
-  if (rule.type === 'days_before') {
+  if (rule.type === 'days_before' || rule.type === 'months_before') {
+    const ahead = rule.type === 'days_before' ? `the date ${rule.days} days later` : `the same date ${rule.monthsAhead} month${rule.monthsAhead === 1 ? '' : 's'} later`;
     return `<section class="next" data-rule="${ruleAttr}" data-name="${esc(f.shortName)}" data-id="${esc(f.id)}" data-url="${esc(f.officialUrl)}">
   <p class="eyebrow">Bookings open every day</p>
-  <p class="when">${esc(rule.time ?? '')} JST, for the date ${esc(rule.days)} days later</p>
+  <p class="when">${esc(rule.time ?? '')} JST, for ${esc(ahead)}</p>
   <form class="visit" data-visit-form>
     <label>Your visit date <input type="date" name="visit" required></label>
     <button class="btn" type="submit">When can I book?</button>
@@ -120,7 +131,7 @@ export function facilityPage({ site, f, affiliates, changelog, now }) {
   const history = changelog.filter((c) => c.facility === f.id);
   const body = `
 <p class="crumbs"><a href="/">Home</a> › ${esc(f.shortName)}</p>
-<h1>When do ${esc(f.shortName)} tickets go on sale?</h1>
+<h1>When do ${esc(f.shortName)} ${esc(f.ticketNoun ?? 'tickets')} go on sale?</h1>
 <p class="lede">${esc(describeRule(f.rule))}</p>
 <p>${statusBadge(f)} <span class="muted">Last checked ${esc(fmtJst(new Date(f.lastVerifiedAt)))}</span></p>
 ${nextReleaseBox(f, now)}
@@ -143,7 +154,7 @@ ${history.length ? `<h2>Rule changes</h2><ul>${history.map((c) => `<li>${esc(c.d
 `;
   return layout({
     site,
-    title: `${f.shortName} tickets: when they go on sale (${new Date(now).getUTCFullYear()}) | ${site.name}`,
+    title: `${f.shortName} ${f.ticketNoun ?? 'tickets'}: when they go on sale (${new Date(now).getUTCFullYear()}) | ${site.name}`,
     description: `${describeRule(f.rule)} See the next release in your time zone and add it to your calendar.`,
     path: `/tickets/${f.id}/`,
     body,
@@ -154,7 +165,7 @@ ${history.length ? `<h2>Rule changes</h2><ul>${history.map((c) => `<li>${esc(c.d
 export function homePage({ site, facilities, now, affiliates }) {
   const rows = facilities
     .map((f) => {
-      const [n] = f.rule.type === 'monthly' || f.rule.type === 'lottery' ? upcomingReleases(f.rule, now, 1) : [];
+      const [n] = hasFixedReleases(f.rule) ? upcomingReleases(f.rule, now, 1) : [];
       return { f, n };
     })
     .sort((a, b) => (a.n?.opensAt ?? Infinity) - (b.n?.opensAt ?? Infinity));
@@ -169,8 +180,8 @@ export function homePage({ site, facilities, now, affiliates }) {
 ${rows
   .map(({ f, n }) => `<li class="card">
   <a href="/tickets/${esc(f.id)}/"><strong>${esc(f.shortName)}</strong></a> ${statusBadge(f)}
-  ${n && n.opensAt <= now ? `<p><strong>Open now</strong>, until ${esc(fmtJstDay(new Date(n.closesAt - 1)))} (Japan time)</p><p class="muted">Lottery for visits ${esc(n.coversFrom)} to ${esc(n.coversTo)}</p>`
-    : n ? `<p><time data-at="${n.opensAt.toISOString()}" data-timeknown="${n.timeKnown}">${esc(n.timeKnown ? fmtJst(n.opensAt) : fmtJstDay(n.opensAt))}</time><span class="local" data-local></span></p><p class="muted">${esc(n.label)} for ${esc(n.coversFrom)} to ${esc(n.coversTo)}</p>`
+  ${n && n.opensAt <= now ? `<p><strong>Open now</strong>, until ${esc(fmtJstDay(new Date(n.closesAt - 1)))} (Japan time)</p><p class="muted">Lottery for visits ${esc(coversText(n))}</p>`
+    : n ? `<p><time data-at="${n.opensAt.toISOString()}" data-timeknown="${n.timeKnown}">${esc(n.timeKnown ? fmtJst(n.opensAt) : fmtJstDay(n.opensAt))}</time><span class="local" data-local></span></p><p class="muted">${esc(n.label)} for ${esc(coversText(n))}</p>`
     : `<p class="muted">${esc(describeRule(f.rule))}</p>`}
 </li>`)
   .join('\n')}
@@ -191,7 +202,7 @@ export function plannerPage({ site, facilities }) {
   <button class="btn" type="submit">Show my booking dates</button>
 </form>
 <div data-planner-result></div>`;
-  return layout({ site, title: `Japan trip booking planner | ${site.name}`, description: 'Find out when to book Ghibli Museum, Ghibli Park, Shibuya Sky, Nintendo Museum and more for your travel dates.', path: '/planner/', body });
+  return layout({ site, title: `Japan trip booking planner | ${site.name}`, description: 'Find out when to book the Shinkansen, Tokyo Disney, Ghibli Museum, sumo tickets and more for your travel dates.', path: '/planner/', body });
 }
 
 export function fujiPage({ site, forecasts, affiliates }) {

@@ -3,6 +3,7 @@
   "name": "Nintendo Museum",
   "shortName": "Nintendo Museum",
   "city": "Uji, Kyoto",
+  "category": "attractions",
   "priority": 6,
   "officialUrl": "https://museum.nintendo.com/en/guide/visit-flow/",
   "watchUrls": ["https://museum.nintendo.com/en/guide/visit-flow/"],
