@@ -89,7 +89,7 @@ function introBlock(f) {
 /** Google Maps embeds for the places a facility lists; nothing without a key. */
 function mapBlock(f, site) {
   if (!site.googleMapsEmbedKey || !f.mapPlaces?.length) return '';
-  const src = (q) => `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(site.googleMapsEmbedKey)}&q=${encodeURIComponent(q)}`;
+  const src = (q) => `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(site.googleMapsEmbedKey)}&q=${encodeURIComponent(q)}&zoom=14`;
   return `<h2>Where it is</h2>
 <div class="maps">${f.mapPlaces.map((m) => `<figure class="map"><iframe src="${esc(src(m.query))}" title="Map: ${esc(m.label)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>${f.mapPlaces.length > 1 ? `<figcaption>${esc(m.label)}</figcaption>` : ''}</figure>`).join('')}</div>`;
 }
