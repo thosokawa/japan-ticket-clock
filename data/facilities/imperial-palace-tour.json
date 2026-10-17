@@ -5,6 +5,8 @@
   "city": "Chiyoda, Tokyo",
   "category": "sights",
   "priority": 15,
+  "intro": "A free guided walk through part of the Imperial Palace grounds in central Tokyo, an area normally closed to the public. Online places for a whole month are released at once and go quickly, but some places are kept for people who turn up on the day.",
+  "facts": { "location": "Chiyoda, Tokyo; tours start from Kikyo-mon Gate", "price": "Free", "bookAhead": "Up to one month: the next month opens on the 1st at 05:00" },
   "officialUrl": "https://sankan.kunaicho.go.jp/",
   "watchUrls": [
     "https://sankan.kunaicho.go.jp/"

@@ -5,6 +5,8 @@
   "city": "Tokyo, Osaka, Fukuoka",
   "category": "attractions",
   "priority": 7,
+  "intro": "Kirby-themed cafés serving dishes shaped like Kirby and his friends. Reservations open once a month, you need an account to book, and each account can make up to three reservations per store per month.",
+  "facts": { "location": "Tokyo, Osaka and Hakata (Fukuoka)", "price": "Main dishes about ¥1,800 to ¥2,400 (tax included)", "bookAhead": "About one month (reported: on the 10th)" },
   "officialUrl": "https://kirbycafe.jp/cafe/",
   "watchUrls": ["https://kirbycafe.jp/cafe/"],
   "rule": { "type": "monthly", "day": 10, "time": "18:00", "monthsAhead": 1, "windowStartDay": 11 },

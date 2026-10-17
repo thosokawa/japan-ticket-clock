@@ -5,6 +5,8 @@
   "city": "Kyoto",
   "category": "events",
   "priority": 20,
+  "intro": "The Jidai Matsuri is a procession on October 22 of people dressed in the costumes of over a thousand years of Japanese history. Paid seats along the route give you a reserved view, and the best seats sell out.",
+  "facts": { "location": "Kyoto Gyoen and Oike-dori Street, Kyoto", "price": "¥5,000 to ¥15,500 (2026)", "bookAhead": "About six weeks: 2026 seats went on sale on September 8" },
   "officialUrl": "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/",
   "watchUrls": [
     "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/"

@@ -5,6 +5,8 @@
   "city": "Urayasu, Chiba (Tokyo area)",
   "category": "attractions",
   "priority": 10,
+  "intro": "Tokyo Disneyland and Tokyo DisneySea are two separate theme parks at Tokyo Disney Resort, just east of central Tokyo. Each ticket is for one park on a set date, and weekends and school holidays can sell out.",
+  "facts": { "location": "Urayasu, Chiba (next to Tokyo)", "price": "1-Day Passport from ¥8,900 for adults; the price changes by date", "visitLength": "A full day for one park", "bookAhead": "Two months: each day goes on sale at 14:00, two months before" },
   "officialUrl": "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html",
   "watchUrls": [
     "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html"

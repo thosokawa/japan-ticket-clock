@@ -5,6 +5,8 @@
   "city": "Tokyo, Nagoya, Kyoto, Osaka, Hiroshima, Fukuoka",
   "category": "trains",
   "priority": 9,
+  "intro": "Japan's high-speed bullet trains. The Tokaido, Sanyo and Kyushu lines link Tokyo, Nagoya, Kyoto, Osaka, Hiroshima and Fukuoka. On most days there are seats to spare, but at holiday peaks reserved seats on popular trains can sell out soon after they go on sale.",
+  "facts": { "location": "Tokyo to Fukuoka, via Nagoya, Kyoto, Osaka and Hiroshima", "bookAhead": "One month: seats open at 10:00 on the same date a month before" },
   "officialUrl": "https://global.jr-central.co.jp/en/nozomi/",
   "watchUrls": [
     "https://global.jr-central.co.jp/en/nozomi/",

@@ -5,6 +5,8 @@
   "city": "Nagakute, Aichi",
   "category": "attractions",
   "priority": 4,
+  "intro": "A Studio Ghibli park near Nagoya with full-size buildings and scenes from the films, spread across five areas. It is not a ride park. Tickets are sold online only for a set date, and a whole month goes on sale at once.",
+  "facts": { "location": "Nagakute, Aichi (near Nagoya)", "price": "Standard pass ¥3,300 to ¥3,800 for adults; Premium pass ¥7,300 to ¥7,800 (weekdays to weekends)", "bookAhead": "Two months: tickets go on sale on the 10th, two months before" },
   "officialUrl": "https://ghibli-park.jp/en/ticket/",
   "watchUrls": ["https://ghibli-park.jp/en/ticket/", "https://ghibli-park.jp/en/ticket/ticket2.html"],
   "rule": { "type": "monthly", "day": 10, "time": "14:00", "monthsAhead": 2 },

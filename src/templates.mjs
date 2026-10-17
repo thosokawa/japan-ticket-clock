@@ -59,6 +59,15 @@ ${scripts}
 </html>`;
 }
 
+// Labels for the facts list, in display order. Facts without a value are left out.
+const FACTS = [['location', 'Where'], ['price', 'Price'], ['visitLength', 'Time needed'], ['bookAhead', 'Book ahead']];
+
+function introBlock(f) {
+  const facts = FACTS.filter(([k]) => f.facts?.[k]);
+  return `${f.intro ? `<p class="intro">${esc(f.intro)}</p>` : ''}${facts.length ? `
+<dl class="facts">${facts.map(([k, label]) => `<div><dt>${esc(label)}</dt><dd>${esc(f.facts[k])}</dd></div>`).join('')}</dl>` : ''}`;
+}
+
 function statusBadge(f) {
   const s = STATUS[f.status] ?? STATUS.unconfirmed;
   return `<span class="badge ${s.cls}" title="${esc(f.statusNote)}">${esc(s.label)}</span>`;
@@ -133,6 +142,7 @@ export function facilityPage({ site, f, affiliates, changelog, now }) {
 <p class="crumbs"><a href="/">Home</a> › ${esc(f.shortName)}</p>
 <h1>When do ${esc(f.shortName)} ${esc(f.ticketNoun ?? 'tickets')} go on sale?</h1>
 <p class="lede">${esc(describeRule(f.rule))}</p>
+${introBlock(f)}
 <p>${statusBadge(f)} <span class="muted">Last checked ${esc(fmtJst(new Date(f.lastVerifiedAt)))}</span></p>
 ${nextReleaseBox(f, now)}
 <p><a class="official" href="${esc(f.officialUrl)}" rel="noopener" target="_blank">Official booking page ↗</a></p>

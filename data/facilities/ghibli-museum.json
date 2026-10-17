@@ -5,6 +5,8 @@
   "city": "Mitaka, Tokyo",
   "category": "attractions",
   "priority": 1,
+  "intro": "A small museum about the art and animation of Studio Ghibli, the studio behind My Neighbor Totoro and Spirited Away. There are no tickets at the door: every visitor needs an advance ticket for a set date and entry time, and a whole month goes on sale at once, so popular days go within minutes.",
+  "facts": { "location": "Mitaka, western Tokyo", "price": "¥1,000 for adults (19 and over); ¥100 to ¥700 for ages 4 to 18", "bookAhead": "Up to one month: the next month goes on sale on the 10th" },
   "officialUrl": "https://www.ghibli-museum.jp/en/tickets/",
   "watchUrls": ["https://www.ghibli-museum.jp/en/tickets/", "https://www.lawson.co.jp/ghibli_museum/english.html"],
   "rule": { "type": "monthly", "day": 10, "time": "10:00", "monthsAhead": 1 },

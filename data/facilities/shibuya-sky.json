@@ -5,6 +5,8 @@
   "city": "Shibuya, Tokyo",
   "category": "sights",
   "priority": 3,
+  "intro": "An open-air observation deck on the roof of Shibuya Scramble Square, right above Shibuya Crossing. Entry is by time slot, and slots around sunset sell out first.",
+  "facts": { "location": "Shibuya Scramble Square, Shibuya, Tokyo", "bookAhead": "About two weeks (reported)" },
   "officialUrl": "https://www.shibuya-scramble-square.com/sky/",
   "watchUrls": [
     "https://www.shibuya-scramble-square.com/sky/"

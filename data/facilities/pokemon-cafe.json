@@ -5,6 +5,8 @@
   "city": "Tokyo, Osaka",
   "category": "attractions",
   "priority": 8,
+  "intro": "A Pokémon-themed café with food and drinks styled after Pokémon characters. Seats are by reservation only, and each day's slots usually go within minutes of release.",
+  "facts": { "location": "Tokyo and Osaka", "bookAhead": "About a month (reported: 31 days before)" },
   "officialUrl": "https://www.pokemon-cafe.jp/en/",
   "watchUrls": [
     "https://www.pokemon-cafe.jp/en/"

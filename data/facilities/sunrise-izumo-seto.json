@@ -5,6 +5,8 @@
   "city": "Tokyo to Izumo and Takamatsu",
   "category": "trains",
   "priority": 18,
+  "intro": "Japan's last regular overnight sleeper trains, leaving Tokyo at night and arriving in Izumo or Takamatsu the next morning. Each train has only a limited number of private rooms, and they often sell out within minutes of the 10:00 release.",
+  "facts": { "location": "Tokyo to Izumo (Shimane) and Takamatsu (Kagawa)", "visitLength": "One night on board", "bookAhead": "One month: berths open at 10:00 on the same date a month before" },
   "officialUrl": "https://www.westjr.co.jp/global/en/ticket/overview/",
   "watchUrls": [
     "https://www.westjr.co.jp/global/en/ticket/overview/"
