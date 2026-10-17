@@ -1,0 +1,79 @@
+{
+  "id": "tokyo-disney-tickets",
+  "name": "Tokyo Disneyland and Tokyo DisneySea park tickets",
+  "shortName": "Tokyo Disney",
+  "city": "Urayasu, Chiba (Tokyo area)",
+  "category": "attractions",
+  "priority": 10,
+  "intro": "Tokyo Disneyland and Tokyo DisneySea are two separate theme parks at Tokyo Disney Resort, just east of central Tokyo. Each ticket is for one park on a set date, and weekends and school holidays can sell out.",
+  "facts": { "location": "Urayasu, Chiba (next to Tokyo)", "price": "1-Day Passport from ¥8,900 for adults; the price changes by date", "visitLength": "A full day for one park", "bookAhead": "Two months: each day goes on sale at 14:00, two months before" },
+  "officialUrl": "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html",
+  "watchUrls": [
+    "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 2,
+    "time": "14:00"
+  },
+  "status": "official",
+  "statusNote": "Read from the official Tokyo Disney Resort ticket sales page.",
+  "popularity": 3,
+  "popularityNote": "Not in our keyword data. Estimate: Tokyo Disneyland and DisneySea are among the most visited attractions in Japan, so we place them just below the two most-searched places.",
+  "difficulty": "available",
+  "difficultyNote": "Reasoning: most dates stay on sale until close to the day; weekends and Japanese school holidays can sell out, and the official page says sold-out tickets may go back on sale.",
+  "bookingSteps": [
+    "Create a MyDisney account. You need it to buy on the official website or in the Tokyo Disney Resort App.",
+    "Decide on the park (Tokyo Disneyland or Tokyo DisneySea) and the date. Each ticket is for one park on one date.",
+    "From 14:00 Japan time, tickets go on sale for the same date two months later. You can buy up to ten tickets at a time.",
+    "Install the Tokyo Disney Resort App and log in with the same account. Tickets you bought online appear automatically.",
+    "Visiting as a group? Create a group in the app and invite the others so everyone sees the tickets.",
+    "On the day, tap the ticket in the app to show its code and scan it at the park entrance. The code appears from midnight on your visit day."
+  ],
+  "visitorTips": [
+    "No cancellations or refunds for personal reasons, even for bad weather. You can change the date or age category for free in My Booking if the new date is on sale, but you can't change the park.",
+    "After a change, the code in your original email no longer works. Use the app or the code in the new email.",
+    "Sold-out dates can come back on sale without notice, so keep checking.",
+    "Ages: adult 18 and over, junior 12 to 17, child 4 to 11. Children 3 and under enter free.",
+    "Some older guides say tickets are released every Wednesday. That is out of date: the official page now says daily."
+  ],
+  "soldOut": [
+    {
+      "label": "Tokyo Disney tickets on Klook",
+      "partner": "klook",
+      "query": "tokyo disney ticket"
+    },
+    {
+      "label": "Stay at a Disney hotel: rooms open four months ahead",
+      "internal": "/tickets/tokyo-disney-hotels/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How far ahead can I buy Tokyo Disney tickets?",
+      "a": "Two months. Tickets go on sale every day at 14:00 Japan time for the same date two months later."
+    },
+    {
+      "q": "Can I buy Tokyo Disney tickets at the gate?",
+      "a": "Don't count on it. Buy online before you go; popular dates sell out."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html",
+      "quote": "Tickets will be sold daily from 2:00 p.m. for admissions on the same date two months later.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/ticket/sales_status.html",
+      "quote": "tickets will be available from 2:00 p.m. on the first day of the next month.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/ticket/purchase.html",
+      "quote": "Up to ten Park tickets may be purchased online at a time.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

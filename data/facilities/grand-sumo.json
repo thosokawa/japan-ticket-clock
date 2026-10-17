@@ -1,0 +1,164 @@
+{
+  "id": "grand-sumo",
+  "name": "Grand Sumo tournaments (Nihon Sumo Kyokai)",
+  "shortName": "Grand Sumo",
+  "city": "Tokyo, Osaka, Nagoya, Fukuoka",
+  "category": "events",
+  "priority": 12,
+  "intro": "Professional sumo holds six main tournaments a year, each lasting 15 days, with bouts from morning until the top wrestlers fight in the late afternoon. Every tournament has a fixed ticket sale date, and weekends and the final days sell out fast.",
+  "facts": { "location": "Tokyo (January, May, September), Osaka (March), Nagoya (July), Fukuoka (November)", "bookAhead": "About five weeks: each tournament has its own sale date" },
+  "officialUrl": "https://sumo.pia.jp/en/",
+  "watchUrls": [
+    "https://www.sumo.or.jp/EnTicket/year_schedule/"
+  ],
+  "rule": {
+    "type": "fixed_dates",
+    "sales": [
+      {
+        "event": "January 2027 tournament, Ryogoku Kokugikan, Tokyo",
+        "opensAt": "2026-12-05",
+        "time": "10:00",
+        "coversFrom": "2027-01-10",
+        "coversTo": "2027-01-24"
+      },
+      {
+        "event": "March 2027 tournament, EDION Arena Osaka",
+        "opensAt": "2027-02-06",
+        "time": "10:00",
+        "coversFrom": "2027-03-14",
+        "coversTo": "2027-03-28"
+      },
+      {
+        "event": "May 2027 tournament, Ryogoku Kokugikan, Tokyo",
+        "opensAt": "2027-04-10",
+        "time": "10:00",
+        "coversFrom": "2027-05-09",
+        "coversTo": "2027-05-23"
+      },
+      {
+        "event": "July 2027 tournament, IG Arena, Nagoya",
+        "opensAt": "2027-05-15",
+        "time": "10:00",
+        "coversFrom": "2027-07-11",
+        "coversTo": "2027-07-25"
+      },
+      {
+        "event": "September 2027 tournament, Ryogoku Kokugikan, Tokyo",
+        "opensAt": "2027-08-07",
+        "time": "10:00",
+        "coversFrom": "2027-09-12",
+        "coversTo": "2027-09-26"
+      },
+      {
+        "event": "November 2027 tournament, Fukuoka Kokusai Center",
+        "opensAt": "2027-09-18",
+        "time": "10:00",
+        "coversFrom": "2027-11-14",
+        "coversTo": "2027-11-28"
+      },
+      {
+        "event": "January 2028 tournament, Ryogoku Kokugikan, Tokyo",
+        "opensAt": "2027-12-04",
+        "time": "10:00",
+        "coversFrom": "2028-01-09",
+        "coversTo": "2028-01-23"
+      },
+      {
+        "event": "March 2028 tournament, EDION Arena Osaka",
+        "opensAt": "2028-02-05",
+        "time": "10:00",
+        "coversFrom": "2028-03-12",
+        "coversTo": "2028-03-26"
+      },
+      {
+        "event": "May 2028 tournament, Ryogoku Kokugikan, Tokyo",
+        "opensAt": "2028-04-08",
+        "time": "10:00",
+        "coversFrom": "2028-05-14",
+        "coversTo": "2028-05-28"
+      },
+      {
+        "event": "July 2028 tournament, IG Arena, Nagoya",
+        "opensAt": "2028-05-20",
+        "time": "10:00",
+        "coversFrom": "2028-07-09",
+        "coversTo": "2028-07-23"
+      },
+      {
+        "event": "September 2028 tournament, Ryogoku Kokugikan, Tokyo",
+        "opensAt": "2028-08-05",
+        "time": "10:00",
+        "coversFrom": "2028-09-10",
+        "coversTo": "2028-09-24"
+      },
+      {
+        "event": "November 2028 tournament, Fukuoka Kokusai Center",
+        "opensAt": "2028-09-16",
+        "time": "10:00",
+        "coversFrom": "2028-11-12",
+        "coversTo": "2028-11-26"
+      }
+    ]
+  },
+  "status": "secondary",
+  "statusNote": "Sale dates are from the official Japan Sumo Association schedule. The 10:00 start time is from travel sources and an older official ticket page; the current official schedule does not state it.",
+  "popularity": 7,
+  "popularityNote": "Not in our keyword data. Estimate: sumo is one of the most requested experiences on travel forums, but tournaments run only six times a year.",
+  "difficulty": "days",
+  "difficultyNote": "Reasoning from ticket guides: weekend days and the final day of each tournament sell out first; weekday chair seats usually last longer.",
+  "bookingSteps": [
+    "Check the tournament dates and sale dates on the Japan Sumo Association's English site.",
+    "Choose a day and a seat type: a box seat on the floor (masu-seki, for up to four people) or a chair seat.",
+    "At 10:00 Japan time on the sale day, buy on Ticket Oosumo English, the official ticket site.",
+    "Pay by credit card. The English site takes cards only and adds a handling fee per ticket.",
+    "Print your tickets at a Seven-Eleven store in Japan, using the details in your confirmation email.",
+    "Keep the tickets safe: lost tickets can't be used to enter."
+  ],
+  "visitorTips": [
+    "Tickets can't be changed or cancelled for any reason.",
+    "Resale or transfer to strangers is prohibited.",
+    "Children aged 4 and over need their own ticket.",
+    "At the Ryogoku Kokugikan in Tokyo, a limited number of same-day tickets are sold at the box office from 8:00.",
+    "Ticket Oosumo members can enter a pre-sale lottery before the general sale."
+  ],
+  "soldOut": [
+    {
+      "label": "Sumo tournament tickets and tours on Klook",
+      "partner": "klook",
+      "query": "sumo tournament ticket"
+    },
+    {
+      "label": "Watch a sumo morning practice in Tokyo",
+      "partner": "klook",
+      "query": "sumo morning practice"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Grand Sumo tickets go on sale?",
+      "a": "On a fixed date for each tournament, about five weeks before it starts. Tickets for the January 2027 tournament in Tokyo go on sale on December 5, 2026, reportedly at 10:00 Japan time."
+    },
+    {
+      "q": "Can I buy sumo tickets on the day?",
+      "a": "In Tokyo, a limited number of same-day general admission tickets are sold at the Kokugikan box office from 8:00. They can run out early on busy days."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sumo.or.jp/EnTicket/year_schedule/",
+      "quote": "Advanced Tickets are sold from",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://japanroyalservice.com/blog/how-sumo-tickets-work-japan",
+      "quote": "Official general sales typically open about one month before each tournament at 10:00 a.m. Japan Standard Time.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://sumo.pia.jp/en/sumo07.jsp",
+      "quote": "Tickets that have been purchased cannot be changed or cancelled for whatever reason.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

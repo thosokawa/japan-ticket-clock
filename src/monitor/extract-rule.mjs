@@ -9,10 +9,10 @@ const MODEL = process.env.MONITOR_MODEL ?? 'claude-opus-5-5';
 // Flat schema (nullable fields) so it maps cleanly onto JSON Schema; converted to our rule shape below.
 const Extraction = z.object({
   ruleChanged: z.boolean().describe('True only if the page states a release rule that differs from the current rule.'),
-  ruleType: z.enum(['monthly', 'days_before', 'lottery', 'rolling', 'unknown']),
+  ruleType: z.enum(['monthly', 'days_before', 'months_before', 'lottery', 'rolling', 'unknown']),
   day: z.number().int().nullable().describe('monthly: day of month bookings open'),
   time: z.string().nullable().describe('HH:MM in Japan time, or null if the page gives no time'),
-  monthsAhead: z.number().int().nullable(),
+  monthsAhead: z.number().int().nullable().describe('monthly, lottery: months between release and visit; months_before: open on the same date this many months before the visit'),
   windowStartDay: z.number().int().nullable(),
   days: z.number().int().nullable().describe('days_before: how many days before the visit'),
   resultsDay: z.number().int().nullable(),
@@ -25,6 +25,7 @@ const Extraction = z.object({
 const KEYS = {
   monthly: ['day', 'time', 'monthsAhead', 'windowStartDay'],
   days_before: ['days', 'time'],
+  months_before: ['monthsAhead', 'time'],
   lottery: ['monthsAhead', 'resultsDay', 'paymentDay'],
   rolling: ['checkFromDaysBefore'],
 };
@@ -36,7 +37,7 @@ export function toRule(x) {
   const rule = { type: x.ruleType };
   for (const k of keys) if (x[k] != null) rule[k] = x[k];
   if (rule.time != null && !/^\d{2}:\d{2}$/.test(rule.time)) return null;
-  const required = { monthly: ['day', 'monthsAhead'], days_before: ['days'], lottery: ['monthsAhead', 'resultsDay', 'paymentDay'], rolling: ['checkFromDaysBefore'] }[x.ruleType];
+  const required = { monthly: ['day', 'monthsAhead'], days_before: ['days'], months_before: ['monthsAhead'], lottery: ['monthsAhead', 'resultsDay', 'paymentDay'], rolling: ['checkFromDaysBefore'] }[x.ruleType];
   return required.every((k) => rule[k] != null) ? rule : null;
 }
 

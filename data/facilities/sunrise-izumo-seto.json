@@ -1,0 +1,67 @@
+{
+  "id": "sunrise-izumo-seto",
+  "name": "Sunrise Izumo and Sunrise Seto sleeper trains",
+  "shortName": "Sunrise Izumo / Seto",
+  "city": "Tokyo to Izumo and Takamatsu",
+  "category": "trains",
+  "priority": 18,
+  "intro": "Japan's last regular overnight sleeper trains, leaving Tokyo at night and arriving in Izumo or Takamatsu the next morning. Each train has only a limited number of private rooms, and they often sell out within minutes of the 10:00 release.",
+  "facts": { "location": "Tokyo to Izumo (Shimane) and Takamatsu (Kagawa)", "visitLength": "One night on board", "bookAhead": "One month: berths open at 10:00 on the same date a month before" },
+  "officialUrl": "https://www.westjr.co.jp/global/en/ticket/overview/",
+  "watchUrls": [
+    "https://www.westjr.co.jp/global/en/ticket/overview/"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 1,
+    "time": "10:00"
+  },
+  "status": "official",
+  "statusNote": "The standard JR release rule, read from JR-WEST's official English page.",
+  "popularity": 16,
+  "popularityNote": "Not in our keyword data. Estimate: a well-known \"bucket list\" train with a small, dedicated audience.",
+  "difficulty": "minutes",
+  "difficultyNote": "Rail guides and travellers report the private rooms selling out within minutes of the 10:00 release.",
+  "bookingSteps": [
+    "Book on JR-WEST Online Train Reservation, which is in English.",
+    "Be ready a few minutes before 10:00 Japan time, one month before your travel date. The private rooms often go within minutes.",
+    "Pay by credit card when you book.",
+    "Before boarding, collect your ticket at a ticket machine: choose \"Receive reserved ticket\", insert the card you paid with and enter your four-digit ID number.",
+    "Starting in Tokyo? JR East has only a few machines and Travel Service Centers that hand out these tickets, so find one in advance."
+  ],
+  "visitorTips": [
+    "If you board without collecting your ticket, you must buy a new one at full price.",
+    "Bring the physical card you paid with. Virtual cards can't be used to collect tickets.",
+    "If the same date doesn't exist in the previous month, sales start on the 1st of the travel month."
+  ],
+  "soldOut": [
+    {
+      "label": "Take the Shinkansen instead: same 10:00 release",
+      "internal": "/tickets/shinkansen/"
+    },
+    {
+      "label": "Japan Rail Pass on Klook",
+      "partner": "klook",
+      "query": "japan rail pass"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When can I book the Sunrise Izumo?",
+      "a": "At 10:00 Japan time, one month before your travel date, on JR-WEST Online Train Reservation."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.westjr.co.jp/global/en/ticket/overview/",
+      "quote": "starting at 10:00 am (JST) on same day of preceding month.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.westjr.co.jp/global/en/howto/train-reservation/receive/",
+      "quote": "A passport with an IC chip is required for this.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

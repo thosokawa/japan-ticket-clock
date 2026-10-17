@@ -1,0 +1,74 @@
+{
+  "id": "jidai-matsuri-seats",
+  "name": "Jidai Matsuri procession paid seats",
+  "shortName": "Jidai Matsuri",
+  "city": "Kyoto",
+  "category": "events",
+  "priority": 20,
+  "intro": "The Jidai Matsuri is a procession on October 22 of people dressed in the costumes of over a thousand years of Japanese history. Paid seats along the route give you a reserved view, and the best seats sell out.",
+  "facts": { "location": "Kyoto Gyoen and Oike-dori Street, Kyoto", "price": "¥5,000 to ¥15,500 (2026)", "bookAhead": "About six weeks: 2026 seats went on sale on September 8" },
+  "officialUrl": "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/",
+  "watchUrls": [
+    "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/"
+  ],
+  "rule": {
+    "type": "fixed_dates",
+    "sales": [
+      {
+        "event": "Jidai Matsuri procession, October 22, 2026",
+        "opensAt": "2026-09-08",
+        "time": "10:00",
+        "coversFrom": "2026-10-22",
+        "coversTo": "2026-10-22"
+      },
+      {
+        "event": "Jidai Matsuri procession, October 22, 2027",
+        "opensAt": "2027-09-01",
+        "estimated": true,
+        "coversFrom": "2027-10-22",
+        "coversTo": "2027-10-22"
+      }
+    ]
+  },
+  "status": "official",
+  "statusNote": "The 2026 sale date is from the Kyoto City Tourism Association's official site. The 2027 date is not announced yet; we show early September as a guide.",
+  "popularity": 18,
+  "popularityNote": "Not in our keyword data. Estimate: a smaller Kyoto festival than the Gion Matsuri.",
+  "difficulty": "days",
+  "difficultyNote": "Official sales page: by October 17, 2026, all seats except Oike-dori general seats had sold out (sale began September 8).",
+  "bookingSteps": [
+    "Check the official seat page for the sale date and which seats are left.",
+    "At 10:00 Japan time on sale day, buy online through the link on the official page, or at a Seven-Eleven in Japan.",
+    "Choose seats in the Kyoto Gyoen National Garden (with live commentary in English or Chinese) or on Oike-dori Street (guidebook, no commentary).",
+    "For Gyoen seats, bring your own smartphone with internet access and headphones. No app or account is needed.",
+    "Bring a raincoat. Umbrellas, parasols and tripods aren't allowed in the seats."
+  ],
+  "visitorTips": [
+    "On October 17, 2026, only general seats on Oike-dori Street were still on sale for the 2026 procession.",
+    "After a natural disaster, the schedule and route may change or the festival may be cancelled.",
+    "The 2027 sale date has not been announced. We will update this page when it is."
+  ],
+  "soldOut": [
+    {
+      "label": "Watch from the street for free along the route"
+    },
+    {
+      "label": "Aoi Matsuri seats in May",
+      "internal": "/tickets/aoi-matsuri-seats/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Jidai Matsuri seats go on sale?",
+      "a": "In 2026 they went on sale at 10:00 Japan time on September 8. The 2027 date has not been announced yet."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/",
+      "quote": "From September 8 (Tue), 10 AM (JST), 2026",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

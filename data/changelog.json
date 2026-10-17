@@ -5,5 +5,19 @@
   { "date": "2026-10-15", "facility": "kirby-cafe", "text": "Added. 10th of each month at 18:00 JST (awaiting official confirmation)." },
   { "date": "2026-10-15", "facility": "pokemon-cafe", "text": "Added. 31 days before the visit at 18:00 JST (awaiting official confirmation)." },
   { "date": "2026-10-15", "facility": "shibuya-sky", "text": "Added. Web tickets two weeks ahead at 00:00 JST (awaiting official confirmation)." },
-  { "date": "2026-10-15", "facility": "teamlab-planets", "text": "Added. No fixed release rule; check about two months ahead." }
+  { "date": "2026-10-15", "facility": "teamlab-planets", "text": "Added. No fixed release rule; check about two months ahead." },
+  { "date": "2026-10-17", "facility": "shinkansen", "text": "Added. 10:00 JST on the same date one month before travel (official JR Central and JR-WEST pages)." },
+  { "date": "2026-10-17", "facility": "jr-east-train-reservation", "text": "Added. 10:00 JST one month before travel (official JR page for the same system)." },
+  { "date": "2026-10-17", "facility": "tokyo-disney-tickets", "text": "Added. Daily at 14:00 JST for the same date two months later (official page)." },
+  { "date": "2026-10-17", "facility": "tokyo-disney-hotels", "text": "Added. 11:00 JST four months before the stay (official page)." },
+  { "date": "2026-10-17", "facility": "grand-sumo", "text": "Added. Official sale dates for each tournament through November 2028; 10:00 JST start from travel sources." },
+  { "date": "2026-10-17", "facility": "imperial-palace-tour", "text": "Added. 05:00 JST on the 1st of the month before the visit (official page)." },
+  { "date": "2026-10-17", "facility": "chichu-art-museum", "text": "Added. 10:00 JST on the 5th of each month, for the month after next (official page)." },
+  { "date": "2026-10-17", "facility": "toyosu-tuna-auction", "text": "Added. Monthly lottery; entry windows announced each month (official pages). Future dates are estimates." },
+  { "date": "2026-10-17", "facility": "gion-matsuri-seats", "text": "Added. 2026 seats went on sale June 1 at 10:00 JST (official page)." },
+  { "date": "2026-10-17", "facility": "aoi-matsuri-seats", "text": "Added. 2026 seats went on sale April 1 at 10:00 JST (official page)." },
+  { "date": "2026-10-17", "facility": "jidai-matsuri-seats", "text": "Added. 2026 seats went on sale September 8 at 10:00 JST (official page)." },
+  { "date": "2026-10-17", "facility": "sunrise-izumo-seto", "text": "Added. Standard JR rule: 10:00 JST one month before travel (official JR-WEST page)." },
+  { "date": "2026-10-17", "facility": "pokemon-cafe", "text": "Rule corrected from the official reservation site: the whole next month opens on the 1st at 18:00 JST (was reported as 31 days before)." },
+  { "date": "2026-10-17", "facility": "ghibli-museum", "text": "Confirmed on the official tickets page: 10th of each month at 10:00 JST, for the following month." }
 ]

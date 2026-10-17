@@ -27,6 +27,10 @@ test('toRule builds a monthly rule and drops unrelated fields', () => {
   assert.deepEqual(toRule({ ...base, ruleType: 'monthly', day: 10, time: '14:00', monthsAhead: 2, days: 5 }), { type: 'monthly', day: 10, time: '14:00', monthsAhead: 2 });
 });
 
+test('toRule builds a months_before rule', () => {
+  assert.deepEqual(toRule({ ...base, ruleType: 'months_before', monthsAhead: 2, time: '14:00', day: 1 }), { type: 'months_before', monthsAhead: 2, time: '14:00' });
+});
+
 test('toRule rejects incomplete or malformed rules', () => {
   assert.equal(toRule({ ...base, ruleType: 'monthly', day: 10 }), null);
   assert.equal(toRule({ ...base, ruleType: 'days_before', days: 31, time: '6pm' }), null);

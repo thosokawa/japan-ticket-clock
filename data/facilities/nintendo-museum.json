@@ -3,20 +3,32 @@
   "name": "Nintendo Museum",
   "shortName": "Nintendo Museum",
   "city": "Uji, Kyoto",
+  "category": "attractions",
   "priority": 6,
+  "intro": "Nintendo's own museum in Uji, near Kyoto, showing the company's products over the years, with hands-on games. Tickets are given out by lottery, so you have to enter three months ahead and hope to win.",
+  "facts": { "location": "Uji, Kyoto Prefecture", "bookAhead": "Three months: enter the lottery three months before your visit" },
   "officialUrl": "https://museum.nintendo.com/en/guide/visit-flow/",
   "watchUrls": ["https://museum.nintendo.com/en/guide/visit-flow/"],
   "rule": { "type": "lottery", "monthsAhead": 3, "resultsDay": 1, "paymentDay": 7 },
   "status": "official",
   "statusNote": "Read from the official visit-flow page.",
-  "howToBuy": [
-    "Enter the lottery with a Nintendo Account, starting three months before your visit.",
-    "Results are emailed on the 1st of the following month, in the afternoon (Japan time).",
-    "Pay by the 7th by credit card (3D Secure required), or the tickets are cancelled automatically.",
-    "After the lottery, tickets freed by cancellations may be sold first-come, first-served."
+  "popularity": 9,
+  "popularityNote": "Keyword data (Oct 2025 to Sep 2026): \"nintendo museum tickets\" about 5,000 searches a month and rising; ranked below Pokémon Café, which has more related searches.",
+  "difficulty": "minutes",
+  "difficultyNote": "Tickets are given out by lottery (official), so entering is no guarantee of a ticket; tickets freed after the lottery are sold first come, first served.",
+  "bookingSteps": [
+    "Create a free Nintendo Account. You need it to enter the drawing and to buy tickets.",
+    "Enter the drawing on the official ticketing site, three months before your visit. Book in the name of the person visiting.",
+    "Wait for the results email, sent to your Nintendo Account address on the 1st of the following month.",
+    "If you win, pay by the 7th with a Visa, Mastercard or JCB card that has a security code and is registered for 3D Secure. Unpaid tickets are cancelled.",
+    "Buying for a group? Use Assign Ticket to give each person their own QR code. Each person needs their own Nintendo Account.",
+    "From 14:00 the day before your visit, issue your QR code on the ticketing site. After that, the ticket can't be cancelled.",
+    "At the security gate, show your QR code and your passport."
   ],
-  "rulesToKnow": [
-    "Your QR code can be issued from 14:00 the day before your visit. Once issued, the ticket cannot be cancelled."
+  "visitorTips": [
+    "A passport is the only ID accepted from non-Japanese visitors. If your identity can't be checked, you may be refused entry.",
+    "Not selected? Tickets freed by cancellations may go on sale first come, first served after the drawing.",
+    "Workshops inside the museum are booked on the day, first come, first served, for an extra fee."
   ],
   "soldOut": [
     { "label": "Kyoto day tours that pass through Uji", "partner": "klook", "query": "uji kyoto tour" },

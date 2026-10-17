@@ -3,17 +3,33 @@
   "name": "Kirby Café",
   "shortName": "Kirby Café",
   "city": "Tokyo, Osaka, Fukuoka",
+  "category": "attractions",
   "priority": 7,
+  "intro": "Kirby-themed cafés serving dishes shaped like Kirby and his friends. Reservations open once a month, you need an account to book, and each account can make up to three reservations per store per month.",
+  "facts": { "location": "Tokyo, Osaka and Hakata (Fukuoka)", "price": "Main dishes about ¥1,800 to ¥2,400 (tax included)", "bookAhead": "About one month (reported: on the 10th)" },
   "officialUrl": "https://kirbycafe.jp/cafe/",
   "watchUrls": ["https://kirbycafe.jp/cafe/"],
   "rule": { "type": "monthly", "day": 10, "time": "18:00", "monthsAhead": 1, "windowStartDay": 11 },
   "status": "unconfirmed",
   "statusNote": "From a travel guide; not yet confirmed on the official site.",
-  "howToBuy": [
-    "Book on the official reservation site (Japanese; use your browser's translate feature).",
-    "Each release covers the 11th of the next month to the 10th of the month after."
+  "popularity": 10,
+  "popularityNote": "Keyword data (Oct 2025 to Sep 2026): \"kirby cafe reservation\" about 5,000 searches a month, with no other related searches.",
+  "difficulty": "days",
+  "difficultyNote": "The official site says bookings are hard to get right after they open (high traffic). That weekday slots remain later is our estimate.",
+  "bookingSteps": [
+    "Open the reservation page for your store (Tokyo, Osaka or Hakata) from the official Kirby Café site. It is in Japanese, so use your browser’s translate feature.",
+    "Create an account with an email address and a phone number. You verify the number by calling a number from that phone.",
+    "At release time, choose a date, a time and the number of people: up to 8 in Tokyo and Hakata, 6 in Osaka.",
+    "Keep the reservation-completion email. You show it at the door.",
+    "Arrive 10 minutes before your time with ID for the person who booked."
   ],
-  "rulesToKnow": [],
+  "visitorTips": [
+    "The official FAQ doesn't say whether an overseas phone number can be verified.",
+    "You can book up to three times a month at each store.",
+    "Your booking is cancelled if you're more than 10 minutes late. Tables are yours for 85 minutes, including payment.",
+    "The booker must be one of the visitors. Transferred or resold bookings are void.",
+    "Cancel online in My Page until the day before. On the day, call the store."
+  ],
   "soldOut": [
     { "label": "Pokémon Café: bookings open 31 days ahead", "internal": "/tickets/pokemon-cafe/" }
   ],
@@ -21,7 +37,9 @@
     { "q": "When do Kirby Café reservations open?", "a": "On the 10th of each month at 18:00 Japan time, for the 11th of the next month through the 10th of the month after. Check the official site to confirm." }
   ],
   "sources": [
-    { "url": "https://thirdeyetraveller.com/kirby-cafe-japan-reservation-worth-it/", "quote": "Reservations open at 6 pm Japan Time on the 10th of each month.", "checkedAt": "2026-10-15" }
+    { "url": "https://thirdeyetraveller.com/kirby-cafe-japan-reservation-worth-it/", "quote": "Reservations open at 6 pm Japan Time on the 10th of each month.", "checkedAt": "2026-10-15" },
+    { "url": "https://kirbycafe.jp/cafe/faq/", "quote": "もしご予約時間から10分を過ぎてもご来店いただけない場合は、キャンセルとさせていただきます。", "checkedAt": "2026-10-17" },
+    { "url": "https://kirbycafe.jp/cafe/", "quote": "Kirby Café will check your ID when you visit the store, and if you are not the person who made the reservation, you will not be allowed to enter the store.", "checkedAt": "2026-10-17" }
   ],
   "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
 }

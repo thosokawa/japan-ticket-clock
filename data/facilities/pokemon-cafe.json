@@ -3,23 +3,39 @@
   "name": "Pokémon Café",
   "shortName": "Pokémon Café",
   "city": "Tokyo, Osaka",
+  "category": "attractions",
   "priority": 8,
+  "intro": "A Pokémon-themed café with food and drinks styled after Pokémon characters. Seats are by reservation only, and each day's slots usually go within minutes of release.",
+  "facts": { "location": "Tokyo and Osaka", "bookAhead": "About a month: the whole next month opens on the 1st at 18:00 JST" },
   "officialUrl": "https://www.pokemon-cafe.jp/en/",
   "watchUrls": [
     "https://www.pokemon-cafe.jp/en/"
   ],
   "rule": {
-    "type": "days_before",
-    "days": 31,
-    "time": "18:00"
+    "type": "monthly",
+    "day": 1,
+    "time": "18:00",
+    "monthsAhead": 1
   },
-  "status": "unconfirmed",
-  "statusNote": "Travel guides disagree (30 or 31 days ahead). Not yet confirmed on the official site.",
-  "howToBuy": [
-    "Book on the official reservation site. A new day opens every evening.",
-    "Be on the booking page a few minutes early; slots go in seconds and the site often slows down."
+  "status": "official",
+  "statusNote": "The official reservation site opened all of November 2026 at once on October 1 at 18:00 JST. Later months are assumed to follow the same pattern; the site announces each release.",
+  "popularity": 8,
+  "popularityNote": "Keyword data (Oct 2025 to Sep 2026): \"pokemon cafe reservation\" about 5,000 searches a month plus \"pokemon cafe reserve\" about 500.",
+  "difficulty": "minutes",
+  "difficultyNote": "Travel guides (for example thirdeyetraveller.com) report slots going within seconds of release, with the booking site slowing down.",
+  "bookingSteps": [
+    "Open the official reservation site from the Pokémon Café website. The notices are also in English.",
+    "Read the notes, tick the consent box and continue.",
+    "Choose a date and a time slot.",
+    "Enter a phone number and an email address. The café uses them to contact you.",
+    "Keep the confirmation email. It has the link to view or cancel your booking.",
+    "Arrive 15 minutes before your time (10 minutes for the first 10:40 slot)."
   ],
-  "rulesToKnow": [],
+  "visitorTips": [
+    "Your booking is cancelled automatically if you're 10 minutes late without contacting the café.",
+    "Cancel online until 22:00 the day before. On the day, contact the café directly. Goods ordered with the booking are cancelled too.",
+    "Booking for someone else, and reselling or transferring a booking, aren't allowed."
+  ],
   "soldOut": [
     {
       "label": "Kirby Café: reservations open on the 10th",
@@ -29,14 +45,19 @@
   "faq": [
     {
       "q": "How far ahead can I book Pokémon Café?",
-      "a": "Bookings are reported to open 31 days before your visit at 18:00 Japan time. Check the official site to confirm."
+      "a": "A whole month opens at once, on the 1st of the month before, at 18:00 Japan time. For example, all November 2026 dates opened on October 1 at 18:00."
     }
   ],
   "sources": [
     {
-      "url": "https://thirdeyetraveller.com/pokemon-cafe-japan-reservation-worth-it/",
-      "quote": "Bookings open 31 days before your chosen date, at 6 pm Japan Time.",
-      "checkedAt": "2026-10-15"
+      "url": "https://reserve.pokemon-cafe.jp/",
+      "quote": "Reservations will open at 6:00 p.m. on Thursday, October 1, 2026. Available Dates: Sunday, November 1 - Monday, November 30, 2026",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://reserve.pokemon-cafe.jp/",
+      "quote": "Please arrive 10 minutes before your reservation only for the first A-seat time slot at 10:40 AM.",
+      "checkedAt": "2026-10-17"
     }
   ],
   "lastVerifiedAt": "2026-10-15T20:00:00+09:00"

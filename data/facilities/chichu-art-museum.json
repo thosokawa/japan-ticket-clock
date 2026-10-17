@@ -1,0 +1,74 @@
+{
+  "id": "chichu-art-museum",
+  "name": "Chichu Art Museum (Benesse Art Site Naoshima)",
+  "shortName": "Chichu Art Museum",
+  "city": "Naoshima, Kagawa",
+  "category": "attractions",
+  "priority": 16,
+  "intro": "An art museum on the island of Naoshima, built mostly underground, where a few works are shown in natural light. Entry is by timed ticket only, and a whole month goes on sale at once.",
+  "facts": { "location": "Naoshima, Kagawa (reached by ferry)", "bookAhead": "Two months: tickets go on sale on the 5th, for the month after next" },
+  "officialUrl": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
+  "watchUrls": [
+    "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html"
+  ],
+  "rule": {
+    "type": "monthly",
+    "day": 5,
+    "time": "10:00",
+    "monthsAhead": 2
+  },
+  "status": "official",
+  "statusNote": "Read from the official Benesse Art Site Naoshima FAQ.",
+  "popularity": 17,
+  "popularityNote": "Not in our keyword data. Estimate: a must-see for art lovers, but Naoshima is far off the usual route.",
+  "difficulty": "days",
+  "difficultyNote": "Reasoning: weekend and holiday slots in busy seasons sell out ahead; weekday slots often remain, and same-day tickets are sold if any are left (official).",
+  "bookingSteps": [
+    "Check ferry times to Naoshima first. Museum tickets don't include buses or ferries.",
+    "Buy on the sales page of the official Benesse Art Site Naoshima website. Tickets aren't sold by phone.",
+    "At 10:00 Japan time on the 5th, choose a date and an entry time. Slots start every 15 minutes.",
+    "Add a ticket for every visitor. Ages 15 and under enter free but still need a reservation.",
+    "Pay by credit card: Visa, Mastercard or JCB. There is no fee for buying online.",
+    "Arrive on time. Your ticket is valid for 30 minutes from the reserved time."
+  ],
+  "visitorTips": [
+    "Tickets can't be changed or cancelled. Refunds are given only if the museum closes, for example for bad weather.",
+    "Same-day tickets are sold if slots remain, until 30 minutes before the slot.",
+    "Junior and senior high school students should bring proof of student status."
+  ],
+  "soldOut": [
+    {
+      "label": "Naoshima art island tours on Klook",
+      "partner": "klook",
+      "query": "naoshima tour"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Chichu Art Museum tickets go on sale?",
+      "a": "At 10:00 Japan time on the 5th of each month, for the month after next. For example, tickets for October go on sale on August 5."
+    },
+    {
+      "q": "How do I pay for Chichu Art Museum tickets?",
+      "a": "By credit card online: Visa, Mastercard or JCB."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
+      "quote": "We start selling online tickets for the month after next at 10:00 on the 5th of every month.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
+      "quote": "Ticket sales for October start at 10:00 on August 5th",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html",
+      "quote": "Reservation tickets can be used for 30 minutes from the reservation time.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

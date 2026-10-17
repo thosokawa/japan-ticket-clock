@@ -1,0 +1,84 @@
+{
+  "id": "shinkansen",
+  "name": "Shinkansen reserved seats (Tokaido, Sanyo and Kyushu lines)",
+  "shortName": "Shinkansen",
+  "city": "Tokyo, Nagoya, Kyoto, Osaka, Hiroshima, Fukuoka",
+  "category": "trains",
+  "priority": 9,
+  "intro": "Japan's high-speed bullet trains. The Tokaido, Sanyo and Kyushu lines link Tokyo, Nagoya, Kyoto, Osaka, Hiroshima and Fukuoka. On most days there are seats to spare, but at holiday peaks reserved seats on popular trains can sell out soon after they go on sale.",
+  "facts": { "location": "Tokyo to Fukuoka, via Nagoya, Kyoto, Osaka and Hiroshima", "bookAhead": "One month: seats open at 10:00 on the same date a month before" },
+  "officialUrl": "https://global.jr-central.co.jp/en/nozomi/",
+  "watchUrls": [
+    "https://global.jr-central.co.jp/en/nozomi/",
+    "https://www.westjr.co.jp/global/en/ticket/overview/"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 1,
+    "time": "10:00"
+  },
+  "status": "official",
+  "statusNote": "Read from the official JR Central and JR-WEST English pages.",
+  "popularity": 4,
+  "popularityNote": "Not in our keyword data. Estimate: almost every first-time visitor rides the Shinkansen, but most trains have seats to spare, so fewer people search for release times than for the Ghibli Museum.",
+  "difficulty": "available",
+  "difficultyNote": "Reasoning: on most days there are seats to spare; popular trains sell out at New Year, late March to early April, Golden Week and Obon (JR Central publishes separate advice for these peak periods).",
+  "bookingSteps": [
+    "Register on SmartEX (JR Central) or JR-WEST Online Train Reservation. Both are in English. SmartEX needs a credit card when you register.",
+    "At 10:00 Japan time, one month before your travel date, search for your train.",
+    "Pick a train and a seat on the seat map. SmartEX books up to six people at once.",
+    "Travelling with a large suitcase on the Tokaido, Sanyo or Kyushu Shinkansen? Reserve a seat with an oversized baggage area.",
+    "Pay by credit card when you book.",
+    "SmartEX: show the QR ticket on your phone at the ticket gate. There is nothing to collect.",
+    "JR-WEST: before boarding, collect your ticket from a ticket machine with the credit card you paid with and your four-digit ID number."
+  ],
+  "visitorTips": [
+    "Busy times sell out fast: New Year, late March to early April, Golden Week (late April to early May) and Obon (mid-August).",
+    "With a Japan Rail Pass, Nozomi and Mizuho trains need an extra ticket.",
+    "Your card company may charge a foreign transaction fee.",
+    "SmartEX releases some products one year ahead at 05:30, but ordinary reserved seats open one month ahead.",
+    "If the same date doesn't exist in the previous month (for example March 31), sales start on the 1st of the travel month."
+  ],
+  "soldOut": [
+    {
+      "label": "Shinkansen tickets and rail passes on Klook",
+      "partner": "klook",
+      "query": "shinkansen ticket"
+    },
+    {
+      "label": "Ride in an unreserved car where the train has one: no booking needed, but expect to queue"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Shinkansen tickets go on sale?",
+      "a": "Reserved seats go on sale at 10:00 Japan time, one month before the travel date (the same date in the previous month)."
+    },
+    {
+      "q": "Can I book the Shinkansen from outside Japan?",
+      "a": "Yes. SmartEX and JR-WEST Online Train Reservation both have English sites and accept overseas credit cards."
+    },
+    {
+      "q": "What if all reserved seats are gone?",
+      "a": "Most trains have unreserved cars, though the Nozomi is all-reserved at the busiest holiday times. Seats also come back as other people change their plans, so keep checking."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://global.jr-central.co.jp/en/nozomi/",
+      "quote": "Reserved seats go on sale from 10:00 AM one month before the departure date of your train (the same day of the previous month).",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://www.westjr.co.jp/global/en/ticket/overview/",
+      "quote": "starting at 10:00 am (JST) on same day of preceding month.",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://global.jr-central.co.jp/en/nozomi/",
+      "quote": "A compatible credit card is required for initial registration.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "gion-matsuri-seats",
+  "name": "Gion Matsuri float procession paid seats",
+  "shortName": "Gion Matsuri",
+  "city": "Kyoto",
+  "category": "events",
+  "priority": 17,
+  "intro": "The Gion Matsuri is Kyoto's biggest festival, held throughout July. Its highlights are the processions of huge decorated floats on July 17 and July 24. Paid seats along the route give you a reserved view, and front rows and premium seats go first.",
+  "facts": { "location": "Central Kyoto", "price": "¥6,000 to ¥8,000 for general seats (2026); premium seats cost much more", "bookAhead": "About six weeks: 2026 seats went on sale on June 1" },
+  "officialUrl": "https://kyoto.travel/en/travel-inspiration/gion-matsuri-seats/",
+  "watchUrls": [
+    "https://kyoto.travel/en/travel-inspiration/gion-matsuri-seats/",
+    "https://kyoto.travel/en/news/gion-festival-seats/"
+  ],
+  "rule": {
+    "type": "fixed_dates",
+    "sales": [
+      {
+        "event": "Saki Matsuri procession, July 17, 2026",
+        "opensAt": "2026-06-01",
+        "time": "10:00",
+        "coversFrom": "2026-07-17",
+        "coversTo": "2026-07-17"
+      },
+      {
+        "event": "Ato Matsuri procession, July 24, 2026",
+        "opensAt": "2026-06-01",
+        "time": "10:00",
+        "coversFrom": "2026-07-24",
+        "coversTo": "2026-07-24"
+      },
+      {
+        "event": "Saki Matsuri procession, July 17, 2027",
+        "opensAt": "2027-06-01",
+        "estimated": true,
+        "coversFrom": "2027-07-17",
+        "coversTo": "2027-07-17"
+      },
+      {
+        "event": "Ato Matsuri procession, July 24, 2027",
+        "opensAt": "2027-06-01",
+        "estimated": true,
+        "coversFrom": "2027-07-24",
+        "coversTo": "2027-07-24"
+      }
+    ]
+  },
+  "status": "official",
+  "statusNote": "The 2026 sale date is from the Kyoto City Tourism Association's official site. The 2027 date is not announced yet; we show the 2026 date as a guide.",
+  "popularity": 15,
+  "popularityNote": "Not in our keyword data. Estimate: Kyoto's biggest festival, but paid seats are a once-a-year search.",
+  "difficulty": "days",
+  "difficultyNote": "Official sales page: front-row and premium seats go first; general seats stay on sale longer.",
+  "bookingSteps": [
+    "Check the year's sale date and prices on the Kyoto City Tourism Association's seat page.",
+    "At 10:00 Japan time on sale day, buy online through Ticket Pia, linked from the official page, or at a Seven-Eleven in Japan (up to nine tickets per transaction).",
+    "Choose the procession (July 17 or July 24) and a seat. Front-row and premium seats go first.",
+    "Premium seats are paid by credit card only and come as electronic tickets.",
+    "For seats with English commentary, bring your own smartphone or tablet with internet access and headphones.",
+    "Bring a raincoat and a hat. Umbrellas, parasols and tripods aren't allowed in the seats."
+  ],
+  "visitorTips": [
+    "The procession goes ahead rain or shine. Tickets are refunded only if it is cancelled, and only where you bought them.",
+    "Every seat comes with an official guidebook in Japanese and English.",
+    "The 2027 sale date has not been announced. We will update this page when it is."
+  ],
+  "soldOut": [
+    {
+      "label": "Watch from the street for free: the procession route is public, but arrive early for a good spot"
+    },
+    {
+      "label": "Kyoto kimono rental and walking tours on Klook",
+      "partner": "klook",
+      "query": "kyoto gion tour"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When do Gion Matsuri seats go on sale?",
+      "a": "In 2026 they went on sale at 10:00 Japan time on June 1. The 2027 date has not been announced yet."
+    },
+    {
+      "q": "Do I need a seat to see the Gion Matsuri floats?",
+      "a": "No. Anyone can watch from the street for free. Paid seats give you a reserved spot on the route."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kyoto.travel/en/news/gion-festival-seats/",
+      "quote": "went on sale at 10:00 AM JST, June 1 (Mon), 2026",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://kyoto.travel/en/travel-inspiration/gion-matsuri-seats/",
+      "quote": "The Yamahoko Junko Procession will be held rain or shine.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}

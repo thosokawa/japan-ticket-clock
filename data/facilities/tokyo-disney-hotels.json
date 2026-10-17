@@ -1,0 +1,74 @@
+{
+  "id": "tokyo-disney-hotels",
+  "name": "Tokyo Disney Hotels (including Fantasy Springs Hotel)",
+  "shortName": "Tokyo Disney Hotels",
+  "ticketNoun": "rooms",
+  "city": "Urayasu, Chiba (Tokyo area)",
+  "category": "attractions",
+  "priority": 13,
+  "intro": "The hotels run by Tokyo Disney Resort, including Tokyo DisneySea Fantasy Springs Hotel inside the park. Rooms open four months ahead, and the most sought-after hotels and room types can sell out within minutes.",
+  "facts": { "location": "Urayasu, Chiba (next to Tokyo)", "bookAhead": "Four months: rooms open at 11:00 on the same date four months before" },
+  "officialUrl": "https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html",
+  "watchUrls": [
+    "https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html"
+  ],
+  "rule": {
+    "type": "months_before",
+    "monthsAhead": 4,
+    "time": "11:00"
+  },
+  "status": "official",
+  "statusNote": "Read from the official Tokyo Disney Resort hotel reservation page. Tokyo DisneySea Fantasy Springs Hotel has its own page, which we have not checked separately.",
+  "popularity": 11,
+  "popularityNote": "Not in our keyword data. Estimate: Fantasy Springs Hotel is a big topic, but far fewer visitors book a Disney hotel than a park ticket.",
+  "difficulty": "minutes",
+  "difficultyNote": "Travel guides report Fantasy Springs Hotel rooms selling out within minutes of the 11:00 release; other Disney hotels last longer.",
+  "bookingSteps": [
+    "Create a MyDisney account for the Tokyo Disney Resort Online Reservations & Tickets site.",
+    "Have every guest's name ready. Each room needs a different guest name, and names can't be changed after booking.",
+    "Be logged in before 11:00 Japan time, four months before your stay. Fantasy Springs Hotel has its own reservation page.",
+    "Book up to three rooms for up to five nights in one go.",
+    "Pay a deposit by credit card when you book: ¥30,000 per room at Luxury and Deluxe hotels, ¥15,000 at Moderate and Value hotels.",
+    "Pay the rest when you check out."
+  ],
+  "visitorTips": [
+    "Cancellation fees start 14 days before your stay and rise to the full deposit from the day before. They come out of your deposit.",
+    "Changing dates counts as cancelling and booking again, so fees apply and the new dates may not be available.",
+    "If the same date doesn't exist four months earlier, rooms open on the 1st of the next month. The official example: an October 31 stay opens on July 1 at 11:00.",
+    "Help by phone from overseas: +81-50-3090-2743, 10:00 to 15:00 Japan time."
+  ],
+  "soldOut": [
+    {
+      "label": "Hotels near Tokyo Disney Resort on Klook",
+      "partner": "klook",
+      "query": "tokyo disney hotel"
+    },
+    {
+      "label": "Park tickets: on sale two months ahead",
+      "internal": "/tickets/tokyo-disney-tickets/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "When can I book a Tokyo Disney hotel?",
+      "a": "From 11:00 Japan time four months before the date of your stay."
+    },
+    {
+      "q": "Does the same rule apply to Fantasy Springs Hotel?",
+      "a": "Fantasy Springs Hotel has its own reservation page. Check it on the official site before you book."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html",
+      "quote": "Reservations are accepted from 11:00 a.m. four months before your planned day of stay",
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://reserve.tokyodisneyresort.jp/en/help/hotel_02",
+      "quote": "The reservation deposit for stays should be paid using a credit card.",
+      "checkedAt": "2026-10-17"
+    }
+  ],
+  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+}
