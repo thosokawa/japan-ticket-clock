@@ -248,7 +248,7 @@ export function homePage({ site, facilities, now, affiliates }) {
   };
   const body = `
 <section class="hero">
-  <h1>Know when to book in Japan, in your time.</h1>
+  <h1><span class="line">Know when to book in Japan,</span> <span class="line">in your time.</span></h1>
   <p class="lede">Ghibli, Disney, sumo, the Shinkansen and more. Release times from official sites, checked every day.</p>
   <ul class="what">
     <li>When bookings open, in your time zone</li>
