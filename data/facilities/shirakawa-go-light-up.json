@@ -7,8 +7,16 @@
   "category": "events",
   "priority": 22,
   "intro": "Shirakawa-go, a village in Gifu Prefecture, holds its winter light-up on four days in January 2027. Parking for those days is sold in advance, online only, in rounds. Round 1 is sold out, and round 2 goes on sale on December 1, 2026.",
-  "facts": { "location": "Shirakawa-go, Gifu Prefecture", "bookAhead": "About six weeks: round 2 opens December 1, 2026, for light-up days in January 2027" },
-  "mapPlaces": [{ "label": "Shirakawa-go", "query": "Shirakawa-go, Gifu" }],
+  "facts": {
+    "location": "Shirakawa-go, Gifu Prefecture",
+    "bookAhead": "About six weeks: round 2 opens December 1, 2026, for light-up days in January 2027"
+  },
+  "mapPlaces": [
+    {
+      "label": "Shirakawa-go",
+      "query": "Shirakawa-go, Gifu"
+    }
+  ],
   "officialUrl": "https://shirakawa-go.gr.jp/events/443/",
   "watchUrls": [
     "https://shirakawa-go.gr.jp/events/443/",
@@ -108,5 +116,5 @@
       "checkedAt": "2026-10-17"
     }
   ],
-  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+  "lastVerifiedAt": "2026-10-20T00:09:57.356Z"
 }
