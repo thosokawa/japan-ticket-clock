@@ -6,11 +6,28 @@
   "category": "attractions",
   "priority": 4,
   "intro": "A Studio Ghibli park near Nagoya with full-size buildings and scenes from the films, spread across five areas. It is not a ride park. Tickets are sold online only for a set date, and a whole month goes on sale at once.",
-  "facts": { "location": "Nagakute, Aichi (near Nagoya)", "price": "Standard pass ¥3,300 to ¥3,800 for adults; Premium pass ¥7,300 to ¥7,800 (weekdays to weekends)", "bookAhead": "Two months: tickets go on sale on the 10th, two months before" },
-  "mapPlaces": [{ "label": "Ghibli Park", "query": "Ghibli Park, Nagakute" }],
+  "facts": {
+    "location": "Nagakute, Aichi (near Nagoya)",
+    "price": "Standard pass ¥3,300 to ¥3,800 for adults; Premium pass ¥7,300 to ¥7,800 (weekdays to weekends)",
+    "bookAhead": "Two months: tickets go on sale on the 10th, two months before"
+  },
+  "mapPlaces": [
+    {
+      "label": "Ghibli Park",
+      "query": "Ghibli Park, Nagakute"
+    }
+  ],
   "officialUrl": "https://ghibli-park.jp/en/ticket/",
-  "watchUrls": ["https://ghibli-park.jp/en/ticket/", "https://ghibli-park.jp/en/ticket/ticket2.html"],
-  "rule": { "type": "monthly", "day": 10, "time": "14:00", "monthsAhead": 2 },
+  "watchUrls": [
+    "https://ghibli-park.jp/en/ticket/",
+    "https://ghibli-park.jp/en/ticket/ticket2.html"
+  ],
+  "rule": {
+    "type": "monthly",
+    "day": 10,
+    "time": "14:00",
+    "monthsAhead": 2
+  },
   "status": "official",
   "statusNote": "Read from the official overseas ticket page.",
   "popularity": 5,
@@ -33,15 +50,32 @@
     "Phone help in English and other languages: +81 50 3626 2455 (international calls). Tickets can't be bought by phone."
   ],
   "soldOut": [
-    { "label": "Ghibli Park tickets on Klook (an official overseas seller)", "partner": "klook", "query": "ghibli park" },
-    { "label": "Ghibli Museum in Tokyo: tickets open one month ahead", "internal": "/tickets/ghibli-museum/" }
+    {
+      "label": "Ghibli Park tickets on Klook (an official overseas seller)",
+      "partner": "klook",
+      "query": "ghibli park"
+    },
+    {
+      "label": "Ghibli Museum in Tokyo: tickets open one month ahead",
+      "internal": "/tickets/ghibli-museum/"
+    }
   ],
   "faq": [
-    { "q": "When do Ghibli Park tickets go on sale for overseas visitors?", "a": "On the 10th of each month at 14:00 Japan time, for visits two months later. For example, December tickets go on sale on October 10." },
-    { "q": "Can I buy Ghibli Park tickets at the park?", "a": "No. Tickets are sold online only." }
+    {
+      "q": "When do Ghibli Park tickets go on sale for overseas visitors?",
+      "a": "On the 10th of each month at 14:00 Japan time, for visits two months later. For example, December tickets go on sale on October 10."
+    },
+    {
+      "q": "Can I buy Ghibli Park tickets at the park?",
+      "a": "No. Tickets are sold online only."
+    }
   ],
   "sources": [
-    { "url": "https://ghibli-park.jp/en/ticket/", "quote": "Reservations for December 2026 go on sale October 10th 2026 at 2 p.m. (Japan time).", "checkedAt": "2026-10-15" }
+    {
+      "url": "https://ghibli-park.jp/en/ticket/",
+      "quote": "Reservations for December 2026 go on sale October 10th 2026 at 2 p.m. (Japan time).",
+      "checkedAt": "2026-10-15"
+    }
   ],
-  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+  "lastVerifiedAt": "2026-10-21T23:56:57.352Z"
 }

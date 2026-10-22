@@ -6,7 +6,10 @@
   "category": "trains",
   "priority": 11,
   "intro": "JR East's booking site covers the Shinkansen lines heading north and northwest from Tokyo (Tohoku, Hokkaido, Hokuriku and Joetsu), the Narita Express and limited express trains. Reserved seats open one month ahead and can sell out at holiday peaks.",
-  "facts": { "location": "Tokyo to Tohoku, Hokkaido, Hokuriku and Niigata", "bookAhead": "One month: seats open at 10:00 on the same date a month before" },
+  "facts": {
+    "location": "Tokyo to Tohoku, Hokkaido, Hokuriku and Niigata",
+    "bookAhead": "One month: seats open at 10:00 on the same date a month before"
+  },
   "officialUrl": "https://www.eki-net.com/en/",
   "watchUrls": [
     "https://www.jrhokkaido.co.jp/global/english/ticket/reservation/index.html"
@@ -62,5 +65,5 @@
       "checkedAt": "2026-10-17"
     }
   ],
-  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+  "lastVerifiedAt": "2026-10-21T23:56:57.352Z"
 }

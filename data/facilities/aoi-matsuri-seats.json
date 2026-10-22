@@ -6,8 +6,17 @@
   "category": "events",
   "priority": 19,
   "intro": "The Aoi Matsuri is one of Kyoto's three great festivals: a procession in Heian-period court dress on May 15. Paid seats along the route give you a reserved view of the procession.",
-  "facts": { "location": "Kyoto", "price": "¥5,000 to ¥20,000 (2026)", "bookAhead": "About six weeks: 2026 seats went on sale on April 1" },
-  "mapPlaces": [{ "label": "Kyoto Gyoen (paid seats)", "query": "Kyoto Gyoen National Garden, Kyoto" }],
+  "facts": {
+    "location": "Kyoto",
+    "price": "¥5,000 to ¥20,000 (2026)",
+    "bookAhead": "About six weeks: 2026 seats went on sale on April 1"
+  },
+  "mapPlaces": [
+    {
+      "label": "Kyoto Gyoen (paid seats)",
+      "query": "Kyoto Gyoen National Garden, Kyoto"
+    }
+  ],
   "officialUrl": "https://kyoto.travel/en/travel-inspiration/the-aoi-matsuri-festival-procession-sales-information-parade-viewing-seats/",
   "watchUrls": [
     "https://kyoto.travel/en/travel-inspiration/the-aoi-matsuri-festival-procession-sales-information-parade-viewing-seats/"
@@ -76,5 +85,5 @@
       "checkedAt": "2026-10-17"
     }
   ],
-  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+  "lastVerifiedAt": "2026-10-21T23:56:57.352Z"
 }

@@ -6,8 +6,17 @@
   "category": "sights",
   "priority": 15,
   "intro": "A free guided walk through part of the Imperial Palace grounds in central Tokyo, an area normally closed to the public. Online places for a whole month are released at once and go quickly, but some places are kept for people who turn up on the day.",
-  "facts": { "location": "Chiyoda, Tokyo; tours start from Kikyo-mon Gate", "price": "Free", "bookAhead": "Up to one month: the next month opens on the 1st at 05:00" },
-  "mapPlaces": [{ "label": "Kikyo-mon Gate (tour start)", "query": "Kikyomon Gate, Tokyo Imperial Palace" }],
+  "facts": {
+    "location": "Chiyoda, Tokyo; tours start from Kikyo-mon Gate",
+    "price": "Free",
+    "bookAhead": "Up to one month: the next month opens on the 1st at 05:00"
+  },
+  "mapPlaces": [
+    {
+      "label": "Kikyo-mon Gate (tour start)",
+      "query": "Kikyomon Gate, Tokyo Imperial Palace"
+    }
+  ],
   "officialUrl": "https://sankan.kunaicho.go.jp/",
   "watchUrls": [
     "https://sankan.kunaicho.go.jp/"
@@ -76,5 +85,5 @@
       "checkedAt": "2026-10-17"
     }
   ],
-  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+  "lastVerifiedAt": "2026-10-21T23:56:57.352Z"
 }

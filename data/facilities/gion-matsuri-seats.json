@@ -6,8 +6,17 @@
   "category": "events",
   "priority": 17,
   "intro": "The Gion Matsuri is Kyoto's biggest festival, held throughout July. Its highlights are the processions of huge decorated floats on July 17 and July 24. Paid seats along the route give you a reserved view, and front rows and premium seats go first.",
-  "facts": { "location": "Central Kyoto", "price": "¥6,000 to ¥8,000 for general seats (2026); premium seats cost much more", "bookAhead": "About six weeks: 2026 seats went on sale on June 1" },
-  "mapPlaces": [{ "label": "Yasaka Shrine", "query": "Yasaka Shrine, Kyoto" }],
+  "facts": {
+    "location": "Central Kyoto",
+    "price": "¥6,000 to ¥8,000 for general seats (2026); premium seats cost much more",
+    "bookAhead": "About six weeks: 2026 seats went on sale on June 1"
+  },
+  "mapPlaces": [
+    {
+      "label": "Yasaka Shrine",
+      "query": "Yasaka Shrine, Kyoto"
+    }
+  ],
   "officialUrl": "https://kyoto.travel/en/travel-inspiration/gion-matsuri-seats/",
   "watchUrls": [
     "https://kyoto.travel/en/travel-inspiration/gion-matsuri-seats/",
@@ -97,5 +106,5 @@
       "checkedAt": "2026-10-17"
     }
   ],
-  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+  "lastVerifiedAt": "2026-10-21T23:56:57.352Z"
 }
