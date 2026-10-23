@@ -6,21 +6,6 @@ Floor Map
 Seating Chart
 Miscellaneous
 Performance Information about the Kabukiza Theatre
-2026:10:02:00:00:00:2026:10:20:00:00:00
-October Program at the Kabukiza Theatre
-Daily:
-Oct 02 (Fri) - Oct 20 (Tue), 2026
-Part 1: 11:00 AM
-Part 2: 2:30 PM
-Part 3: 6:00 PM
-*No performances on the 9th (Fri).
-On sale: from Sep 14 (Mon), 2026 10:00 AM(JST) 2026:09:14:10:00:00
-Book Ticket
-Information
-Single Act Tickets
-【🔗How to buy tickets】Tickets may still be available from the promoter, Shochiku Co., Ltd. for dates that are shown as "sold out" online. To check availability and other preferred seating areas, please call +81(0)3 6745-0888 or visit the box office.
-*Captioning service (either English or simplified Chinese subtitles) available to rent. Click here for details.
-*Sold program (Detailed English synopsis are found at the end of the Japanese program) available.
 2026:11:01:00:00:00:2026:11:25:00:00:00
 November Program at the Kabukiza Theatre
 Daily:
@@ -42,7 +27,40 @@ Information
 December Program at the Kabukiza Theatre
 Daily:
 Dec 02 (Wed) - Dec 25 (Fri), 2026
+Part 1: 11:00 AM
+Part 2: 2:30 PM
+Part 3: 6:00 PM
 *No performances on the 9th (Wed) and 17th (Thu).
+On sale: from Nov 14 (Sat), 2026 10:00 AM(JST) 2026:11:14:10:00:00
+Book Ticket
+Information
+【🔗How to buy tickets】Tickets may still be available from the promoter, Shochiku Co., Ltd. for dates that are shown as "sold out" online. To check availability and other preferred seating areas, please call +81(0)3 6745-0888 or visit the box office.
+*Captioning service (either English or simplified Chinese subtitles) available to rent. Click here for details.
+*Sold program (Detailed English synopsis are found at the end of the Japanese program) available.
+2027:01:02:00:00:00:2027:01:26:00:00:00
+January Program at the Kabukiza Theatre
+Daily:
+Jan 02 (Sat) - Jan 26 (Tue), 2027
+*No performances on the 8th (Fri) and 18th (Mon).
+*The 24th (Sun) Matinee/Evening Show will be 'Kabukiza Kimono Day', a performance where customers are recommended to wear kimono.
+Book Ticket
+Information
+*Captioning service (either English or simplified Chinese subtitles) available to rent. Click here for details.
+*Sold program (Detailed English synopsis are found at the end of the Japanese program) available.
+2027:02:02:00:00:00:2027:02:26:00:00:00
+February Program at the Kabukiza Theatre
+Daily:
+Feb 02 (Tue) - Feb 26 (Fri), 2027
+*No performances on the 9th (Tue) and 18th (Thu).
+Book Ticket
+Information
+*Captioning service (either English or simplified Chinese subtitles) available to rent. Click here for details.
+*Sold program (Detailed English synopsis are found at the end of the Japanese program) available.
+2027:03:05:00:00:00:2027:03:22:00:00:00
+March Program at the Kabukiza Theatre
+Daily:
+Mar 05 (Fri) - Mar 22 (Mon), 2027
+*No performances on the 15th (Mon) .
 Book Ticket
 Information
 *Captioning service (either English or simplified Chinese subtitles) available to rent. Click here for details.

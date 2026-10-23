@@ -18,16 +18,9 @@ Notice
 p]:mb-4 [&>p]:text-inherit
 [&>a]:underline [&>a]:text-[#2e2824] [&>a:hover]:text-[#9c8b59]
 [&>a.section-text-link-block]:no-underline [&>a.section-text-link-block]:text-inherit">
-The 2026 Jidai Matsuri Festival Procession will be carried out as planned today
-Notice:
-– Please make use of public transportation when coming to the Jidai Matsuri Festival.
-– Please follow the police instructions to ensure your safety.
-– If you have reserved your seat, please don’t forget to issue your ticket at a convenience store beforehand and bring it with you.
-– Umbrellas are not permitted in paid viewing areas as they obstruct the view for other spectators. We recommend bringing a raincoat instead.
-What is the Jidai Matsuri Festival?
-*Tickets for the paid procession viewing seats will be available for same-day purchase at the following location:
-– Kyoto Imperial Palace Park seats: Headquarters tent (south of block no. 6).
-Check the procession route on the “Kyoto Smart Navi” digital map
+Temporary Suspension of a Number of Tourism-Related Websites Due to PHP Vulnerability Issues
+Due to a global technical issue caused by a vulnerability in PHP (scripting language used for websites), some tourism-related websites are currently inaccessible.
+If you are unable to access a website, please check its official social media account for updates, or contact them directly by phone.
 Skip to content
 01
 JUN

@@ -6,8 +6,17 @@
   "category": "events",
   "priority": 25,
   "intro": "Kabukiza is a kabuki theatre in Tokyo. Regular seats for each program go on sale on a date set for that program, so far the 14th of the month before. Single-act seats, for watching just one act, are sold separately: online from noon the day before, and at the box office on the day.",
-  "facts": { "location": "Tokyo", "price": "Single-act seats ¥1,500 to ¥4,000 on the 4th level (October 2026)", "bookAhead": "About three weeks for regular seats; single-act seats from noon the day before" },
-  "mapPlaces": [{ "label": "Kabukiza Theatre", "query": "Kabukiza Theatre, Tokyo" }],
+  "facts": {
+    "location": "Tokyo",
+    "price": "Single-act seats ¥1,500 to ¥4,000 on the 4th level (October 2026)",
+    "bookAhead": "About three weeks for regular seats; single-act seats from noon the day before"
+  },
+  "mapPlaces": [
+    {
+      "label": "Kabukiza Theatre",
+      "query": "Kabukiza Theatre, Tokyo"
+    }
+  ],
   "officialUrl": "https://www.kabukiweb.net/theatres/kabukiza/",
   "watchUrls": [
     "https://www.kabukiweb.net/theatres/kabukiza/",
@@ -109,5 +118,5 @@
       "checkedAt": "2026-10-17"
     }
   ],
-  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+  "lastVerifiedAt": "2026-10-23T23:47:35.938Z"
 }
