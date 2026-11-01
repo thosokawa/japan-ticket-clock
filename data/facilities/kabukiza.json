@@ -39,6 +39,13 @@
         "time": "10:00",
         "coversFrom": "2026-12-02",
         "coversTo": "2026-12-25"
+      },
+      {
+        "event": "January 2027 program",
+        "opensAt": "2026-12-14",
+        "time": "10:00",
+        "coversFrom": "2027-01-02",
+        "coversTo": "2027-01-26"
       }
     ]
   },
@@ -87,6 +94,11 @@
     }
   ],
   "sources": [
+    {
+      "url": "https://www.kabukiweb.net/theatres/kabukiza/",
+      "quote": "January Program at the Kabukiza Theatre. Daily: Jan 02 (Sat) - Jan 26 (Tue), 2027. On sale: from Dec 14 (Mon), 2026 10:00 AM(JST)",
+      "checkedAt": "2026-11-01"
+    },
     {
       "url": "https://www.kabukiweb.net/theatres/kabukiza/",
       "quote": "On sale: from Oct 14 (Wed), 2026 10:00 AM(JST)",
