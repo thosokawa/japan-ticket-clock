@@ -24,23 +24,10 @@
     "https://www.kabukiweb.net/about/ticket/"
   ],
   "rule": {
-    "type": "fixed_dates",
-    "sales": [
-      {
-        "event": "November 2026 program",
-        "opensAt": "2026-10-14",
-        "time": "10:00",
-        "coversFrom": "2026-11-01",
-        "coversTo": "2026-11-25"
-      },
-      {
-        "event": "December 2026 program",
-        "opensAt": "2026-11-14",
-        "time": "10:00",
-        "coversFrom": "2026-12-02",
-        "coversTo": "2026-12-25"
-      }
-    ]
+    "type": "monthly",
+    "day": 14,
+    "time": "10:00",
+    "monthsAhead": 1
   },
   "status": "official",
   "statusNote": "Sale dates are from Kabukiza's official program pages. The December page gives the date only; the 10:00 start comes from the official ticket page, which says online sales start at 10:00 on the first day. Single-act seat times are from the official program and news pages.",
@@ -89,8 +76,8 @@
   "sources": [
     {
       "url": "https://www.kabukiweb.net/theatres/kabukiza/",
-      "quote": "On sale: from Oct 14 (Wed), 2026 10:00 AM(JST)",
-      "checkedAt": "2026-10-17"
+      "quote": "On sale: from Dec 14 (Mon), 2026 10:00 AM(JST) 2026:12:14:10:00:00",
+      "checkedAt": "2026-11-01"
     },
     {
       "url": "https://www.kabuki-bito.jp/theaters/kabukiza/",
@@ -118,5 +105,5 @@
       "checkedAt": "2026-10-17"
     }
   ],
-  "lastVerifiedAt": "2026-10-23T23:47:35.938Z"
+  "lastVerifiedAt": "2026-11-01T00:03:03.765Z"
 }
