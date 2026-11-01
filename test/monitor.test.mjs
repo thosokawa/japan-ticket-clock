@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { htmlToText, lineDiff, quoteAppears, sha256 } from '../src/monitor/text.mjs';
+import { htmlToText, dropVolatileLines, lineDiff, quoteAppears, sha256 } from '../src/monitor/text.mjs';
 import { toRule } from '../src/monitor/extract-rule.mjs';
 
 test('htmlToText drops scripts and navigation, keeps content lines', () => {
@@ -35,4 +35,9 @@ test('toRule rejects incomplete or malformed rules', () => {
   assert.equal(toRule({ ...base, ruleType: 'monthly', day: 10 }), null);
   assert.equal(toRule({ ...base, ruleType: 'days_before', days: 31, time: '6pm' }), null);
   assert.equal(toRule({ ...base, ruleType: 'unknown' }), null);
+});
+
+test('dropVolatileLines removes daily dates and sun times, keeps rule text', () => {
+  const text = ['チェックイン日', '2026/10/26', '2026.10.25.Sun', '2026年10月25日(日)', '日の出 5:53', '日の入 16:57', 'Sales start on 2026/12/01 at 13:00'].join('\n');
+  assert.equal(dropVolatileLines(text), 'チェックイン日\nSales start on 2026/12/01 at 13:00');
 });

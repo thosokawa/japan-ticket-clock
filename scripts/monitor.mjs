@@ -10,7 +10,7 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { htmlToText, sha256, lineDiff, quoteAppears } from '../src/monitor/text.mjs';
+import { htmlToText, dropVolatileLines, sha256, lineDiff, quoteAppears } from '../src/monitor/text.mjs';
 import { describeRule } from '../src/rules.mjs';
 
 // JTC_ROOT lets tests run against a copy of the data.
@@ -33,7 +33,7 @@ const slug = (url) => url.replace(/^https?:\/\//, '').replace(/[^a-z0-9]+/gi, '_
 async function fetchPlain(url) {
   const res = await fetch(url, { headers: { 'user-agent': USER_AGENT, 'accept-language': 'en,ja;q=0.8' }, redirect: 'follow' });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return htmlToText(await res.text());
+  return dropVolatileLines(htmlToText(await res.text()));
 }
 
 // Real browser for pages that need JavaScript or turn away simple clients. Optional dependency.
@@ -44,7 +44,7 @@ async function fetchWithBrowser(url) {
   const page = await browser.newPage({ userAgent: USER_AGENT });
   try {
     await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
-    return htmlToText(await page.content());
+    return dropVolatileLines(htmlToText(await page.content()));
   } finally {
     await page.close();
   }

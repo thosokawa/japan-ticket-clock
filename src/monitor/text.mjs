@@ -19,6 +19,17 @@ export function htmlToText(html) {
     .join('\n');
 }
 
+// Lines that change every day on their own (today's date, sunrise and sunset times).
+// Comparing them would flag a page as changed daily.
+const VOLATILE = [
+  /^\d{4}\s*[./\-年]\s*\d{1,2}\s*[./\-月]\s*\d{1,2}\s*日?\s*[.(（]?\s*([A-Za-z]{3}|[日月火水木金土])?\s*[)）]?$/,
+  /^(日の出|日の入り?|sunrise|sunset)\s*:?\s*\d{1,2}:\d{2}$/i,
+];
+
+/** Drop lines that change daily regardless of the booking rules. */
+export const dropVolatileLines = (text) =>
+  text.split('\n').filter((l) => !VOLATILE.some((re) => re.test(l))).join('\n');
+
 export const sha256 = (s) => createHash('sha256').update(s).digest('hex');
 
 /** Lines added and removed between two texts (order-insensitive, good enough to show a reviewer). */
