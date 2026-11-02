@@ -14,13 +14,6 @@ the necessary cookies. For more details, please read our privacy
 policy .
 Accept All
 Essential Only
-Notice
-p]:mb-4 [&>p]:text-inherit
-[&>a]:underline [&>a]:text-[#2e2824] [&>a:hover]:text-[#9c8b59]
-[&>a.section-text-link-block]:no-underline [&>a.section-text-link-block]:text-inherit">
-Temporary Suspension of a Number of Tourism-Related Websites Due to PHP Vulnerability Issues
-Due to a global technical issue caused by a vulnerability in PHP (scripting language used for websites), some tourism-related websites are currently inaccessible.
-If you are unable to access a website, please check its official social media account for updates, or contact them directly by phone.
 Skip to content
 13
 MAR

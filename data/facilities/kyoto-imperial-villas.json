@@ -6,8 +6,25 @@
   "category": "sights",
   "priority": 21,
   "intro": "Katsura Imperial Villa, Shugakuin Imperial Villa and Sento Imperial Palace in Kyoto can only be seen on timed tours run by the Imperial Household Agency. All three share one booking rule: a whole month of tours opens at once, three months ahead, and a few same-day places are handed out each morning.",
-  "facts": { "location": "Kyoto: three separate sites", "price": "Katsura ¥1,000 for ages 18 and over (13 to 17 free); Shugakuin and Sento free", "bookAhead": "Three months: the whole month opens on the 1st at 05:00, three months before" },
-  "mapPlaces": [{ "label": "Katsura Imperial Villa", "query": "Katsura Imperial Villa, Kyoto" }, { "label": "Shugakuin Imperial Villa", "query": "Shugakuin Imperial Villa, Kyoto" }, { "label": "Sento Imperial Palace", "query": "Sento Imperial Palace, Kyoto" }],
+  "facts": {
+    "location": "Kyoto: three separate sites",
+    "price": "Katsura ¥1,000 for ages 18 and over (13 to 17 free); Shugakuin and Sento free",
+    "bookAhead": "Three months: the whole month opens on the 1st at 05:00, three months before"
+  },
+  "mapPlaces": [
+    {
+      "label": "Katsura Imperial Villa",
+      "query": "Katsura Imperial Villa, Kyoto"
+    },
+    {
+      "label": "Shugakuin Imperial Villa",
+      "query": "Shugakuin Imperial Villa, Kyoto"
+    },
+    {
+      "label": "Sento Imperial Palace",
+      "query": "Sento Imperial Palace, Kyoto"
+    }
+  ],
   "officialUrl": "https://sankan.kunaicho.go.jp/",
   "watchUrls": [
     "https://kyoto-gosho.kunaicho.go.jp/katsura-rikyu/visit",
@@ -93,5 +110,5 @@
       "checkedAt": "2026-10-17"
     }
   ],
-  "lastVerifiedAt": "2026-10-17T12:00:00+09:00"
+  "lastVerifiedAt": "2026-11-02T00:26:24.342Z"
 }
