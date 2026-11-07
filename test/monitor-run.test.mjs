@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, cpSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
@@ -31,6 +31,9 @@ test('first run saves a snapshot, a rule change produces a proposal', async () =
     assert.match(second, /unchanged/);
 
     pageBody = `<p>${filler}</p><p>Tickets go on sale on the 1st of each month at 12:00 (Japan time).</p>`;
+    // Keep main's state as it was before the change, to replay a day where the review is still open.
+    const before = join(root, 'before');
+    cpSync(join(root, 'data'), before, { recursive: true });
     const third = await run();
     assert.match(third, /1 proposal\(s\), 1 rule file\(s\) changed/);
     const updated = JSON.parse(readFileSync(join(root, 'data/facilities/demo.json'), 'utf8'));
@@ -40,6 +43,14 @@ test('first run saves a snapshot, a rule change produces a proposal', async () =
     assert.match(body, /\*\*Before:\*\* Tickets go on sale on the 10th/);
     assert.match(body, /\*\*After:\*\* Tickets go on sale on the 1st/);
     assert.equal(JSON.parse(readFileSync(join(root, 'data/changelog.json'), 'utf8')).length, 1);
+
+    // Next day, pull request not merged yet: main still has the old rule and snapshot, plus the saved answer.
+    const answers = readFileSync(join(root, 'data/monitor/claude-answers.json'), 'utf8');
+    cpSync(before, join(root, 'data'), { recursive: true });
+    writeFileSync(join(root, 'data/monitor/claude-answers.json'), answers);
+    const fourth = await new Promise((resolve, reject) => import('node:child_process').then(({ execFile }) => execFile(process.execPath, ['scripts/monitor.mjs'], { env: { ...process.env, JTC_ROOT: root, MONITOR_FAKE_EXTRACTION: join(root, 'missing.json') } }, (err, out) => (err ? reject(err) : resolve(out)))));
+    assert.match(fourth, /reusing Claude's answer/);
+    assert.match(fourth, /1 proposal\(s\), 1 rule file\(s\) changed/);
   } finally {
     server.close();
   }

@@ -28,6 +28,11 @@ const snapDir = join(monitorDir, 'snapshots');
 mkdirSync(snapDir, { recursive: true });
 const statusPath = join(monitorDir, 'status.json');
 const status = existsSync(statusPath) ? JSON.parse(readFileSync(statusPath, 'utf8')) : {};
+// Claude's last answer per page. While a review pull request is open, main keeps the old snapshot,
+// so the same page shows up as changed every day; the saved answer is reused instead of asking again.
+const answersPath = join(monitorDir, 'claude-answers.json');
+const answers = existsSync(answersPath) ? JSON.parse(readFileSync(answersPath, 'utf8')) : {};
+let usageSummary = () => 'Claude usage: none';
 const slug = (url) => url.replace(/^https?:\/\//, '').replace(/[^a-z0-9]+/gi, '_').slice(0, 120);
 
 async function fetchPlain(url) {
@@ -102,12 +107,23 @@ for (const file of facilityFiles) {
       continue;
     }
 
-    console.log(`~ ${key} changed; asking Claude`);
-    const { extractRule, toRule } = await import('../src/monitor/extract-rule.mjs');
-    // MONITOR_FAKE_EXTRACTION (a JSON file) replaces the Claude call in tests.
-    const result = process.env.MONITOR_FAKE_EXTRACTION
-      ? { ok: true, extraction: JSON.parse(readFileSync(process.env.MONITOR_FAKE_EXTRACTION, 'utf8')) }
-      : await extractRule({ facility, url, pageText: page.text });
+    const mod = await import('../src/monitor/extract-rule.mjs');
+    const { extractRule, toRule } = mod;
+    usageSummary = mod.usageSummary;
+    const ruleHash = sha256(JSON.stringify(facility.rule));
+    const saved = answers[key];
+    let result;
+    if (saved && saved.pageHash === hash && saved.ruleHash === ruleHash) {
+      console.log(`~ ${key} changed; same page as last time, reusing Claude's answer`);
+      result = { ok: true, extraction: saved.extraction };
+    } else {
+      console.log(`~ ${key} changed; asking Claude`);
+      // MONITOR_FAKE_EXTRACTION (a JSON file) replaces the Claude call in tests.
+      result = process.env.MONITOR_FAKE_EXTRACTION
+        ? { ok: true, extraction: JSON.parse(readFileSync(process.env.MONITOR_FAKE_EXTRACTION, 'utf8')) }
+        : await extractRule({ facility, url, pageText: page.text });
+      if (result.ok) answers[key] = { pageHash: hash, ruleHash, extraction: result.extraction, answeredAt: today };
+    }
     const diff = lineDiff(previous, page.text);
     if (!result.ok) {
       proposals.push({ facility, url, diff, note: `Automatic reading failed (${result.reason}). Please check this page by hand.` });
@@ -151,6 +167,7 @@ await browser?.close();
 
 if (!dryRun) {
   writeFileSync(statusPath, JSON.stringify(status, null, 2) + '\n');
+  writeFileSync(answersPath, JSON.stringify(answers, null, 2) + '\n');
   writeFileSync(join(monitorDir, 'alerts.md'), alerts.length ? `Official pages that could not be read:\n\n${alerts.join('\n')}\n` : '');
 }
 
@@ -180,3 +197,4 @@ if (proposals.length) {
 } else if (!dryRun && existsSync(join(monitorDir, 'pr-body.md'))) {
   writeFileSync(join(monitorDir, 'pr-body.md'), '');
 }
+console.log(usageSummary());
