@@ -6,11 +6,26 @@
   "category": "attractions",
   "priority": 6,
   "intro": "Nintendo's own museum in Uji, near Kyoto, showing the company's products over the years, with hands-on games. Tickets are given out by lottery, so you have to enter three months ahead and hope to win.",
-  "facts": { "location": "Uji, Kyoto Prefecture", "bookAhead": "Three months: enter the lottery three months before your visit" },
-  "mapPlaces": [{ "label": "Nintendo Museum", "query": "Nintendo Museum, Uji, Kyoto" }],
+  "facts": {
+    "location": "Uji, Kyoto Prefecture",
+    "bookAhead": "Three months: enter the lottery three months before your visit"
+  },
+  "mapPlaces": [
+    {
+      "label": "Nintendo Museum",
+      "query": "Nintendo Museum, Uji, Kyoto"
+    }
+  ],
   "officialUrl": "https://museum.nintendo.com/en/guide/visit-flow/",
-  "watchUrls": ["https://museum.nintendo.com/en/guide/visit-flow/"],
-  "rule": { "type": "lottery", "monthsAhead": 3, "resultsDay": 1, "paymentDay": 7 },
+  "watchUrls": [
+    "https://museum.nintendo.com/en/guide/visit-flow/"
+  ],
+  "rule": {
+    "type": "lottery",
+    "monthsAhead": 3,
+    "resultsDay": 1,
+    "paymentDay": 7
+  },
   "status": "official",
   "statusNote": "Read from the official visit-flow page.",
   "popularity": 9,
@@ -32,14 +47,28 @@
     "Workshops inside the museum are booked on the day, first come, first served, for an extra fee."
   ],
   "soldOut": [
-    { "label": "Kyoto day tours that pass through Uji", "partner": "klook", "query": "uji kyoto tour" },
-    { "label": "Kirby Café: reservations open on the 10th", "internal": "/tickets/kirby-cafe/" }
+    {
+      "label": "Kyoto day tours that pass through Uji",
+      "partner": "klook",
+      "query": "uji kyoto tour"
+    },
+    {
+      "label": "Kirby Café: reservations open on the 10th",
+      "internal": "/tickets/kirby-cafe/"
+    }
   ],
   "faq": [
-    { "q": "How do I get Nintendo Museum tickets?", "a": "Through a lottery that opens three months before your visit. Winners are emailed on the 1st of the next month and must pay by the 7th." }
+    {
+      "q": "How do I get Nintendo Museum tickets?",
+      "a": "Through a lottery that opens three months before your visit. Winners are emailed on the 1st of the next month and must pay by the 7th."
+    }
   ],
   "sources": [
-    { "url": "https://museum.nintendo.com/en/guide/visit-flow/", "quote": "Entries will be accepted beginning three months prior to your visit.", "checkedAt": "2026-10-15" }
+    {
+      "url": "https://museum.nintendo.com/en/guide/visit-flow/",
+      "quote": "Entries will be accepted beginning three months prior to your visit.",
+      "checkedAt": "2026-10-15"
+    }
   ],
-  "lastVerifiedAt": "2026-10-15T20:00:00+09:00"
+  "lastVerifiedAt": "2026-11-07T00:44:01.794Z"
 }
