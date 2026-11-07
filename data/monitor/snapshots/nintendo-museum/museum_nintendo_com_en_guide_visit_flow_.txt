@@ -65,7 +65,7 @@ On the day
 of your visit
 Entering
 Nintendo Museum
-1.Present your QR code and identity document
+1. Present your QR code and identity document
 When entering the museum, present your QR code and ID to the attendants at the security gate. A passport is the only accepted form of ID for non-Japanese nationals. If a visitor's identity can't be verified, they may be denied entry into the museum.
 Accepted Forms of Identification
 Passport
@@ -79,11 +79,12 @@ Minors can also use the following forms of identification:
 Maternal and Child Health Handbook
 Health Insurance Card (Health Insurance Eligibility Certificate)
 Student ID (including student handbook)
-2.Scan your QR code
+2. Scan your QR code
 at the gate
 When you scan your QR code at the gate, you'll be presented with a temporary ticket that you will then exchange for your play ticket. Don't forget it!
-3.Undergo security check
-Do not bring the following items into the museum: Thank you for your understanding.
+3. Undergo security screening
+For the safety and comfort of all guests, security screening will be conducted upon entry. This includes X-ray screening of bags, metal detector screening, and checks of liquids such as beverages.
+The following items are not permitted inside the museum.
 Prohibited items
 *Excluding baby food and snacks for small children. Those with allergies or other restrictions may bring their own meals.
 4. Accept your ticket
