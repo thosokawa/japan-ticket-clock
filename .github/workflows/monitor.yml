@@ -30,6 +30,15 @@ jobs:
         run: |
           if [ -s data/monitor/pr-body.md ]; then echo "review=true" >> "$GITHUB_OUTPUT"; else echo "review=false" >> "$GITHUB_OUTPUT"; fi
           if [ -s data/monitor/alerts.md ]; then echo "alert=true" >> "$GITHUB_OUTPUT"; else echo "alert=false" >> "$GITHUB_OUTPUT"; fi
+      # Saved to main even while a review is pending, so the next run reuses Claude's answers
+      # for pages still waiting in the pull request instead of paying to ask again.
+      - name: Save Claude's answers to main
+        if: steps.result.outputs.review == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/monitor/claude-answers.json
+          git diff --cached --quiet || (git commit -m "Monitor: save Claude answers $(date -u +%F)" && git push)
       - name: Open a pull request for review
         if: steps.result.outputs.review == 'true'
         uses: peter-evans/create-pull-request@v7

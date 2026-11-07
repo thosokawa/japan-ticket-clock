@@ -5,6 +5,17 @@ import { z } from 'zod';
 import { zodOutputFormat } from '@anthropic-ai/sdk/helpers/zod';
 
 const MODEL = process.env.MONITOR_MODEL ?? 'claude-opus-5-5';
+// $ per million tokens (input, output) for the usage line in the log; a rough guide, not the invoice.
+const PRICE = { 'claude-opus-5-5': [4, 20], 'claude-sonnet-5-5': [2, 10], 'claude-haiku-5-5': [0.1, 0.5] };
+const totals = { calls: 0, input: 0, output: 0 };
+
+/** One line for the end of the run log, so a bill can be traced to this job. */
+export function usageSummary() {
+  if (!totals.calls) return 'Claude usage: none';
+  const [pi, po] = PRICE[MODEL] ?? [0, 0];
+  const usd = (totals.input * pi + totals.output * po) / 1e6;
+  return `Claude usage ${MODEL}: ${totals.calls} calls, ${totals.input} input / ${totals.output} output tokens ≈ $${usd.toFixed(2)}`;
+}
 
 // Flat schema (nullable fields) so it maps cleanly onto JSON Schema; converted to our rule shape below.
 const Extraction = z.object({
@@ -58,6 +69,10 @@ export async function extractRule({ facility, url, pageText, client = new Anthro
     }],
     output_config: { format: zodOutputFormat(Extraction) },
   });
+  const u = response.usage ?? {};
+  totals.calls += 1;
+  totals.input += (u.input_tokens ?? 0) + (u.cache_creation_input_tokens ?? 0) + (u.cache_read_input_tokens ?? 0);
+  totals.output += u.output_tokens ?? 0;
   if (response.stop_reason === 'refusal' || !response.parsed_output) {
     return { ok: false, reason: response.stop_reason === 'refusal' ? 'model declined' : 'no structured output' };
   }
