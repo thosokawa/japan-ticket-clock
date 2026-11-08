@@ -1,6 +1,6 @@
 {
   "shibuya-sky:https://www.shibuya-scramble-square.com/sky/": {
-    "pageHash": "df0cc9ade5602c345405665c6c2990c2355818c08fd4f3a9d26f7694655729fe",
+    "pageHash": "053e34d25ec0e4aaab851c7d659fe169cc65957ed2957b75b83115f190128869",
     "ruleHash": "d8e97a010aaac4a6b46a0e3da9ee8bd26227894f82bd45db546605e98a10d679",
     "extraction": {
       "ruleChanged": false,
@@ -14,8 +14,8 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "",
-      "summary": "The page does not state a ticket release rule; it only mentions an upcoming change to purchase and entry methods from November 19, 2026, without details, so no rule change can be confirmed."
+      "summary": "The page does not state when tickets go on sale; it only links to a notice about purchase and entry method changes from November 19, 2026, so no rule change can be confirmed."
     },
-    "answeredAt": "2026-11-07"
+    "answeredAt": "2026-11-08"
   }
 }
