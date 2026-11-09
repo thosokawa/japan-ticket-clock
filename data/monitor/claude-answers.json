@@ -17,5 +17,43 @@
       "summary": "The page does not state when tickets go on sale; it only links to a notice about purchase and entry method changes from November 19, 2026, so no rule change can be confirmed."
     },
     "answeredAt": "2026-11-08"
+  },
+  "shirakawa-go-light-up:https://shirakawa-go.gr.jp/events/443/": {
+    "pageHash": "6a02b57aeab7b4768e2d111f3328b4dd7c902595540c88a532580e2651a5d2bf",
+    "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
+    "extraction": {
+      "ruleChanged": false,
+      "ruleType": "unknown",
+      "day": null,
+      "time": "13:00",
+      "monthsAhead": null,
+      "windowStartDay": null,
+      "days": null,
+      "resultsDay": null,
+      "paymentDay": null,
+      "checkFromDaysBefore": null,
+      "evidenceQuote": "尚、第２回目の販売は、2026年12月1日（火）の13：00から販売を開始します。",
+      "summary": "No change: the page says the second round of parking reservations opens December 1, 2026 at 13:00 JST, matching the current rule; the first round, which opened September 10, has sold out."
+    },
+    "answeredAt": "2026-11-09"
+  },
+  "shirakawa-go-light-up:https://shirakawa-go.gr.jp/": {
+    "pageHash": "ba69966805e8713df152f338caa4e0ed8318039b57575c96ac775fe4aeb443e5",
+    "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
+    "extraction": {
+      "ruleChanged": true,
+      "ruleType": "unknown",
+      "day": null,
+      "time": null,
+      "monthsAhead": null,
+      "windowStartDay": null,
+      "days": null,
+      "resultsDay": null,
+      "paymentDay": null,
+      "checkFromDaysBefore": null,
+      "evidenceQuote": "2027年 第41回白川郷ライトアップ 普通車駐車場予約（第１回目 9/10～）は、完売しました。",
+      "summary": "The page says the first round of car parking reservations for the 2027 light-up opened on September 10 and has sold out, which does not match the recorded December 1, 13:00 opening; the page does not say whether a later round opens on December 1, so this needs review."
+    },
+    "answeredAt": "2026-11-09"
   }
 }
