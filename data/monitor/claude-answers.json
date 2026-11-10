@@ -1,6 +1,6 @@
 {
   "shibuya-sky:https://www.shibuya-scramble-square.com/sky/": {
-    "pageHash": "053e34d25ec0e4aaab851c7d659fe169cc65957ed2957b75b83115f190128869",
+    "pageHash": "5bb9fae8c2ba706dcb414a5449c6f177d05d5e4c46d888b84fd69e91fff19563",
     "ruleHash": "d8e97a010aaac4a6b46a0e3da9ee8bd26227894f82bd45db546605e98a10d679",
     "extraction": {
       "ruleChanged": false,
@@ -14,9 +14,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "",
-      "summary": "The page does not state when tickets go on sale; it only links to a notice about purchase and entry method changes from November 19, 2026, so no rule change can be confirmed."
+      "summary": "The page does not state when tickets go on sale; it only links to a notice about purchase and entry method changes from November 19, 2026, which should be checked separately."
     },
-    "answeredAt": "2026-11-08"
+    "answeredAt": "2026-11-10"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/events/443/": {
     "pageHash": "6a02b57aeab7b4768e2d111f3328b4dd7c902595540c88a532580e2651a5d2bf",
@@ -38,10 +38,10 @@
     "answeredAt": "2026-11-09"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/": {
-    "pageHash": "ba69966805e8713df152f338caa4e0ed8318039b57575c96ac775fe4aeb443e5",
+    "pageHash": "3d39eaf89e8747583a8acd91a2573e092b255c496d437a1a6bdd98717e88bae1",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
-      "ruleChanged": true,
+      "ruleChanged": false,
       "ruleType": "unknown",
       "day": null,
       "time": null,
@@ -52,8 +52,8 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "2027年 第41回白川郷ライトアップ 普通車駐車場予約（第１回目 9/10～）は、完売しました。",
-      "summary": "The page says the first round of car parking reservations for the 2027 light-up opened on September 10 and has sold out, which does not match the recorded December 1, 13:00 opening; the page does not say whether a later round opens on December 1, so this needs review."
+      "summary": "No release rule change is confirmed: the page only says the first round of car parking reservations (from 9/10, no time given) has sold out, which does not clearly contradict the stored December 1, 13:00 sale and may refer to an earlier round."
     },
-    "answeredAt": "2026-11-09"
+    "answeredAt": "2026-11-10"
   }
 }
