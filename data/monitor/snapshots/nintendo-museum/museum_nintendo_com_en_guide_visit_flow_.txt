@@ -39,7 +39,7 @@ Only credit cards are accepted as forms of payment.
 Please note that the ticket(s) will be automatically canceled if payment is not confirmed by the deadline.
 *If you are selected from the waitlist, please complete payment for your ticket(s) by the 14th of the month, Japan time.
 Accepted credit card brands
-Visa, MasterCard, and JCB are accepted.
+Visa, MasterCard JCB, and Discover Network are accepted.
 Prepaid credit and debit cards issued by the above credit-card companies are also accepted.
 *Only cards with a security code on them will be accepted.
 *To make a payment, you must use a credit card registered for 3D-Secure (cardholder authentication service).

@@ -1,6 +1,6 @@
 {
   "shibuya-sky:https://www.shibuya-scramble-square.com/sky/": {
-    "pageHash": "5bb9fae8c2ba706dcb414a5449c6f177d05d5e4c46d888b84fd69e91fff19563",
+    "pageHash": "da4ca9bb494815e441e930d8ba027091dc65b831a7c3dca2c822804cca044cef",
     "ruleHash": "d8e97a010aaac4a6b46a0e3da9ee8bd26227894f82bd45db546605e98a10d679",
     "extraction": {
       "ruleChanged": false,
@@ -14,9 +14,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "",
-      "summary": "The page does not state when tickets go on sale; it only links to a notice about purchase and entry method changes from November 19, 2026, which should be checked separately."
+      "summary": "The page does not state when tickets go on sale; it only mentions an upcoming change to purchase and entry methods from November 19, 2026, without giving details, so the current rule cannot be confirmed or updated from this page."
     },
-    "answeredAt": "2026-11-10"
+    "answeredAt": "2026-11-12"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/events/443/": {
     "pageHash": "4a6adf0715d9c9c2ee763e67126bcc9fa88d81fb81140ce508450c5082ec3a25",
@@ -93,5 +93,24 @@
       "summary": "The page says December 2026 applications have closed and results will be emailed on November 19, but it gives no opening date or rule for future lottery entries, so the current rule stays as it is."
     },
     "answeredAt": "2026-11-11"
+  },
+  "nintendo-museum:https://museum.nintendo.com/en/guide/visit-flow/": {
+    "pageHash": "0c1d74576eb15cf9f5aacd315a7bcc953a67e6941304bb3b30319fe94c1d4441",
+    "ruleHash": "71895b7e08c35accd41132ff4bad57bb472ec3dccd0e4e93c03fed0f6e4b4fc9",
+    "extraction": {
+      "ruleChanged": false,
+      "ruleType": "lottery",
+      "day": null,
+      "time": null,
+      "monthsAhead": 3,
+      "windowStartDay": null,
+      "days": null,
+      "resultsDay": 1,
+      "paymentDay": 7,
+      "checkFromDaysBefore": null,
+      "evidenceQuote": "Entries will be accepted beginning three months prior to your visit.",
+      "summary": "No change: the page still describes a lottery opening three months before the visit, with results on the 1st of the following month and payment due by 23:59 on the 7th."
+    },
+    "answeredAt": "2026-11-12"
   }
 }
