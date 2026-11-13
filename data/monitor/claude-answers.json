@@ -112,5 +112,24 @@
       "summary": "No change: the page still describes a lottery opening three months before the visit, with results on the 1st of the following month and payment due by 23:59 on the 7th."
     },
     "answeredAt": "2026-11-12"
+  },
+  "kabukiza:https://www.kabuki-bito.jp/theaters/kabukiza/": {
+    "pageHash": "a7833ead283b901e2acd329a2ef0d1fbd96a4f90e0d5f832fa5d2d9c04dd04cd",
+    "ruleHash": "5ce02f0fe359fd733be878e35ab730bd9cb7d4b3d1c44b1beedf44d07479184b",
+    "extraction": {
+      "ruleChanged": false,
+      "ruleType": "monthly",
+      "day": 14,
+      "time": null,
+      "monthsAhead": 1,
+      "windowStartDay": null,
+      "days": null,
+      "resultsDay": null,
+      "paymentDay": null,
+      "checkFromDaysBefore": null,
+      "evidenceQuote": "11月14日（土）チケット発売予定",
+      "summary": "No change: the page lists the same release dates as the current rule (December program on Nov 14, January program on Dec 14, November program already on sale), gives no sale time, and announces no dates for later programs."
+    },
+    "answeredAt": "2026-11-13"
   }
 }
