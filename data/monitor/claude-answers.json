@@ -19,7 +19,7 @@
     "answeredAt": "2026-11-12"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/events/443/": {
-    "pageHash": "4a6adf0715d9c9c2ee763e67126bcc9fa88d81fb81140ce508450c5082ec3a25",
+    "pageHash": "1075520268cc3cf372faaa371026716b806fbc20baa78732b11995fbdf12c507",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
       "ruleChanged": false,
@@ -33,12 +33,12 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "尚、第２回目の販売は、2026年12月1日（火）の13：00から販売を開始します。",
-      "summary": "The page confirms the second sales round opens December 1, 2026 at 13:00 JST, matching the current rule, so nothing has changed (the first round, which went on sale September 10, has sold out)."
+      "summary": "No change: the page confirms the second parking-reservation sale opens December 1, 2026 at 13:00 JST, which matches the current rule (the first sale from September 10 is sold out)."
     },
-    "answeredAt": "2026-11-11"
+    "answeredAt": "2026-11-14"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/": {
-    "pageHash": "206778618e4c857c20a48eb05beb6f9eec6014575ce0670e2466932c2b6ccfb8",
+    "pageHash": "216d8a4d56eb25cde9b9cd1598d957438b00db30d1b4707a0d30e78441bf91b5",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
       "ruleChanged": false,
@@ -52,12 +52,12 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "2027年 第41回白川郷ライトアップ 普通車駐車場予約（第１回目 9/10～）は、完売しました。",
-      "summary": "No change confirmed: the page says only that the first round of car parking reservations, which opened 9/10, has sold out; it gives no date or time for any later round, so it neither confirms nor contradicts the current December 1, 13:00 opening."
+      "summary": "The page says the first round of regular-car parking reservations opened on 9/10 and is sold out, but it gives no time and no date for any later round, so it neither confirms nor contradicts the current December 1, 13:00 rule; a reviewer may want to check whether December 1 is a second round."
     },
-    "answeredAt": "2026-11-11"
+    "answeredAt": "2026-11-14"
   },
   "kirby-cafe:https://kirbycafe.jp/cafe/": {
-    "pageHash": "cce89b66c30408850bfe715b66e96e782fcd83f06cf3aac9f8c9ca0e823ed41b",
+    "pageHash": "bae501c8076b0a32f122f7017a03135f3f5a1b9fcd4679cda5655b271175baa9",
     "ruleHash": "145d7ab043c8cbe98c7fa4b3f12429e43dff7d8d8c351db86f35c2720429619c",
     "extraction": {
       "ruleChanged": false,
@@ -71,9 +71,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "よりよいサービスのご提供とセキュリティ強化のため、2026年8月予約分（2026年7月10日予約受付開始）より、予約方法を変更させていただきます。",
-      "summary": "No change: the page says August 2026 bookings open on July 10, which matches the current rule of opening on the 10th one month ahead; the page gives no opening time, and the only change announced is that an account is now required to book."
+      "summary": "No change: August 2026 bookings open on July 10, which matches the current rule of the 10th of the prior month; the page states no opening time, and the only change is that an account is now required."
     },
-    "answeredAt": "2026-11-11"
+    "answeredAt": "2026-11-14"
   },
   "toyosu-tuna-auction:https://toyosu.jcdlotterysite.jp/index_en": {
     "pageHash": "16dac4328cc05eaeca3f5195764579b2d6ef3de062f1f409bac9c52148971aba",
