@@ -1,176 +1,176 @@
 {
   "ghibli-museum:https://www.ghibli-museum.jp/en/tickets/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "ghibli-museum:https://www.lawson.co.jp/ghibli_museum/english.html": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "ghibli-park:https://ghibli-park.jp/en/ticket/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "ghibli-park:https://ghibli-park.jp/en/ticket/ticket2.html": {
-    "failures": 22,
-    "lastError": "2026-11-16: page text too short (96 chars)"
+    "failures": 23,
+    "lastError": "2026-11-17: page text too short (96 chars)"
   },
   "kirby-cafe:https://kirbycafe.jp/cafe/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "nintendo-museum:https://museum.nintendo.com/en/guide/visit-flow/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "pokemon-cafe:https://www.pokemon-cafe.jp/en/": {
-    "failures": 22,
-    "lastError": "2026-11-16: page text too short (90 chars)"
+    "failures": 23,
+    "lastError": "2026-11-17: page text too short (90 chars)"
   },
   "shibuya-sky:https://www.shibuya-scramble-square.com/sky/": {
-    "failures": 4,
+    "failures": 5,
     "lastCheckedAt": "2026-11-12T02:10:17.514Z",
     "via": "browser",
-    "lastError": "2026-11-16: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.shibuya-scramble-square.com/sky/\", waiting until \"networkidle\"\n"
+    "lastError": "2026-11-17: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.shibuya-scramble-square.com/sky/\", waiting until \"networkidle\"\n"
   },
   "teamlab-planets:https://teamlabplanets.dmm.com/en": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "aoi-matsuri-seats:https://kyoto.travel/en/travel-inspiration/the-aoi-matsuri-festival-procession-sales-information-parade-viewing-seats/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "chichu-art-museum:https://benesse-artsite.jp/en/faq/chichu_art_museumonline_tickets.html": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "gion-matsuri-seats:https://kyoto.travel/en/travel-inspiration/gion-matsuri-seats/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "gion-matsuri-seats:https://kyoto.travel/en/news/gion-festival-seats/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "grand-sumo:https://www.sumo.or.jp/EnTicket/year_schedule/": {
-    "failures": 19,
-    "lastError": "2026-11-16: page text too short (31 chars)"
+    "failures": 20,
+    "lastError": "2026-11-17: page text too short (31 chars)"
   },
   "imperial-palace-tour:https://sankan.kunaicho.go.jp/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "jidai-matsuri-seats:https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "jr-east-train-reservation:https://www.jrhokkaido.co.jp/global/english/ticket/reservation/index.html": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "kabukiza:https://www.kabukiweb.net/theatres/kabukiza/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch",
     "lastError": "2026-10-21: page text too short (174 chars)"
   },
   "kabukiza:https://www.kabuki-bito.jp/theaters/kabukiza/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch",
     "lastError": "2026-10-21: page text too short (174 chars)"
   },
   "kabukiza:https://www.kabukiweb.net/about/ticket/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch",
     "lastError": "2026-10-21: page text too short (174 chars)"
   },
   "kyoto-imperial-villas:https://kyoto-gosho.kunaicho.go.jp/katsura-rikyu/visit": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "kyoto-imperial-villas:https://kyoto-gosho.kunaicho.go.jp/shugakuin-rikyu/visit": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "browser"
   },
   "kyoto-imperial-villas:https://kyoto-gosho.kunaicho.go.jp/sento-gosho/visit": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "browser"
   },
   "sagano-romantic-train:https://www.sagano-kanko.co.jp/en/faq/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch",
     "lastError": "2026-10-21: page text too short (0 chars)"
   },
   "sagano-romantic-train:https://www.sagano-kanko.co.jp/en/ticket": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch",
     "lastError": "2026-10-21: page text too short (0 chars)"
   },
   "shinkansen:https://global.jr-central.co.jp/en/nozomi/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "shinkansen:https://www.westjr.co.jp/global/en/ticket/overview/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/events/443/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "sunrise-izumo-seto:https://www.westjr.co.jp/global/en/ticket/overview/": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   },
   "tokyo-disney-hotels:https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html": {
-    "failures": 19,
-    "lastError": "2026-11-16: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html\", waiting until \"networkidle\"\n"
+    "failures": 20,
+    "lastError": "2026-11-17: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.tokyodisneyresort.jp/en/hotel/topics/info/operation/reservation.html\", waiting until \"networkidle\"\n"
   },
   "tokyo-disney-restaurants:https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html": {
-    "failures": 19,
-    "lastError": "2026-11-16: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html\", waiting until \"networkidle\"\n"
+    "failures": 20,
+    "lastError": "2026-11-17: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.tokyodisneyresort.jp/en/tdr/guide/app_service/priorityseating.html\", waiting until \"networkidle\"\n"
   },
   "tokyo-disney-restaurants:https://reserve.tokyodisneyresort.jp/en/about/restaurant_01": {
-    "failures": 19,
-    "lastError": "2026-11-16: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://reserve.tokyodisneyresort.jp/en/about/restaurant_01\", waiting until \"networkidle\"\n"
+    "failures": 20,
+    "lastError": "2026-11-17: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://reserve.tokyodisneyresort.jp/en/about/restaurant_01\", waiting until \"networkidle\"\n"
   },
   "tokyo-disney-tickets:https://www.tokyodisneyresort.jp/en/ticket/sales_status.html": {
-    "failures": 19,
-    "lastError": "2026-11-16: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.tokyodisneyresort.jp/en/ticket/sales_status.html\", waiting until \"networkidle\"\n"
+    "failures": 20,
+    "lastError": "2026-11-17: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.tokyodisneyresort.jp/en/ticket/sales_status.html\", waiting until \"networkidle\"\n"
   },
   "toyosu-tuna-auction:https://toyosu.jcdlotterysite.jp/index_en": {
     "failures": 0,
-    "lastCheckedAt": "2026-11-16T00:52:16.918Z",
+    "lastCheckedAt": "2026-11-17T03:32:08.535Z",
     "via": "fetch"
   }
 }
