@@ -38,7 +38,7 @@
     "answeredAt": "2026-11-18"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/": {
-    "pageHash": "6bc3e5b2b5fde5608d7f36bcbed54a3b477e5c252d2cd885dd6604c84b577f34",
+    "pageHash": "c5eafaa5ed387aaf8ce86334364185babd388918a9a60ee85c508cc9abd56b78",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
       "ruleChanged": true,
@@ -52,9 +52,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "2027年 第41回白川郷ライトアップ 普通車駐車場予約（第１回目 9/10～）は、完売しました。",
-      "summary": "The page says the first round of car parking reservations for the 2027 light-up opened on September 10 and has sold out, which conflicts with the current rule's December 1, 13:00 opening; the page gives no time and does not say whether a later round opens December 1."
+      "summary": "The page says the first round of car parking reservations for the 2027 light-up opened on September 10 and is sold out, while the current rule has sales opening December 1, 2026 at 13:00; it gives no time and does not mention any later round."
     },
-    "answeredAt": "2026-11-18"
+    "answeredAt": "2026-11-19"
   },
   "kirby-cafe:https://kirbycafe.jp/cafe/": {
     "pageHash": "bae501c8076b0a32f122f7017a03135f3f5a1b9fcd4679cda5655b271175baa9",
@@ -76,7 +76,7 @@
     "answeredAt": "2026-11-14"
   },
   "toyosu-tuna-auction:https://toyosu.jcdlotterysite.jp/index_en": {
-    "pageHash": "16dac4328cc05eaeca3f5195764579b2d6ef3de062f1f409bac9c52148971aba",
+    "pageHash": "1122999ed4de8e0b1d1eac7cea4d00a22852c251b2d40c3d1d954a0b273fd32a",
     "ruleHash": "3c4d22bd48a718e76b6c558c93e2524d036801525db31b0f1aad06ecc530d347",
     "extraction": {
       "ruleChanged": false,
@@ -90,9 +90,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "",
-      "summary": "The page says December 2026 applications have closed and results will be emailed on November 19, but it gives no opening date or rule for future lottery entries, so the current rule stays as it is."
+      "summary": "The page lists headings for the entry period and raffle results but no dates or times, and only notes that December applications have closed, so it states no release rule to compare against."
     },
-    "answeredAt": "2026-11-11"
+    "answeredAt": "2026-11-19"
   },
   "nintendo-museum:https://museum.nintendo.com/en/guide/visit-flow/": {
     "pageHash": "0c1d74576eb15cf9f5aacd315a7bcc953a67e6941304bb3b30319fe94c1d4441",
