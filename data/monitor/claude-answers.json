@@ -76,7 +76,7 @@
     "answeredAt": "2026-11-14"
   },
   "toyosu-tuna-auction:https://toyosu.jcdlotterysite.jp/index_en": {
-    "pageHash": "1122999ed4de8e0b1d1eac7cea4d00a22852c251b2d40c3d1d954a0b273fd32a",
+    "pageHash": "663c2c91d190a99676fe30404fc763ae414bb768b8ce751894545a78b75596c9",
     "ruleHash": "3c4d22bd48a718e76b6c558c93e2524d036801525db31b0f1aad06ecc530d347",
     "extraction": {
       "ruleChanged": false,
@@ -90,9 +90,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "",
-      "summary": "The page lists headings for the entry period and raffle results but no dates or times, and only notes that December applications have closed, so it states no release rule to compare against."
+      "summary": "The page leaves the entry period and winner-announcement dates blank and only notes that December 2026 results were posted on 2026.11.19, so it states no release rule and nothing changes."
     },
-    "answeredAt": "2026-11-19"
+    "answeredAt": "2026-11-20"
   },
   "nintendo-museum:https://museum.nintendo.com/en/guide/visit-flow/": {
     "pageHash": "0c1d74576eb15cf9f5aacd315a7bcc953a67e6941304bb3b30319fe94c1d4441",
@@ -150,5 +150,43 @@
       "summary": "No change: the page lists the same on-sale dates and times as the current rule (Oct 14, Nov 14 and Dec 14, 2026 at 10:00 JST for the November, December and January programs), and later programs have no on-sale date yet."
     },
     "answeredAt": "2026-11-18"
+  },
+  "ghibli-park:https://ghibli-park.jp/en/ticket/": {
+    "pageHash": "5865fa303cbd4db9f06a0d5701883a46cccd5caf7d3be80032f3e650eb5d655e",
+    "ruleHash": "ca69cca705d633c53ee524bd9efe811060901fc3c7287330513b0ba221d82136",
+    "extraction": {
+      "ruleChanged": false,
+      "ruleType": "monthly",
+      "day": 10,
+      "time": "14:00",
+      "monthsAhead": 2,
+      "windowStartDay": null,
+      "days": null,
+      "resultsDay": null,
+      "paymentDay": null,
+      "checkFromDaysBefore": null,
+      "evidenceQuote": "This pass goes on sale two months in advance, on the 10th at 2 p.m. (Japan time)",
+      "summary": "No change: overseas tickets still go on sale on the 10th at 2 p.m. JST, two months before the visit month (February 2027 tickets on sale December 10, 2026)."
+    },
+    "answeredAt": "2026-11-20"
+  },
+  "imperial-palace-tour:https://sankan.kunaicho.go.jp/": {
+    "pageHash": "ae107c7ca9d608c801884b10b390bc1ad5730b08c1e1f6446c720492fa9e43d1",
+    "ruleHash": "17e5a3ff4738f18e92a96ff14f2f99121e2d8d82fd79146ac8658a8291c6c066",
+    "extraction": {
+      "ruleChanged": false,
+      "ruleType": "unknown",
+      "day": null,
+      "time": null,
+      "monthsAhead": null,
+      "windowStartDay": null,
+      "days": null,
+      "resultsDay": null,
+      "paymentDay": null,
+      "checkFromDaysBefore": null,
+      "evidenceQuote": "",
+      "summary": "The page is a system maintenance notice with no release rule, so no change can be determined."
+    },
+    "answeredAt": "2026-11-20"
   }
 }
