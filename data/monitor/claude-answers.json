@@ -76,7 +76,7 @@
     "answeredAt": "2026-11-14"
   },
   "toyosu-tuna-auction:https://toyosu.jcdlotterysite.jp/index_en": {
-    "pageHash": "663c2c91d190a99676fe30404fc763ae414bb768b8ce751894545a78b75596c9",
+    "pageHash": "4b3998533cde91635048d5a70eed6a12bba9cd9d019d0eb34c84856438f4d60a",
     "ruleHash": "3c4d22bd48a718e76b6c558c93e2524d036801525db31b0f1aad06ecc530d347",
     "extraction": {
       "ruleChanged": false,
@@ -90,9 +90,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "",
-      "summary": "The page leaves the entry period and winner-announcement dates blank and only notes that December 2026 results were posted on 2026.11.19, so it states no release rule and nothing changes."
+      "summary": "The page lists announcements (December results available, January applications pending) but states no entry period dates or release rule, so no change can be confirmed."
     },
-    "answeredAt": "2026-11-20"
+    "answeredAt": "2026-11-21"
   },
   "nintendo-museum:https://museum.nintendo.com/en/guide/visit-flow/": {
     "pageHash": "0c1d74576eb15cf9f5aacd315a7bcc953a67e6941304bb3b30319fe94c1d4441",
@@ -188,5 +188,24 @@
       "summary": "The page is a system maintenance notice with no release rule, so no change can be determined."
     },
     "answeredAt": "2026-11-20"
+  },
+  "ghibli-museum:https://www.ghibli-museum.jp/en/tickets/": {
+    "pageHash": "700a3b0e8a00b5b00aa59084ea18c0e833677c293f4c7b04047ef0aa230bd049",
+    "ruleHash": "cc264ac9f31e0c97813036612c22559147944389dd5c762ecb702402616f603e",
+    "extraction": {
+      "ruleChanged": false,
+      "ruleType": "monthly",
+      "day": 10,
+      "time": "10:00",
+      "monthsAhead": 1,
+      "windowStartDay": null,
+      "days": null,
+      "resultsDay": null,
+      "paymentDay": null,
+      "checkFromDaysBefore": null,
+      "evidenceQuote": "Tickets become available for purchase at 10 a.m. (JST) on the 10th of each month for the subsequent month.",
+      "summary": "No change: tickets still go on sale at 10:00 JST on the 10th of each month for the following month."
+    },
+    "answeredAt": "2026-11-21"
   }
 }
