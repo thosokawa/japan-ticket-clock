@@ -19,7 +19,7 @@
     "answeredAt": "2026-11-12"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/events/443/": {
-    "pageHash": "a818abb3feaed04c0b84a18e6efb75f5c060a8e5a97802f0bb483375b7eb8d57",
+    "pageHash": "99cf3c5404a9140e7db969700f5a565cbcb01b78cd01be7c0882d906a08adce7",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
       "ruleChanged": false,
@@ -33,12 +33,12 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "尚、第２回目の販売は、2026年12月1日（火）の13：00から販売を開始します。",
-      "summary": "The page says the first sale round (from September 10) has sold out and confirms the second round opens December 1, 2026 at 13:00 JST, matching the current rule, so nothing has changed."
+      "summary": "No change: the page confirms the second sale of light-up parking reservations opens December 1, 2026 at 13:00 JST, matching the current rule; the first sale, which opened September 10, has sold out."
     },
-    "answeredAt": "2026-11-18"
+    "answeredAt": "2026-11-25"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/": {
-    "pageHash": "3dac784d6a10d4b8ec749103146b994b195960eb5fee9fb0c3eaa0927912a9c5",
+    "pageHash": "91a1030440a170a3aa5bd04c552f85038d1f5559ff55bcf5bb2aac3499b2770c",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
       "ruleChanged": false,
@@ -52,9 +52,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "2027年 第41回白川郷ライトアップ 普通車駐車場予約（第１回目 9/10～）は、完売しました。",
-      "summary": "The page says only that the first round of car parking reservations (from 9/10) has sold out, which may need a reviewer's check, and it gives no date for any later round, so the stored December 1 13:00 release is neither confirmed nor contradicted."
+      "summary": "The page only says the first round of car parking reservations (from 9/10) has sold out; it gives no date or time for later rounds, so it neither confirms nor contradicts the current December 1, 13:00 release rule."
     },
-    "answeredAt": "2026-11-24"
+    "answeredAt": "2026-11-25"
   },
   "kirby-cafe:https://kirbycafe.jp/cafe/": {
     "pageHash": "bae501c8076b0a32f122f7017a03135f3f5a1b9fcd4679cda5655b271175baa9",
@@ -114,7 +114,7 @@
     "answeredAt": "2026-11-12"
   },
   "kabukiza:https://www.kabuki-bito.jp/theaters/kabukiza/": {
-    "pageHash": "1d332c57cb243016dbd4758a1e2050109ff35e3d43d6f826d1fdb6da4b9bdf79",
+    "pageHash": "4c8ffd9268e673170dfb5175505297802dda9818ab762a59100e421353a13bcc",
     "ruleHash": "5ce02f0fe359fd733be878e35ab730bd9cb7d4b3d1c44b1beedf44d07479184b",
     "extraction": {
       "ruleChanged": false,
@@ -128,28 +128,28 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "12月14日（月）チケット発売予定",
-      "summary": "No change: the page lists the January 2027 program going on sale December 14, matching the current rule, and shows the November and December programs already on sale; it gives no sale time and no general release rule."
+      "summary": "No change: the page lists the January 2027 program going on sale on December 14 and shows December 2026 tickets already on sale, both matching the current rule, and gives no sale date for later programs."
     },
-    "answeredAt": "2026-11-15"
+    "answeredAt": "2026-11-25"
   },
   "kabukiza:https://www.kabukiweb.net/theatres/kabukiza/": {
-    "pageHash": "0c60d45583f070b8cf44889f9aa33628b8d06d46d2a772efc12d192870311651",
+    "pageHash": "4d6f1b70fa4df9e436806b1048c8eedd1c760853d577879bbbe0d10467e376cf",
     "ruleHash": "5ce02f0fe359fd733be878e35ab730bd9cb7d4b3d1c44b1beedf44d07479184b",
     "extraction": {
       "ruleChanged": false,
-      "ruleType": "monthly",
-      "day": 14,
-      "time": "10:00",
-      "monthsAhead": 1,
+      "ruleType": "unknown",
+      "day": null,
+      "time": null,
+      "monthsAhead": null,
       "windowStartDay": null,
       "days": null,
       "resultsDay": null,
       "paymentDay": null,
       "checkFromDaysBefore": null,
-      "evidenceQuote": "On sale: from Oct 14 (Wed), 2026 10:00 AM(JST)",
-      "summary": "No change: the page lists the same on-sale dates and times as the current rule (Oct 14, Nov 14 and Dec 14, 2026 at 10:00 JST for the November, December and January programs), and later programs have no on-sale date yet."
+      "evidenceQuote": "",
+      "summary": "The page's on-sale dates for the November 2026, December 2026, and January 2027 programs (Oct 14, Nov 14, and Dec 14 at 10:00 AM JST) match the current fixed dates, and no sale dates are listed yet for later programs, so nothing has changed."
     },
-    "answeredAt": "2026-11-18"
+    "answeredAt": "2026-11-25"
   },
   "ghibli-park:https://ghibli-park.jp/en/ticket/": {
     "pageHash": "5865fa303cbd4db9f06a0d5701883a46cccd5caf7d3be80032f3e650eb5d655e",
