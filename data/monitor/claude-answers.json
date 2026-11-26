@@ -133,23 +133,23 @@
     "answeredAt": "2026-11-25"
   },
   "kabukiza:https://www.kabukiweb.net/theatres/kabukiza/": {
-    "pageHash": "4d6f1b70fa4df9e436806b1048c8eedd1c760853d577879bbbe0d10467e376cf",
+    "pageHash": "644946bd4403e3f15003f8c6aff8f6a82d91aaaa1c0ffa36ba4058ffaf727c73",
     "ruleHash": "5ce02f0fe359fd733be878e35ab730bd9cb7d4b3d1c44b1beedf44d07479184b",
     "extraction": {
       "ruleChanged": false,
       "ruleType": "unknown",
       "day": null,
-      "time": null,
+      "time": "10:00",
       "monthsAhead": null,
       "windowStartDay": null,
       "days": null,
       "resultsDay": null,
       "paymentDay": null,
       "checkFromDaysBefore": null,
-      "evidenceQuote": "",
-      "summary": "The page's on-sale dates for the November 2026, December 2026, and January 2027 programs (Oct 14, Nov 14, and Dec 14 at 10:00 AM JST) match the current fixed dates, and no sale dates are listed yet for later programs, so nothing has changed."
+      "evidenceQuote": "On sale: from Dec 14 (Mon), 2026 10:00 AM(JST)",
+      "summary": "No change: the page's on-sale dates match the current rule (December 2026 program from Nov 14, 2026 and January 2027 program from Dec 14, 2026, both at 10:00 JST), and no sale dates are given for February 2027 onward."
     },
-    "answeredAt": "2026-11-25"
+    "answeredAt": "2026-11-26"
   },
   "ghibli-park:https://ghibli-park.jp/en/ticket/": {
     "pageHash": "5865fa303cbd4db9f06a0d5701883a46cccd5caf7d3be80032f3e650eb5d655e",
