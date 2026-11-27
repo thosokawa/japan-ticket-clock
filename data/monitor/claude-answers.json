@@ -38,7 +38,7 @@
     "answeredAt": "2026-11-25"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/": {
-    "pageHash": "91a1030440a170a3aa5bd04c552f85038d1f5559ff55bcf5bb2aac3499b2770c",
+    "pageHash": "a77d826cf6cc641464947c49e400a1bcaebe2af62567b99c23d5b2593d8ec686",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
       "ruleChanged": false,
@@ -52,9 +52,9 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "2027年 第41回白川郷ライトアップ 普通車駐車場予約（第１回目 9/10～）は、完売しました。",
-      "summary": "The page only says the first round of car parking reservations (from 9/10) has sold out; it gives no date or time for later rounds, so it neither confirms nor contradicts the current December 1, 13:00 release rule."
+      "summary": "The page only says the first round of car parking reservations (from 9/10) has sold out; it gives no time and says nothing about the December 1, 13:00 sale, so it does not clearly contradict the current rule and no change is recorded."
     },
-    "answeredAt": "2026-11-25"
+    "answeredAt": "2026-11-27"
   },
   "kirby-cafe:https://kirbycafe.jp/cafe/": {
     "pageHash": "bae501c8076b0a32f122f7017a03135f3f5a1b9fcd4679cda5655b271175baa9",
