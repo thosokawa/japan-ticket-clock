@@ -19,7 +19,7 @@
     "answeredAt": "2026-11-12"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/events/443/": {
-    "pageHash": "99cf3c5404a9140e7db969700f5a565cbcb01b78cd01be7c0882d906a08adce7",
+    "pageHash": "a14562ae0b07dcc8eba235d020b01108aae61a5cf7ff79a1068181e3d6c9930d",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
       "ruleChanged": false,
@@ -33,12 +33,12 @@
       "paymentDay": null,
       "checkFromDaysBefore": null,
       "evidenceQuote": "尚、第２回目の販売は、2026年12月1日（火）の13：00から販売を開始します。",
-      "summary": "No change: the page confirms the second sale of light-up parking reservations opens December 1, 2026 at 13:00 JST, matching the current rule; the first sale, which opened September 10, has sold out."
+      "summary": "No change: the page confirms the second sale opens December 1, 2026 at 13:00 JST, matching the current rule; the first sale, which began September 10, has sold out."
     },
-    "answeredAt": "2026-11-25"
+    "answeredAt": "2026-11-28"
   },
   "shirakawa-go-light-up:https://shirakawa-go.gr.jp/": {
-    "pageHash": "a77d826cf6cc641464947c49e400a1bcaebe2af62567b99c23d5b2593d8ec686",
+    "pageHash": "629ac8f2a528ebed301eb39f2fc5dabb70ac359430b440453f9302d2b020bfe2",
     "ruleHash": "6e6d61fc01a5365a04c9590c9403bc2c4dc22548976b73372d9d6317805e3a7d",
     "extraction": {
       "ruleChanged": false,
@@ -51,10 +51,10 @@
       "resultsDay": null,
       "paymentDay": null,
       "checkFromDaysBefore": null,
-      "evidenceQuote": "2027年 第41回白川郷ライトアップ 普通車駐車場予約（第１回目 9/10～）は、完売しました。",
-      "summary": "The page only says the first round of car parking reservations (from 9/10) has sold out; it gives no time and says nothing about the December 1, 13:00 sale, so it does not clearly contradict the current rule and no change is recorded."
+      "evidenceQuote": "",
+      "summary": "The page states no complete release rule, so no change is recorded. It does say the first round of regular-car parking reservations opened on 9/10 and is sold out (\"2027年 第41回白川郷ライトアップ 普通車駐車場予約（第１回目 9/10～）は、完売しました。\"), with no time given. That does not necessarily conflict with the current 2026-12-01 13:00 date, which may be a later round, but the reviewer may want to confirm."
     },
-    "answeredAt": "2026-11-27"
+    "answeredAt": "2026-11-28"
   },
   "kirby-cafe:https://kirbycafe.jp/cafe/": {
     "pageHash": "bae501c8076b0a32f122f7017a03135f3f5a1b9fcd4679cda5655b271175baa9",
